@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>튼튼환풍기 | 환기 설비 전문 시공</title>
-<meta name="description" content="공간별 압력·배출 진단을 통한 환기 설비 시공. 매장, 주방, 창고, 오피스까지 튼튼환풍기가 방문 진단 후 시공합니다.">
+<meta name="description" content="환풍기 설치·교체 전문 튼튼환풍기. 주방·음식점, 무인매장, 화장실, 공장 판넬, 세탁실까지 26건의 실제 시공 전후 사진을 확인하세요. 수원·용인·동탄 중심 방문 시공.">
 <link rel="canonical" href="https://fanmaster.co.kr/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="튼튼환풍기">
@@ -295,6 +295,35 @@
   .area-group{margin-bottom:20px;}
   .area-group:last-child{margin-bottom:0;}
   .area-group .ag-title{font-size:12.5px;font-weight:700;color:var(--moss);letter-spacing:.04em;margin-bottom:8px;display:block;}
+
+  /* case gallery */
+  .gal-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px;}
+  .gal-filter button{
+    font-family:inherit;font-size:13.5px;font-weight:700;color:var(--muted2);
+    background:var(--white);border:1px solid var(--line);border-radius:999px;
+    padding:9px 18px;cursor:pointer;transition:all .15s ease;
+  }
+  .gal-filter button:hover{border-color:var(--moss-soft);color:var(--ink);}
+  .gal-filter button.on{background:var(--ink);border-color:var(--ink);color:#fff;}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:900px){.gal{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.gal{grid-template-columns:1fr;}}
+  .gal-card{background:var(--white);border:1px solid var(--line);overflow:hidden;
+    transition:transform .18s ease, box-shadow .18s ease;}
+  .gal-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(30,33,25,.10);}
+  .gal-card.hide{display:none;}
+  .gal-ba{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);}
+  .gal-half{position:relative;overflow:hidden;background:var(--cream-alt);}
+  .gal-half img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .gal-half .t{position:absolute;left:8px;bottom:8px;font-size:10.5px;font-weight:700;
+    color:#fff;border-radius:5px;padding:3px 9px;letter-spacing:.02em;}
+  .gal-half.b .t{background:rgba(45,52,40,.86);}
+  .gal-half.a .t{background:var(--moss);}
+  .gal-body{padding:16px 18px 18px;}
+  .gal-body .loc{font-size:11.5px;font-weight:700;color:var(--moss-deep);margin-bottom:5px;}
+  .gal-body h4{font-size:15px;font-weight:700;line-height:1.45;margin-bottom:7px;}
+  .gal-body p{font-size:12.5px;color:var(--muted2);line-height:1.65;}
+  .gal-count{font-size:13.5px;color:var(--muted2);margin-top:26px;text-align:center;}
 </style>
 </head>
 <body>
@@ -505,30 +534,306 @@
   <section id="works" style="background:var(--cream-alt);">
     <div class="wrap">
       <span class="label">Works</span>
-      <h2 class="headline">현장에서 확인한 작업</h2>
-      <p class="lede">매장, 식당, 창고 등 다양한 공간에서 진행한 시공 기록입니다.</p>
-      <div class="bento">
-        <div class="bento-item large">
-          <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"></rect><path d="M3 10h18M9 4v16"></path></svg></div>
-          <div><div class="loc">경기 성남시 분당구 · 오피스</div><h4>창문형 고압환풍기 2기 설치</h4></div>
-        </div>
-        <div class="bento-item small">
-          <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg></div>
-          <div><div class="loc">서울 마포구 · 미용실</div><h4>환기팬 3대 설치</h4></div>
-        </div>
-        <div class="bento-item small">
-          <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"></path><path d="M9 21v-7h6v7"></path></svg></div>
-          <div><div class="loc">인천 부평구 · 음식점</div><h4>주방 고압환풍기 교체</h4></div>
-        </div>
-        <div class="bento-item small">
-          <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="13" rx="1"></rect><path d="M2 12h20M8 7V4h8v3"></path></svg></div>
-          <div><div class="loc">경기 화성시 · 창고·공장</div><h4>조립식 판넬 고압환풍기 2기</h4></div>
-        </div>
-        <div class="bento-item large">
-          <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v6m0 0-3-3m3 3 3-3"></path><rect x="4" y="12" width="16" height="9" rx="1"></rect></svg></div>
-          <div><div class="loc">서울 동작구 노량진동 · 음식점</div><h4>벽면 타공 후 배기팬 시공</h4></div>
-        </div>
+      <h2 class="headline">직접 다녀온 시공 현장</h2>
+      <p class="lede">주방과 무인매장, 화장실, 공장 판넬까지 — 실제 시공 전후를 그대로 올렸습니다.</p>
+      <div class="gal-filter">
+        <button data-cat="all" class="on">전체</button>
+        <button data-cat="kitchen">주방·음식점</button>
+        <button data-cat="store">무인매장·상가</button>
+        <button data-cat="bath">화장실·욕실</button>
+        <button data-cat="factory">공장·창고</button>
+        <button data-cat="utility">세탁실·다용도실</button>
+        <button data-cat="office">사무실</button>
       </div>
+      <div class="gal">
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c01-b.jpg" alt="무인 헬스장 출입구 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c01-a.jpg" alt="무인 헬스장 출입구 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">24시간 무인 헬스장</div>
+            <h4>무인 헬스장 출입구 환풍기 설치</h4>
+            <p>상주 인원이 없는 무인 헬스장 출입구 상부에 환풍기를 설치해 상시 환기 경로를 만들었습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c02-b.jpg" alt="음식점 주방 노후 환풍기 교체 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c02-a.jpg" alt="음식점 주방 노후 환풍기 교체 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">음식점 주방</div>
+            <h4>음식점 주방 노후 환풍기 교체</h4>
+            <p>기름때로 굳어 배출이 거의 되지 않던 노후 환풍기를 철거하고 새 제품으로 교체했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="bath">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c03-b.jpg" alt="화장실 창문형 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c03-a.jpg" alt="화장실 창문형 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상가 화장실</div>
+            <h4>화장실 창문형 환풍기 설치</h4>
+            <p>창문만 있고 배기 장치가 없던 화장실에 창문형 환풍기를 설치해 냄새와 습기를 배출합니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="bath">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c04-b.jpg" alt="화장실 천장형 환풍기 교체 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c04-a.jpg" alt="화장실 천장형 환풍기 교체 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">화장실·샤워실</div>
+            <h4>화장실 천장형 환풍기 교체</h4>
+            <p>소음만 크고 바람이 약해진 천장 매립형 환풍기를 같은 규격의 새 제품으로 교체했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c05-b.jpg" alt="무인 매장 출입구 환풍기 2대 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c05-a.jpg" alt="무인 매장 출입구 환풍기 2대 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">무인 매장</div>
+            <h4>무인 매장 출입구 환풍기 2대 설치</h4>
+            <p>출입문 상부 창을 활용해 환풍기 2대를 나란히 설치, 매장 전체 공기 순환을 확보했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c06-b.jpg" alt="무인점포 셔터형 환풍기 2대 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c06-a.jpg" alt="무인점포 셔터형 환풍기 2대 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">무인점포</div>
+            <h4>무인점포 셔터형 환풍기 2대 시공</h4>
+            <p>전원을 끄면 날개가 닫히는 셔터형으로 시공해 영업 종료 후 외기 유입을 차단했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c07-b.jpg" alt="무인 아이스크림 매장 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c07-a.jpg" alt="무인 아이스크림 매장 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">무인 아이스크림 할인점</div>
+            <h4>무인 아이스크림 매장 환풍기 설치</h4>
+            <p>24시간 무인 매장 출입구 상부에 환풍기를 설치해 내부 열기와 냄새를 배출합니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c08-b.jpg" alt="무인 할인점 출입구 환풍기 2대 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c08-a.jpg" alt="무인 할인점 출입구 환풍기 2대 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">무인 할인점</div>
+            <h4>무인 할인점 출입구 환풍기 2대 설치</h4>
+            <p>유리 출입문 상부 프레임을 이용해 벽 손상 없이 환풍기 2대를 설치했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c09-b.jpg" alt="무인 매장 환풍기 신규 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c09-a.jpg" alt="무인 매장 환풍기 신규 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">무인 매장</div>
+            <h4>무인 매장 환풍기 신규 설치</h4>
+            <p>냉동·냉장 설비 열기가 빠지지 않던 매장에 배출 경로를 만들어 실내 온도를 낮췄습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c10-b.jpg" alt="음식점 주방 환풍기 2대 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c10-a.jpg" alt="음식점 주방 환풍기 2대 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">음식점 주방</div>
+            <h4>음식점 주방 환풍기 2대 설치</h4>
+            <p>냉장고 상부 창을 활용해 환풍기 2대를 설치, 조리 열기와 냄새를 빠르게 빼냅니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c11-b.jpg" alt="주방 창문형 환풍기 교체 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c11-a.jpg" alt="주방 창문형 환풍기 교체 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">주방 창문</div>
+            <h4>주방 창문형 환풍기 교체</h4>
+            <p>오래되어 배출이 약해진 대형 창문형 환풍기를 철거하고 새 제품으로 교체했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c12-b.jpg" alt="마라탕 음식점 환풍기 2대 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c12-a.jpg" alt="마라탕 음식점 환풍기 2대 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">마라탕 음식점</div>
+            <h4>마라탕 음식점 환풍기 2대 시공</h4>
+            <p>향신료 냄새가 강한 업종 특성에 맞춰 배출량이 큰 환풍기 2대를 설치했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c13-b.jpg" alt="상가 창문 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c13-a.jpg" alt="상가 창문 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상가 건물</div>
+            <h4>상가 창문 환풍기 설치</h4>
+            <p>실외기실과 인접한 창을 이용해 환풍기를 설치, 정체된 공기를 밖으로 밀어냅니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="factory">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c14-b.jpg" alt="실외기실 갤러리창 환풍기 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c14-a.jpg" alt="실외기실 갤러리창 환풍기 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">실외기실</div>
+            <h4>실외기실 갤러리창 환풍기 시공</h4>
+            <p>갤러리(루버)창 안쪽에 환풍기를 설치해 실외기 발열이 쌓이지 않도록 했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="factory">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c15-b.jpg" alt="갤러리창 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c15-a.jpg" alt="갤러리창 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">설비 공간</div>
+            <h4>갤러리창 환풍기 설치</h4>
+            <p>루버창 구조에 맞춰 프레임을 잡고 환풍기를 고정해 상시 배기가 가능하도록 시공했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="factory">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c16-b.jpg" alt="루버창 배기 환풍기 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c16-a.jpg" alt="루버창 배기 환풍기 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">설비 공간</div>
+            <h4>루버창 배기 환풍기 시공</h4>
+            <p>개폐가 불가능한 루버창 구간에 환풍기를 설치해 강제 배기 경로를 확보했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c17-b.jpg" alt="주방 환풍기 3대 분산 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c17-a.jpg" alt="주방 환풍기 3대 분산 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상업 주방</div>
+            <h4>주방 환풍기 3대 분산 설치</h4>
+            <p>후드만으로 부족하던 주방 상부에 환풍기 3대를 나눠 설치해 배출량을 크게 늘렸습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="utility">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c18-b.jpg" alt="세탁실 창문형 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c18-a.jpg" alt="세탁실 창문형 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">세탁실</div>
+            <h4>세탁실 창문형 환풍기 설치</h4>
+            <p>건조 시 습기가 오래 남던 세탁실 창에 환풍기를 설치해 곰팡이 발생을 줄였습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="office">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c19-b.jpg" alt="사무실 창가 환풍기 교체 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c19-a.jpg" alt="사무실 창가 환풍기 교체 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">사무실</div>
+            <h4>사무실 창가 환풍기 교체</h4>
+            <p>작동은 하지만 배출이 약하던 소형 벽걸이 환풍기를 창문형 제품으로 교체했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c20-b.jpg" alt="상가 출입구 상부 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c20-a.jpg" alt="상가 출입구 상부 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상가 매장</div>
+            <h4>상가 출입구 상부 환풍기 설치</h4>
+            <p>출입문 위 유리 구간을 활용해 환풍기를 설치, 손님 출입이 잦아도 환기가 유지됩니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="factory">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c21-b.jpg" alt="공장 세척실 판넬 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c21-a.jpg" alt="공장 세척실 판넬 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">공장 세척실</div>
+            <h4>공장 세척실 판넬 환풍기 설치</h4>
+            <p>샌드위치 판넬 벽면을 타공하고 보강한 뒤 환풍기를 고정해 습기와 수증기를 배출합니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="utility">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c22-b.jpg" alt="다용도실 창 환풍기·갤러리 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c22-a.jpg" alt="다용도실 창 환풍기·갤러리 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">다용도실</div>
+            <h4>다용도실 창 환풍기·갤러리 시공</h4>
+            <p>환풍기와 함께 하부 갤러리를 시공해 공기가 들어오고 나가는 흐름을 함께 만들었습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="factory">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c23-b.jpg" alt="창고 판넬 벽 환풍기 3대 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c23-a.jpg" alt="창고 판넬 벽 환풍기 3대 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">창고·공장</div>
+            <h4>창고 판넬 벽 환풍기 3대 시공</h4>
+            <p>조립식 판넬 벽에 환풍기 2대와 하부 급기구를 설치해 내부 공기 순환을 만들었습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="bath">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c24-b.jpg" alt="욕실 창문형 환풍기 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c24-a.jpg" alt="욕실 창문형 환풍기 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">욕실</div>
+            <h4>욕실 창문형 환풍기 설치</h4>
+            <p>창은 있으나 환기가 되지 않던 욕실에 창문형 환풍기를 설치해 습기를 밖으로 뺍니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="store">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c25-b.jpg" alt="상가 창문 배기 환풍기 시공 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c25-a.jpg" alt="상가 창문 배기 환풍기 시공 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상가 매장</div>
+            <h4>상가 창문 배기 환풍기 시공</h4>
+            <p>기존 덕트가 지나가는 벽면 상황을 확인하고, 이를 피해 창에 환풍기를 설치했습니다.</p>
+          </div>
+        </article>
+        <article class="gal-card" data-cat="kitchen">
+          <div class="gal-ba">
+            <div class="gal-half b"><img src="photos/cases/c26-b.jpg" alt="주방 출입구 고압환풍기 2대 설치 시공 전" loading="lazy"><span class="t">시공 전</span></div>
+            <div class="gal-half a"><img src="photos/cases/c26-a.jpg" alt="주방 출입구 고압환풍기 2대 설치 시공 후" loading="lazy"><span class="t">시공 후</span></div>
+          </div>
+          <div class="gal-body">
+            <div class="loc">상업 주방</div>
+            <h4>주방 출입구 고압환풍기 2대 설치</h4>
+            <p>후드 배기만으로 부족하던 주방 출입구 상부에 고압환풍기 2대를 추가 설치했습니다.</p>
+          </div>
+        </article>
+      </div>
+      <p class="gal-count" id="galCount"></p>
     </div>
   </section>
 
@@ -580,10 +885,10 @@
       <p class="lede">공간과 상황에 맞춘 안내를 정리했습니다.</p>
       <div class="guide-area">
         <div class="guide-list">
-          <a href="https://kitchen.fanmaster.co.kr/"><span class="n">01</span><span>주방 고압환풍기 설치</span></a>
-          <a href="https://window.fanmaster.co.kr/"><span class="n">02</span><span>유리창 창문환풍기 시공</span></a>
-          <a href="https://warehouse.fanmaster.co.kr/"><span class="n">03</span><span>창고 고압환풍기 교체</span></a>
-          <a href="https://window.fanmaster.co.kr/"><span class="n">04</span><span>창문형 환풍기 설치</span></a>
+          <a href="https://fanmaster.co.kr/"><span class="n">01</span><span>주방 고압환풍기 설치</span></a>
+          <a href="https://fanmaster.co.kr/"><span class="n">02</span><span>유리창 창문환풍기 시공</span></a>
+          <a href="https://fanmaster.co.kr/"><span class="n">03</span><span>창고 고압환풍기 교체</span></a>
+          <a href="https://fanmaster.co.kr/"><span class="n">04</span><span>창문형 환풍기 설치</span></a>
           <a href="#contact"><span class="n">05</span><span>기타 환기 시공 문의</span></a>
         </div>
         <div class="area-block">
@@ -687,9 +992,9 @@
     <span class="fbrand">튼튼환풍기</span>
     <div class="flinks">
       <a href="#service">서비스</a>
-      <a href="https://window.fanmaster.co.kr/">창문형 환풍기</a>
-      <a href="https://kitchen.fanmaster.co.kr/">주방·상가 고압환풍기</a>
-      <a href="https://warehouse.fanmaster.co.kr/">창고·공장 환기교체</a>
+      <a href="https://fanmaster.co.kr/">창문형 환풍기</a>
+      <a href="https://fanmaster.co.kr/">주방·상가 고압환풍기</a>
+      <a href="https://fanmaster.co.kr/">창고·공장 환기교체</a>
       <a href="#contact">상담 문의</a>
     </div>
     <div class="fmeta">상호: 튼튼환풍기 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29 · © 2026 튼튼환풍기. All rights reserved.</div>
@@ -712,6 +1017,32 @@
       }
     });
   });
+</script>
+
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.gal-filter button');
+  var cards = document.querySelectorAll('.gal-card');
+  var out = document.getElementById('galCount');
+  function apply(cat){
+    var n = 0;
+    cards.forEach(function(c){
+      var hit = (cat === 'all') || (c.getAttribute('data-cat') === cat);
+      c.classList.toggle('hide', !hit);
+      if (hit) n++;
+    });
+    if (out) out.textContent = '총 ' + n + '건의 시공사례';
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      apply(b.getAttribute('data-cat'));
+    });
+  });
+  apply('all');
+})();
 </script>
 
 </body>
