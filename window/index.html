@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>창문형 환풍기 설치 | 튼튼환풍기 — 무타공 창틀 맞춤 시공</title>
-<meta name="description" content="벽 타공 없이 창틀에 맞춰 끝내는 창문형 환풍기 설치. 전월세 세입자도 원상복구 걱정 없이, 실측부터 시공까지 당일 완료. 서울·경기·인천 방문 시공.">
+<meta name="description" content="벽 타공 없이 창틀 유격을 활용하는 창문형 환풍기 설치. 전월세 세입자도 원상복구 가능, 실측부터 시공까지 당일 완료. 서울·경기·인천 전 지역 방문 시공.">
 <link rel="canonical" href="https://window.fanmaster.co.kr/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="튼튼환풍기">
@@ -29,152 +29,161 @@
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;padding-bottom:64px;}
   img,svg{display:block;max-width:100%;}
   a{color:inherit;text-decoration:none;}
   ul{list-style:none;}
   button{font-family:inherit;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  section{padding:110px 0;}
-  @media(max-width:760px){section{padding:72px 0;}}
-  .label{font-size:12.5px;font-weight:700;color:var(--moss);letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px;display:block;}
+  section{padding:104px 0;}
+  @media(max-width:760px){section{padding:68px 0;}}
+  .label{font-size:12.5px;font-weight:700;color:var(--moss);letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px;display:block;}
   h1,h2,h3,h4{font-weight:700;letter-spacing:-0.01em;color:var(--ink);}
   .headline{font-family:var(--serif);font-weight:600;}
-  h2.headline{font-size:clamp(28px,3.4vw,42px);line-height:1.3;margin-bottom:18px;}
-  .lede{color:var(--muted2);font-size:16px;max-width:560px;margin-bottom:56px;}
+  h2.headline{font-size:clamp(27px,3.3vw,40px);line-height:1.32;margin-bottom:14px;}
+  .lede{color:var(--muted2);font-size:15.5px;max-width:560px;margin-bottom:52px;}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;font-weight:700;font-size:14.5px;cursor:pointer;border:1.5px solid transparent;transition:all .18s ease;white-space:nowrap;}
   .btn-primary{background:var(--ink);color:#fff;}
   .btn-primary:hover{background:var(--moss-deep);}
   .btn-line{background:transparent;color:var(--ink);border-color:var(--ink);}
   .btn-line:hover{background:var(--ink);color:#fff;}
+  .more-link{font-size:13.5px;font-weight:700;color:var(--moss-deep);display:inline-flex;align-items:center;gap:6px;margin-top:14px;}
+  .more-link:hover{color:var(--ink);}
 
   /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(250,248,242,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:82px;flex-wrap:wrap;gap:12px;padding-top:8px;padding-bottom:8px;}
+  header{position:sticky;top:0;z-index:50;background:rgba(250,248,242,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:80px;flex-wrap:wrap;gap:12px;padding-top:8px;padding-bottom:8px;}
   .logo{font-family:var(--serif);font-weight:700;font-size:20px;}
   .logo span{display:block;font-family:var(--sans);font-size:10px;font-weight:600;color:var(--muted2);letter-spacing:.16em;margin-top:2px;}
-  nav.mainnav{display:flex;align-items:center;gap:40px;}
-  .navlinks{display:none;gap:36px;}
+  nav.mainnav{display:flex;align-items:center;gap:36px;}
+  .navlinks{display:none;gap:32px;}
   @media(min-width:900px){.navlinks{display:flex;}}
   .navlinks a{font-size:14px;font-weight:600;position:relative;padding-bottom:4px;}
   .navlinks a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--moss);transition:width .2s ease;}
   .navlinks a:hover::after{width:100%;}
 
-  /* hero — light editorial, distinct from main dark hero */
-  .hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--cream) 0%,var(--cream-alt) 100%);}
-  .hero-inner{display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;padding:96px 28px;}
-  @media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:44px;padding:64px 28px;}}
-  .hero-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.26em;color:var(--moss);margin-bottom:20px;}
-  .hero h1{font-family:var(--serif);font-size:clamp(32px,4.4vw,52px);line-height:1.32;font-weight:600;margin-bottom:22px;}
-  .hero h1 em{font-style:normal;color:var(--moss-deep);border-bottom:3px solid var(--moss-soft);}
-  .hero p.sub{color:var(--muted2);font-size:16px;max-width:520px;margin-bottom:30px;}
-  .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
-  .hero-feats{display:flex;flex-wrap:wrap;gap:10px;}
-  .hero-feats span{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;background:var(--white);border:1px solid var(--line);padding:10px 16px;border-radius:999px;}
-  .hero-feats svg{width:15px;height:15px;color:var(--moss-deep);}
-  .hero-visual{position:relative;aspect-ratio:4/5;background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;}
-  @media(max-width:900px){.hero-visual{aspect-ratio:16/10;}}
-  .hero-visual svg.window-ill{width:72%;height:auto;color:var(--moss-deep);}
-  .hero-visual .hv-tag{position:absolute;left:20px;bottom:18px;font-size:12px;font-weight:700;color:var(--muted2);letter-spacing:.06em;}
-
-  /* floating cta */
-  .float-group{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;flex-direction:column;gap:12px;align-items:center;}
-  .float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,0.28);transition:transform .15s ease, background .15s ease;}
-  .float-btn svg{width:22px;height:22px;}
-  .float-btn.call{background:var(--moss-deep);color:#fff;}
-  .float-btn.call:hover{background:var(--ink);transform:translateY(-2px);}
-  .float-btn.text{background:#fff;color:var(--ink);border:1.5px solid var(--ink);}
-  .float-btn.text:hover{background:var(--ink);color:#fff;transform:translateY(-2px);}
-
-  /* portfolio grid */
-  .pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  @media(max-width:900px){.pf-grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:600px){.pf-grid{grid-template-columns:1fr;}}
-  .pf-card{background:var(--white);border:1px solid var(--line);transition:transform .18s ease, box-shadow .18s ease;}
-  .pf-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(30,33,25,0.08);}
-  .pf-visual{aspect-ratio:16/11;background:var(--cream-alt);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);position:relative;}
-  .pf-visual svg{width:52px;height:52px;color:var(--moss-deep);opacity:.8;}
-  .pf-visual .pf-no{position:absolute;top:14px;left:16px;font-family:var(--serif);font-size:13px;color:var(--moss);}
-  .pf-body{padding:20px 22px 24px;}
-  .pf-body .loc{font-size:12px;font-weight:700;color:var(--moss-deep);margin-bottom:6px;}
-  .pf-body h4{font-size:15.5px;}
-
-  /* services list */
-  .sv-list{border-top:1px solid var(--line);}
-  .sv-item{display:grid;grid-template-columns:64px 1fr 2fr;gap:28px;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line);}
-  @media(max-width:760px){.sv-item{grid-template-columns:48px 1fr;gap:14px;}
-    .sv-item p{grid-column:2;}}
-  .sv-item .n{font-family:var(--serif);font-size:15px;color:var(--moss);}
-  .sv-item h3{font-family:var(--serif);font-size:19px;font-weight:600;}
-  .sv-item p{color:var(--muted2);font-size:14.5px;}
-
-  /* process numbered rows */
-  .proc-row{display:grid;grid-template-columns:120px 1fr;gap:36px;padding:44px 0;border-bottom:1px solid var(--line);align-items:start;}
-  .proc-row:first-of-type{border-top:1px solid var(--line);}
-  @media(max-width:700px){.proc-row{grid-template-columns:70px 1fr;gap:18px;padding:32px 0;}}
-  .proc-num{font-family:var(--serif);font-size:clamp(36px,4.5vw,52px);font-weight:600;color:var(--moss-soft);line-height:1;}
-  .proc-body h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:10px;}
-  .proc-body p{color:var(--muted2);font-size:14.5px;max-width:640px;}
-
-  /* about + metric tiles */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
-  @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px;}}
-  .about-copy .about-lead{font-family:var(--serif);font-size:clamp(22px,2.8vw,32px);line-height:1.45;font-weight:600;margin-bottom:20px;}
-  .about-copy p{color:var(--muted2);font-size:15px;max-width:480px;}
-  .metric-tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  @media(max-width:480px){.metric-tiles{grid-template-columns:1fr;}}
-  .metric{background:var(--white);border:1px solid var(--line);padding:28px 24px;}
-  .metric .num{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--moss-deep);margin-bottom:6px;}
-  .metric .txt{font-size:13px;color:var(--muted2);font-weight:600;}
-
-  /* area */
-  .area-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
-  @media(max-width:760px){.area-cols{grid-template-columns:1fr;gap:24px;}}
-  .area-col{border-top:2px solid var(--ink);padding-top:18px;}
-  .area-col h4{font-family:var(--serif);font-size:17px;font-weight:600;margin-bottom:10px;}
-  .area-col p{font-size:14px;color:var(--muted2);line-height:2;}
-
-  /* faq */
-  .faq-item{border-bottom:1px solid var(--line);}
-  .faq-item:first-child{border-top:1px solid var(--line);}
-  .faq-q{width:100%;text-align:left;background:none;border:none;padding:26px 0;cursor:pointer;display:flex;align-items:flex-start;gap:20px;font-size:15.5px;font-weight:700;color:var(--ink);}
-  .faq-q .qn{font-family:var(--serif);color:var(--moss);flex-shrink:0;font-weight:600;}
-  .faq-q .sign{margin-left:auto;font-size:18px;color:var(--moss-deep);flex-shrink:0;transition:transform .2s ease;}
-  .faq-item.open .sign{transform:rotate(180deg);}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
-  .faq-a p{padding:0 0 26px 33px;font-size:14px;color:var(--muted2);}
-
-  /* contact band */
-  .contact-band{background:var(--ink);color:var(--cream);}
-  .contact-band .inner{padding:80px 48px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
-  @media(max-width:860px){.contact-band .inner{grid-template-columns:1fr;padding:52px 26px;gap:36px;}}
-  .contact-band .label{color:var(--moss-soft);}
-  .contact-band h2{color:#fff;font-family:var(--serif);font-size:clamp(24px,3vw,34px);margin-bottom:18px;font-weight:600;}
-  .contact-band p.cp{color:#D7D9C7;font-size:15px;margin-bottom:28px;max-width:460px;}
-  .phone-big{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);color:#fff;margin-bottom:8px;display:block;}
-  .hours{font-size:13.5px;color:#9A9C87;margin-bottom:26px;}
-  .diff-badges{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  @media(max-width:480px){.diff-badges{grid-template-columns:1fr;}}
-  .diff-badges span{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;color:#fff;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.2);padding:14px 16px;}
-  .diff-badges svg{width:16px;height:16px;color:var(--moss-soft);flex-shrink:0;}
-  .contact-ctas{display:flex;flex-direction:column;gap:12px;}
+  /* HERO — full-bleed photo-style */
+  .hero{position:relative;min-height:72vh;display:flex;align-items:center;background:#20241a;overflow:hidden;padding:0;}
+  @media(max-width:760px){.hero{min-height:auto;}}
+  .hero-bg{position:absolute;inset:0;background:
+    radial-gradient(ellipse at 75% 25%, #454f36 0%, #262b1c 60%, #171a10 100%);}
+  .hero-bg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);background-size:72px 72px;}
+  .hero-window{position:absolute;right:4%;top:50%;transform:translateY(-50%);width:min(34vw,420px);opacity:.35;}
+  @media(max-width:860px){.hero-window{display:none;}}
+  .hero-inner{position:relative;z-index:2;width:100%;padding:110px 28px 96px;}
+  @media(max-width:760px){.hero-inner{padding:72px 24px 60px;}}
+  .hero-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--moss-soft);margin-bottom:20px;}
+  .hero h1{font-family:var(--serif);font-size:clamp(30px,4.4vw,52px);line-height:1.34;font-weight:600;color:#fff;margin-bottom:20px;}
+  .hero h1 em{font-style:normal;color:#EAD9A8;}
+  .hero p.sub{color:#D7D9C7;font-size:15.5px;max-width:520px;margin-bottom:30px;}
+  .hero-feats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px;}
+  .hero-feats span{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#fff;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);padding:10px 16px;border-radius:999px;}
+  .hero-feats svg{width:15px;height:15px;color:var(--moss-soft);}
+  .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;}
   .btn-cream{background:var(--cream);color:var(--ink);}
   .btn-cream:hover{background:var(--moss-soft);color:#fff;}
   .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.55);}
   .btn-ghost:hover{background:rgba(255,255,255,0.12);border-color:#fff;}
 
-  /* footer with sitemap */
-  footer{border-top:1px solid var(--line);padding:64px 0 36px;background:var(--cream);}
-  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px;}
-  @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px;}}
-  @media(max-width:520px){.foot-grid{grid-template-columns:1fr;}}
+  /* portfolio */
+  .pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media(max-width:900px){.pf-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.pf-grid{grid-template-columns:1fr;}}
+  .pf-card{background:var(--white);border:1px solid var(--line);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column;}
+  .pf-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(30,33,25,0.08);}
+  .pf-visual{aspect-ratio:16/11;background:var(--cream-alt);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);position:relative;}
+  .pf-visual svg{width:50px;height:50px;color:var(--moss-deep);opacity:.8;}
+  .pf-visual .pf-no{position:absolute;top:14px;left:16px;font-family:var(--serif);font-size:13px;color:var(--moss);}
+  .pf-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1;}
+  .pf-body .loc{font-size:12px;font-weight:700;color:var(--moss-deep);margin-bottom:6px;}
+  .pf-body h4{font-size:15.5px;margin-bottom:4px;}
+  .pf-body .typ{font-size:12.5px;color:var(--muted2);margin-bottom:12px;}
+  .pf-body .go{margin-top:auto;font-size:13px;font-weight:700;color:var(--moss-deep);}
+
+  /* services */
+  .sv-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  @media(max-width:1000px){.sv-cards{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:680px){.sv-cards{grid-template-columns:1fr 1fr;}}
+  @media(max-width:460px){.sv-cards{grid-template-columns:1fr;}}
+  .sv-card{background:var(--white);border:1px solid var(--line);padding:26px 22px;display:flex;flex-direction:column;transition:transform .18s ease, box-shadow .18s ease;}
+  .sv-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(30,33,25,0.08);}
+  .sv-card .svno{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--moss);margin-bottom:14px;}
+  .sv-card h3{font-size:15.5px;margin-bottom:8px;line-height:1.45;}
+  .sv-card p{font-size:13px;color:var(--muted2);margin-bottom:16px;}
+  .sv-card .go{margin-top:auto;font-size:12.5px;font-weight:700;color:var(--moss-deep);}
+
+  /* process */
+  .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  @media(max-width:900px){.proc-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:540px){.proc-grid{grid-template-columns:1fr;}}
+  .proc-card{background:var(--white);border:1px solid var(--line);padding:30px 26px;}
+  .proc-card .n{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--moss-soft);line-height:1;display:block;margin-bottom:16px;}
+  .proc-card h3{font-size:16px;margin-bottom:10px;}
+  .proc-card p{font-size:13.5px;color:var(--muted2);}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:start;}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px;}}
+  .about-copy h2{margin-bottom:26px;}
+  .about-copy p{color:var(--muted2);font-size:15px;margin-bottom:18px;max-width:520px;}
+  .about-copy p b{color:var(--ink);}
+  .stat-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:480px){.stat-cards{grid-template-columns:1fr;}}
+  .stat-card{background:var(--white);border:1px solid var(--line);padding:26px 22px;}
+  .stat-card .num{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--moss-deep);margin-bottom:4px;}
+  .stat-card .t1{font-size:13px;font-weight:700;margin-bottom:2px;}
+  .stat-card .t2{font-size:12.5px;color:var(--muted2);}
+
+  /* service area — full district lists */
+  .area-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media(max-width:860px){.area-wrap{grid-template-columns:1fr;}}
+  .area-box{background:var(--white);border:1px solid var(--line);padding:28px 26px;}
+  .area-box h4{font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:6px;}
+  .area-box .cnt{font-size:12px;font-weight:700;color:var(--moss);margin-bottom:16px;display:block;}
+  .area-box p{font-size:13px;color:var(--muted2);line-height:1.95;}
+
+  /* faq */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item:first-child{border-top:1px solid var(--line);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;padding:24px 0;cursor:pointer;display:flex;align-items:flex-start;gap:18px;font-size:15.5px;font-weight:700;color:var(--ink);}
+  .faq-q .qn{font-family:var(--serif);color:var(--moss);flex-shrink:0;font-weight:600;}
+  .faq-q .sign{margin-left:auto;font-size:18px;color:var(--moss-deep);flex-shrink:0;transition:transform .2s ease;}
+  .faq-item.open .sign{transform:rotate(180deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .faq-a p{padding:0 0 24px 31px;font-size:14px;color:var(--muted2);}
+
+  /* contact */
+  .contact-band{background:var(--ink);color:var(--cream);}
+  .contact-band .inner{padding:80px 48px;text-align:center;max-width:760px;margin:0 auto;}
+  @media(max-width:760px){.contact-band .inner{padding:56px 24px;}}
+  .contact-band .label{color:var(--moss-soft);}
+  .contact-band h2{color:#fff;font-family:var(--serif);font-size:clamp(24px,3vw,34px);margin-bottom:14px;font-weight:600;}
+  .contact-band p.cp{color:#D7D9C7;font-size:15px;margin-bottom:30px;}
+  .phone-big{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);color:#fff;margin-bottom:26px;display:block;}
+  .strengths{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:34px;}
+  .strengths span{font-size:12.5px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.07);padding:9px 16px;border-radius:999px;}
+  .contact-band .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding:60px 0 40px;background:var(--cream);}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:32px;}}
   .fbrand{font-family:var(--serif);font-weight:700;font-size:18px;margin-bottom:10px;}
-  .foot-grid p.fdesc{font-size:13px;color:var(--muted2);max-width:240px;}
+  .foot-grid p.fdesc{font-size:13px;color:var(--muted2);max-width:250px;line-height:1.8;}
+  .foot-grid .fphone{font-family:var(--serif);font-size:19px;font-weight:600;margin-top:14px;}
   .fcol h5{font-size:12.5px;font-weight:700;color:var(--moss);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;}
   .fcol a{display:block;font-size:13.5px;color:var(--muted2);padding:5px 0;transition:color .15s ease;}
   .fcol a:hover{color:var(--ink);}
-  .fcol .fitem{display:block;font-size:13.5px;color:var(--muted2);padding:5px 0;}
-  .fmeta{font-size:12px;color:var(--muted2);padding-top:20px;border-top:1px solid var(--line);}
+  .fmeta{font-size:12px;color:var(--muted2);padding-top:20px;border-top:1px solid var(--line);line-height:1.9;}
+
+  /* fixed bottom bar (전화/문자) — like reference */
+  .bottom-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:grid;grid-template-columns:1fr 1fr;}
+  .bottom-bar a{display:flex;align-items:center;justify-content:center;gap:9px;padding:17px 10px;font-size:14.5px;font-weight:700;}
+  .bottom-bar a svg{width:17px;height:17px;}
+  .bottom-bar .bb-call{background:var(--moss-deep);color:#fff;}
+  .bottom-bar .bb-call:hover{background:var(--ink);}
+  .bottom-bar .bb-sms{background:var(--ink);color:#fff;}
+  .bottom-bar .bb-sms:hover{background:var(--moss-deep);}
 </style>
 </head>
 <body>
@@ -186,7 +195,7 @@
       <div class="navlinks">
         <a href="#works">시공사례</a>
         <a href="#service">서비스</a>
-        <a href="#process">시공 과정</a>
+        <a href="#about">회사소개</a>
         <a href="#faq">FAQ</a>
       </div>
       <a href="tel:010-2680-4538" class="btn btn-primary">전화 상담</a>
@@ -197,79 +206,66 @@
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero" style="padding:0;">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <svg class="hero-window" viewBox="0 0 200 240" fill="none" stroke="#fff" stroke-width="1.2" aria-hidden="true">
+      <rect x="20" y="16" width="160" height="208" rx="2"></rect>
+      <rect x="34" y="30" width="132" height="180"></rect>
+      <path d="M100 30v180"></path>
+      <path d="M34 120h132"></path>
+      <circle cx="133" cy="75" r="26"></circle>
+      <circle cx="133" cy="75" r="4"></circle>
+      <path d="M133 75 C 120 70, 114 58, 119 46 C 129 51, 133 62, 133 75 Z"></path>
+      <path d="M133 75 C 138 62, 150 56, 162 61 C 157 71, 146 75, 133 75 Z"></path>
+      <path d="M133 75 C 146 80, 152 92, 147 104 C 137 99, 133 88, 133 75 Z"></path>
+      <path d="M133 75 C 128 88, 116 94, 104 89 C 109 79, 120 75, 133 75 Z"></path>
+    </svg>
     <div class="wrap hero-inner">
-      <div>
-        <span class="hero-eyebrow">NO-DRILL WINDOW VENT</span>
-        <h1>벽 타공 없는 쾌적한 환기,<br><em>창틀에 맞춰</em> 끝냅니다</h1>
-        <p class="sub">전월세 세입자도, 고층 아파트도 구조물 손상 없이 설치할 수 있습니다. 창틀 유격을 정밀하게 활용해 실측부터 시공까지 당일 완료를 원칙으로 합니다.</p>
-        <div class="cta-row">
-          <a href="#contact" class="btn btn-primary">사진으로 상담하기</a>
-          <a href="#works" class="btn btn-line">시공사례 보기</a>
-        </div>
-        <div class="hero-feats">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>벽 타공 없는 시공</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>당일 완료</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9"></path><path d="M3 4v8h8"></path></svg>퇴거 시 원상복구</span>
-        </div>
+      <span class="hero-eyebrow">NO-DRILL WINDOW VENTILATION</span>
+      <h1>벽 타공 없는 쾌적한 환기<br><em>창틀 맞춤</em> 시공</h1>
+      <p class="sub">전월세 세입자도, 고층 아파트도 구조물 손상 없이 창문 환풍기를 설치할 수 있습니다.</p>
+      <div class="hero-feats">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>벽 타공 없는 시공</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>당일 완료</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9"></path><path d="M3 4v8h8"></path></svg>퇴거 시 원상복구</span>
       </div>
-      <div class="hero-visual">
-        <svg class="window-ill" viewBox="0 0 200 240" fill="none" stroke="currentColor" stroke-width="1.6">
-          <rect x="20" y="16" width="160" height="208" rx="2"></rect>
-          <rect x="34" y="30" width="132" height="180"></rect>
-          <path d="M100 30v180"></path>
-          <path d="M34 120h132"></path>
-          <circle cx="133" cy="75" r="26"></circle>
-          <circle cx="133" cy="75" r="4"></circle>
-          <path d="M133 75 C 120 70, 114 58, 119 46 C 129 51, 133 62, 133 75 Z" stroke-width="1.2"></path>
-          <path d="M133 75 C 138 62, 150 56, 162 61 C 157 71, 146 75, 133 75 Z" stroke-width="1.2"></path>
-          <path d="M133 75 C 146 80, 152 92, 147 104 C 137 99, 133 88, 133 75 Z" stroke-width="1.2"></path>
-          <path d="M133 75 C 128 88, 116 94, 104 89 C 109 79, 120 75, 133 75 Z" stroke-width="1.2"></path>
-        </svg>
-        <span class="hv-tag">창틀 유격 활용 · 무타공 설치</span>
+      <div class="cta-row">
+        <a href="#works" class="btn btn-cream">시공사례 보기</a>
+        <a href="sms:01026804538" class="btn btn-ghost">사진으로 상담하기</a>
       </div>
     </div>
   </section>
-
-  <div class="float-group">
-    <a href="sms:01026804538" class="float-btn text" aria-label="문자 상담">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-    </a>
-    <a href="tel:010-2680-4538" class="float-btn call" aria-label="전화 상담">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>
-    </a>
-  </div>
 
   <!-- PORTFOLIO -->
   <section id="works">
     <div class="wrap">
       <span class="label">Portfolio</span>
-      <h2 class="headline">창문형 환풍기 시공사례</h2>
+      <h2 class="headline">창문 환풍기 설치</h2>
       <p class="lede">벽 타공 없이 창틀 유격을 활용한 맞춤형 시공 사례입니다.</p>
       <div class="pf-grid">
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path><rect x="9" y="11" width="6" height="5"></rect></svg></div>
-          <div class="pf-body"><div class="loc">경기 용인시 · 아파트</div><h4>창문형 환풍기 신규 설치</h4></div>
+          <div class="pf-body"><div class="loc">경기 용인시 아파트</div><h4>창문환풍기 신규 설치</h4><div class="typ">아파트 창문환풍기 설치</div><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 21V9l8-6 8 6v12"></path><path d="M9 21v-7h6v7"></path></svg></div>
-          <div class="pf-body"><div class="loc">경기 수원시 · 다세대주택</div><h4>주방 창문환풍기 교체 시공</h4></div>
+          <div class="pf-body"><div class="loc">경기 수원시 다세대주택</div><h4>주방 창문환풍기 교체 시공</h4><div class="typ">주방 창문환풍기 시공</div><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="1"></rect><path d="M3 9h18M9 4v14"></path></svg></div>
-          <div class="pf-body"><div class="loc">서울 강서구 · 소형 사무실</div><h4>사무실 창문환풍기 교체</h4></div>
+          <div class="pf-body"><div class="loc">서울 강서구 소형 사무실</div><h4>사무실 창문환풍기 교체</h4><div class="typ">사무실 창문환풍기 교체</div><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">04</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="1"></rect><path d="M4 12h16M12 4v16"></path></svg></div>
-          <div class="pf-body"><div class="loc">인천 남동구 · 아파트</div><h4>베란다 창문환풍기 설치</h4></div>
+          <div class="pf-body"><div class="loc">인천 남동구 아파트</div><h4>베란다 창문환풍기 신규 설치</h4><div class="typ">베란다 창문환풍기 설치</div><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">05</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V7h14v14"></path><path d="M9 11h6M9 15h6"></path></svg></div>
-          <div class="pf-body"><div class="loc">경기 성남시 · 1층 상가</div><h4>상가 창문환풍기 설치</h4></div>
+          <div class="pf-body"><div class="loc">경기 성남시 1층 상가</div><h4>상가 창문환풍기 설치</h4><div class="typ">상가 창문환풍기 시공</div><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="pf-card">
           <div class="pf-visual"><span class="pf-no">06</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="3" width="14" height="18" rx="1"></rect><path d="M5 9h14M5 15h14"></path></svg></div>
-          <div class="pf-body"><div class="loc">서울 마포구 · 오피스텔</div><h4>창틀 환풍기 맞춤 설치</h4></div>
+          <div class="pf-body"><div class="loc">서울 마포구 오피스텔</div><h4>오피스텔 창틀 환풍기 설치</h4><div class="typ">창틀 환풍기 맞춤 설치</div><span class="go">자세히 보기 →</span></div>
         </div>
       </div>
     </div>
@@ -279,14 +275,14 @@
   <section id="service" style="background:var(--cream-alt);">
     <div class="wrap">
       <span class="label">Services</span>
-      <h2 class="headline">공간별 창문형 환풍기 시공</h2>
-      <p class="lede">공간의 특성에 맞춰 사양과 마감 방식을 다르게 적용합니다.</p>
-      <div class="sv-list">
-        <div class="sv-item"><span class="n">01</span><h3>상가 창문환풍기 설치</h3><p>상가·음식점 특성에 맞는 고흡입력 환풍기를 창틀에 맞춰 설치합니다.</p></div>
-        <div class="sv-item"><span class="n">02</span><h3>주방 창문환풍기 시공</h3><p>요리 연기와 냄새를 신속히 배출하는 주방 특화 시공입니다.</p></div>
-        <div class="sv-item"><span class="n">03</span><h3>사무실 창문환풍기 설치</h3><p>저소음 사양으로 업무에 방해 없이 환기를 개선합니다.</p></div>
-        <div class="sv-item"><span class="n">04</span><h3>창틀 환풍기 시공</h3><p>창틀 유격을 정밀하게 활용해 틈새 없는 맞춤 마감을 구현합니다.</p></div>
-        <div class="sv-item"><span class="n">05</span><h3>베란다 창문환풍기 시공</h3><p>세탁·건조 시 발생하는 습기를 배출해 베란다를 쾌적하게 만듭니다.</p></div>
+      <h2 class="headline">서비스 소개</h2>
+      <p class="lede">공간별 특성에 맞는 창문 환풍기 시공 서비스를 제공합니다.</p>
+      <div class="sv-cards">
+        <div class="sv-card"><span class="svno">SERVICE 01</span><h3>상가 창문환풍기<br>설치</h3><p>상가·음식점 특성에 맞는 고흡입력 환풍기 설치</p><span class="go">자세히 보기 →</span></div>
+        <div class="sv-card"><span class="svno">SERVICE 02</span><h3>주방 창문환풍기<br>시공</h3><p>요리 연기·냄새 신속 배출을 위한 주방 특화 시공</p><span class="go">자세히 보기 →</span></div>
+        <div class="sv-card"><span class="svno">SERVICE 03</span><h3>사무실 창문환풍기<br>설치</h3><p>저소음 모델로 업무 방해 없는 사무실 환기 개선</p><span class="go">자세히 보기 →</span></div>
+        <div class="sv-card"><span class="svno">SERVICE 04</span><h3>창틀 환풍기<br>시공</h3><p>창틀 유격 정밀 활용, 틈새 없는 맞춤 마감</p><span class="go">자세히 보기 →</span></div>
+        <div class="sv-card"><span class="svno">SERVICE 05</span><h3>베란다 창문환풍기<br>시공</h3><p>세탁·건조 시 습기 배출, 베란다 쾌적 환경 조성</p><span class="go">자세히 보기 →</span></div>
       </div>
     </div>
   </section>
@@ -296,41 +292,54 @@
     <div class="wrap">
       <span class="label">Process</span>
       <h2 class="headline">시공 진행 과정</h2>
-      <p class="lede">방문 실측부터 완료까지, 당일 완료를 목표로 진행합니다.</p>
-      <div class="proc-row"><div class="proc-num">01</div><div class="proc-body"><h3>현장 방문 실측</h3><p>창문 가로·세로 치수를 정밀하게 측정합니다. 창틀 깊이와 유격을 확인하고 가장 알맞은 설치 방법을 결정합니다.</p></div></div>
-      <div class="proc-row"><div class="proc-num">02</div><div class="proc-body"><h3>마감재 현장 재단</h3><p>실측 수치에 맞게 마감재를 현장에서 직접 재단합니다. 기성품이 아닌 현장 재단으로 오차 없는 맞춤 마감을 구현합니다.</p></div></div>
-      <div class="proc-row"><div class="proc-num">03</div><div class="proc-body"><h3>환풍기 설치·고정</h3><p>환풍기를 창틀 유격에 맞춰 안정적으로 고정합니다. 틈새 없이 기밀하게 마감해 외부 공기 유입을 차단합니다.</p></div></div>
-      <div class="proc-row"><div class="proc-num">04</div><div class="proc-body"><h3>작동 확인·완료</h3><p>설치 후 작동 상태와 개폐, 기밀 성능을 함께 확인합니다. 사용 방법을 안내해 드린 뒤 시공을 마무리합니다.</p></div></div>
+      <p class="lede">방문 실측부터 완료까지 당일 완료를 목표로 합니다.</p>
+      <div class="proc-grid">
+        <div class="proc-card"><span class="n">01</span><h3>현장 방문 실측</h3><p>창문 가로·세로 치수를 정밀하게 측정합니다. 창틀 깊이와 유격을 확인하고 최적의 설치 방법을 결정합니다.</p></div>
+        <div class="proc-card"><span class="n">02</span><h3>마감재 현장 재단</h3><p>실측 수치에 맞게 마감재를 현장에서 직접 재단합니다. 공장 제작이 아닌 현장 재단으로 오차 없는 맞춤 마감을 구현합니다.</p></div>
+        <div class="proc-card"><span class="n">03</span><h3>환풍기 설치 및 고정</h3><p>셔터형 환풍기를 창틀 유격에 맞춰 안정적으로 고정합니다. 틈새 없이 기밀 마감하여 외기 침투를 차단합니다.</p></div>
+        <div class="proc-card"><span class="n">04</span><h3>작동 확인 및 완료</h3><p>설치 후 환풍기 작동 상태와 셔터 개폐, 기밀 성능을 직접 확인합니다. 사용 방법 안내 후 시공을 마무리합니다.</p></div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section style="background:var(--cream-alt);">
+  <section id="about" style="background:var(--cream-alt);">
     <div class="wrap about-grid">
       <div class="about-copy">
         <span class="label">About</span>
-        <p class="about-lead">창틀을 아는 팀이,<br>창문형만큼은 확실하게.</p>
-        <p>창문형 환풍기는 창틀의 구조와 유격을 정확히 읽는 것이 절반입니다. 튼튼환풍기는 현장 실측과 현장 재단을 원칙으로, 공간마다 다른 창호에 맞는 답을 찾습니다.</p>
+        <h2 class="headline">튼튼환풍기<br>창문형 전문 시공</h2>
+        <p>현장에서 쌓아온 경험으로 시공합니다. <b>창문 규격은 생각보다 다양하고, 현장마다 조건이 다릅니다.</b> 방문 실측과 현장 재단을 원칙으로 하는 이유는 오차를 최소화하기 위해서입니다.</p>
+        <p>벽 타공이 불가한 환경에서도 창틀 유격을 활용해 환풍기를 설치할 수 있습니다. <b>셔터형 환풍기를 기본으로 사용해</b> 미사용 시 기밀 유지까지 함께 해결합니다.</p>
+        <p>서울·경기·인천 지역 당일 방문, 당일 완료를 원칙으로 합니다.</p>
       </div>
-      <div class="metric-tiles">
-        <div class="metric"><div class="num">당일</div><div class="txt">방문·완료 원칙<br>실측부터 시공까지 당일 처리</div></div>
-        <div class="metric"><div class="num">0mm</div><div class="txt">타공 손상<br>벽 손상 없는 시공 방식</div></div>
-        <div class="metric"><div class="num">07–20시</div><div class="txt">상담 가능 시간<br>평일·주말 동일</div></div>
-        <div class="metric"><div class="num">수도권</div><div class="txt">서비스 지역<br>서울·경기·인천 방문 시공</div></div>
+      <div class="stat-cards">
+        <div class="stat-card"><div class="num">현장 실측</div><div class="t1">방문 실측 원칙</div><div class="t2">현장마다 다른 조건을 직접 확인</div></div>
+        <div class="stat-card"><div class="num">당일</div><div class="t1">방문·완료 원칙</div><div class="t2">실측부터 시공까지 당일 처리</div></div>
+        <div class="stat-card"><div class="num">0mm</div><div class="t1">타공 손상</div><div class="t2">벽 손상 없는 시공 방식</div></div>
+        <div class="stat-card"><div class="num">수도권</div><div class="t1">서비스 지역</div><div class="t2">서울·경기·인천 당일 방문</div></div>
       </div>
     </div>
   </section>
 
-  <!-- AREA -->
+  <!-- SERVICE AREA -->
   <section>
     <div class="wrap">
       <span class="label">Service Area</span>
       <h2 class="headline">서비스 지역</h2>
-      <p class="lede">서울·경기·인천 전 지역 방문 시공을 진행합니다.</p>
-      <div class="area-cols">
-        <div class="area-col"><h4>서울</h4><p>강남·서초 · 송파·강동 · 마포·서대문 · 영등포·구로 · 노원·도봉 · 그 외 전 지역</p></div>
-        <div class="area-col"><h4>경기</h4><p>용인 · 수원 · 성남 · 화성 · 부천 · 안양 · 고양 · 그 외 전 지역</p></div>
-        <div class="area-col"><h4>인천</h4><p>인천 전 지역 방문 가능 · 그 외 지역은 거리와 일정에 따라 조율 가능합니다</p></div>
+      <p class="lede">서울·경기·인천 전 지역 당일 방문 시공.</p>
+      <div class="area-wrap">
+        <div class="area-box">
+          <h4>서울</h4><span class="cnt">25개 구 전 지역</span>
+          <p>강남구 · 강동구 · 강북구 · 강서구 · 관악구 · 광진구 · 구로구 · 금천구 · 노원구 · 도봉구 · 동대문구 · 동작구 · 마포구 · 서대문구 · 서초구 · 성동구 · 성북구 · 송파구 · 양천구 · 영등포구 · 용산구 · 은평구 · 종로구 · 중구 · 중랑구</p>
+        </div>
+        <div class="area-box">
+          <h4>경기</h4><span class="cnt">31개 시·군 전 지역</span>
+          <p>수원시 · 성남시 · 용인시 · 부천시 · 안산시 · 고양시 · 남양주시 · 화성시 · 평택시 · 안양시 · 시흥시 · 파주시 · 의정부시 · 김포시 · 광주시 · 광명시 · 군포시 · 하남시 · 오산시 · 양주시 · 구리시 · 안성시 · 포천시 · 의왕시 · 여주시 · 동두천시 · 과천시 · 가평군 · 양평군 · 연천군</p>
+        </div>
+        <div class="area-box">
+          <h4>인천</h4><span class="cnt">10개 구·군 전 지역</span>
+          <p>중구 · 동구 · 미추홀구 · 연수구 · 남동구 · 부평구 · 계양구 · 서구 · 강화군 · 옹진군</p>
+        </div>
       </div>
     </div>
   </section>
@@ -340,52 +349,51 @@
     <div class="wrap" style="max-width:840px;">
       <span class="label">FAQ</span>
       <h2 class="headline">자주 묻는 질문</h2>
-      <div class="faq-list" style="margin-top:44px;">
+      <p class="lede">창문 환풍기 설치에 대해 자주 문의하시는 내용을 모았습니다.</p>
+      <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q"><span class="qn">01</span><span>창문 환풍기 설치 시 벽을 뚫어야 하나요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>아니요. 창틀 유격을 활용하는 방식이라 벽은 전혀 건드리지 않습니다. 전월세 세입자도 퇴거 시 원상복구가 가능합니다.</p></div>
+          <div class="faq-a"><p>아닙니다. 창문과 창틀의 유격을 활용하는 방식이라 벽을 전혀 건드리지 않습니다. 전월세 세입자분들도 퇴거 시 원상복구가 가능합니다.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q"><span class="qn">02</span><span>셔터형 환풍기는 어떤 점이 다른가요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>전원을 끄면 셔터가 자동으로 닫혀 찬 바람, 미세먼지, 벌레 유입을 막아줍니다. 주거 공간에 특히 많이 선택하시는 방식입니다.</p></div>
+          <div class="faq-a"><p>일반 환풍기는 사용하지 않을 때 날개가 열린 상태라 외기가 들어올 수 있습니다. 셔터형은 전원을 끄면 날개가 자동으로 닫혀 찬 바람, 미세먼지, 벌레의 유입을 차단합니다.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q"><span class="qn">03</span><span>창문 크기가 특이한 경우에도 설치 가능한가요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>네. 현장에서 정밀 실측 후 마감재를 직접 재단하기 때문에 비표준 사이즈 창문에도 대응이 가능합니다.</p></div>
+          <div class="faq-a"><p>현장에서 가로·세로를 정밀 실측하고 마감재를 직접 재단하기 때문에 비표준 사이즈에도 대응 가능합니다. 다른 곳에서 설치가 어렵다고 안내받은 창문도 먼저 사진으로 보내주시면 검토해 드립니다.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span class="qn">04</span><span>설치 후 창문을 여닫는 데 불편함은 없나요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>창문의 일부 구간에만 설치되므로 기존과 동일하게 창문을 여닫을 수 있습니다. 시공 전 개폐 방향을 함께 확인하고 진행합니다.</p></div>
+          <button class="faq-q"><span class="qn">04</span><span>설치 후 창문을 열거나 닫는 데 불편함이 없나요?</span><span class="sign">＋</span></button>
+          <div class="faq-a"><p>창문의 일부 구간에 환풍기를 설치하므로 나머지 구간은 기존과 동일하게 개폐 가능합니다. 마감재와 환풍기는 창틀에 안정적으로 고정되어 일상적인 창문 사용에 영향을 주지 않습니다.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span class="qn">05</span><span>서울·경기·인천 외 지역도 방문 가능한가요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>거리와 일정에 따라 조율이 가능합니다. 지역과 창문 사진을 먼저 보내주시면 가능 여부를 빠르게 안내해 드립니다.</p></div>
+          <button class="faq-q"><span class="qn">05</span><span>서울·경기·인천 이외 지역도 방문 가능한가요?</span><span class="sign">＋</span></button>
+          <div class="faq-a"><p>기본 서비스 지역은 서울·경기·인천이며 그 외 지역은 거리 및 일정에 따라 조율 가능합니다. 정확한 가능 여부는 전화나 문자로 확인해 주세요.</p></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" style="padding-bottom:110px;">
+  <section id="contact" style="padding-bottom:104px;">
     <div class="wrap">
       <div class="contact-band">
         <div class="inner">
-          <div>
-            <span class="label">Contact</span>
-            <h2>창문 환풍기 설치 문의</h2>
-            <p class="cp">창문 사진을 보내주시면 더욱 정확한 안내가 가능합니다. 실측 방문 전에 대략적인 방식과 사양을 미리 검토해 드립니다.</p>
-            <a href="tel:010-2680-4538" class="phone-big">010-2680-4538</a>
-            <div class="hours">평일·주말 07:00 ~ 20:00 · 튼튼환풍기</div>
-            <div class="diff-badges">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>벽 타공 없는 시공</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>정밀 실측·현장 재단</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>맞춤 마감</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>당일 방문·완료</span>
-            </div>
+          <span class="label">Contact</span>
+          <h2>창문 환풍기 설치 문의</h2>
+          <p class="cp">창문 사이즈와 위치를 사진으로 보내주시면 더욱 정확한 안내가 가능합니다.</p>
+          <a href="tel:010-2680-4538" class="phone-big">010-2680-4538</a>
+          <div class="strengths">
+            <span>벽 타공 없는 시공</span>
+            <span>정밀 실측</span>
+            <span>맞춤 마감</span>
+            <span>당일 방문·완료</span>
+            <span>사후 관리</span>
           </div>
-          <div class="contact-ctas">
+          <div class="cta-row">
             <a href="tel:010-2680-4538" class="btn btn-cream">전화 상담하기</a>
-            <a href="sms:01026804538" class="btn btn-ghost">사진으로 문자 상담하기</a>
+            <a href="sms:01026804538" class="btn btn-ghost">사진으로 상담하기</a>
           </div>
         </div>
       </div>
@@ -399,32 +407,41 @@
     <div class="foot-grid">
       <div>
         <div class="fbrand">튼튼환풍기</div>
-        <p class="fdesc">공간별 압력·배출 진단을 통한 환기 설비 전문 시공. 방문 진단 후 공간에 맞는 방식으로만 시공합니다.</p>
+        <p class="fdesc">창문형 환풍기 설치 전문<br>서울·경기·인천 당일 시공</p>
+        <div class="fphone">010-2680-4538</div>
       </div>
       <div class="fcol">
         <h5>서비스</h5>
-        <a href="https://fanmaster.co.kr/">환기 설비 시공 (메인)</a>
-        <a href="https://window.fanmaster.co.kr/">창문형 환풍기 설치</a>
-        <a href="https://kitchen.fanmaster.co.kr/">주방·상가 고압환풍기</a>
-        <a href="https://warehouse.fanmaster.co.kr/">창고·공장 환기 시공</a>
+        <a href="#service">상가 창문환풍기 설치</a>
+        <a href="#service">주방 창문환풍기 시공</a>
+        <a href="#service">사무실 창문환풍기 설치</a>
+        <a href="#service">창틀 환풍기 시공</a>
+        <a href="#service">베란다 창문환풍기 시공</a>
       </div>
       <div class="fcol">
         <h5>바로가기</h5>
         <a href="#works">시공사례</a>
-        <a href="#process">시공 과정</a>
-        <a href="#faq">자주 묻는 질문</a>
-        <a href="#contact">상담 문의</a>
-      </div>
-      <div class="fcol">
-        <h5>상담 안내</h5>
-        <span class="fitem">010-2680-4538</span>
-        <span class="fitem">평일·주말 07:00 ~ 20:00</span>
-        <span class="fitem">사진 상담 가능 (문자)</span>
+        <a href="sms:01026804538">사진으로 상담하기</a>
+        <a href="https://fanmaster.co.kr/">환기 설비 시공 (메인)</a>
+        <a href="https://kitchen.fanmaster.co.kr/">주방·상가 고압환풍기</a>
+        <a href="https://warehouse.fanmaster.co.kr/">창고·공장 환기 시공</a>
       </div>
     </div>
-    <div class="fmeta">상호: 튼튼환풍기 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29 · © 2026 튼튼환풍기. All rights reserved.</div>
+    <div class="fmeta">상호: 튼튼환풍기 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29<br>Copyright © 2026 튼튼환풍기. All rights reserved.</div>
   </div>
 </footer>
+
+<!-- 고정 하단 바 -->
+<div class="bottom-bar">
+  <a href="tel:010-2680-4538" class="bb-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>
+    전화 상담
+  </a>
+  <a href="sms:01026804538" class="bb-sms">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    문자 상담
+  </a>
+</div>
 
 <script>
   document.querySelectorAll('.faq-q').forEach(btn=>{
