@@ -197,6 +197,10 @@
   .fbtn svg{width:23px;height:23px;}
   .fbtn.call{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(249,115,22,.44);}
   .fbtn.sms{background:var(--teal);color:#fff;box-shadow:0 8px 22px rgba(13,148,136,.38);}
+
+  a.pf-card{display:block;color:inherit;}
+  .go-more{display:inline-flex;align-items:center;gap:5px;font-size:13.5px;font-weight:700;color:var(--orange-deep);margin-top:12px;}
+  a.pf-card:hover .go-more{text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -284,36 +288,42 @@
         <p class="sub">실제로 다녀온 현장의 기록입니다</p>
       </div>
       <div class="pf-grid">
-        <div class="pf-card">
+        <a class="pf-card" href="case-01.html">
           <div class="ba">
             <div class="ba-half before"><img src="photos/ba-wall-before.jpg" alt="시공 전" loading="lazy"><span class="tag">시공 전</span></div>
             <div class="ba-half after"><img src="photos/ba-wall-after.jpg" alt="시공 후" loading="lazy"><span class="tag">시공 후</span></div>
           </div>
-          <div class="pf-body"><h3>카페 로스터실 배기 신설</h3><p class="desc">배출구가 없어 열기가 갇히던 공간에 경로를 만들고 배관까지 정리</p></div>
-        </div>
-        <div class="pf-card">
+          <div class="pf-body"><h3>카페 로스터실 배기 신설</h3><p class="desc">배출구가 없어 열기가 갇히던 공간에 경로를 만들고 배관까지 정리</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
+        <a class="pf-card" href="case-02.html">
           <div class="ba">
             <div class="ba-half before"><img src="photos/ba-window-before.jpg" alt="시공 전" loading="lazy"><span class="tag">시공 전</span></div>
             <div class="ba-half after"><img src="photos/ba-window-after.jpg" alt="시공 후" loading="lazy"><span class="tag">시공 후</span></div>
           </div>
-          <div class="pf-body"><h3>상가 매장 환풍기 2대 설치</h3><p class="desc">창틀 상부를 활용해 두 대를 나란히 배치, 배출량 확보</p></div>
-        </div>
-        <div class="pf-card">
+          <div class="pf-body"><h3>상가 매장 환풍기 2대 설치</h3><p class="desc">창틀 상부를 활용해 두 대를 나란히 배치, 배출량 확보</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
+        <a class="pf-card" href="case-01.html">
           <div class="one"><img src="photos/card-fan-wall.jpg" alt="벽체 타공 고정" loading="lazy"><span class="tag">타공 마감</span></div>
-          <div class="pf-body"><h3>벽체 타공 후 본체 고정</h3><p class="desc">타공면을 다듬고 본체가 흔들리지 않도록 잡아 고정</p></div>
-        </div>
-        <div class="pf-card">
+          <div class="pf-body"><h3>벽체 타공 후 본체 고정</h3><p class="desc">타공면을 다듬고 본체가 흔들리지 않도록 잡아 고정</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
+        <a class="pf-card" href="case-01.html">
           <div class="one"><img src="photos/card-duct.jpg" alt="배관 마감" loading="lazy"><span class="tag">배관 정리</span></div>
-          <div class="pf-body"><h3>배기 덕트 경로 정리</h3><p class="desc">배관이 눈에 거슬리지 않게 선을 잡아 마무리</p></div>
-        </div>
-        <div class="pf-card">
+          <div class="pf-body"><h3>배기 덕트 경로 정리</h3><p class="desc">배관이 눈에 거슬리지 않게 선을 잡아 마무리</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
+        <a class="pf-card" href="case-02.html">
           <div class="one"><img src="photos/card-fan-window.jpg" alt="설치 디테일" loading="lazy"><span class="tag">설치 디테일</span></div>
-          <div class="pf-body"><h3>창틀 밀착 고정</h3><p class="desc">틈이 뜨지 않도록 치수대로 재단해 밀착</p></div>
-        </div>
-        <div class="pf-card">
+          <div class="pf-body"><h3>창틀 밀착 고정</h3><p class="desc">틈이 뜨지 않도록 치수대로 재단해 밀착</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
+        <a class="pf-card" href="case-01.html">
           <div class="one"><img src="photos/card-cafe.jpg" alt="설치 후 전경" loading="lazy"><span class="tag">완료 전경</span></div>
-          <div class="pf-body"><h3>시공 완료 후 매장 전경</h3><p class="desc">주변 마감까지 정리해 인테리어를 해치지 않도록</p></div>
-        </div>
+          <div class="pf-body"><h3>시공 완료 후 매장 전경</h3><p class="desc">주변 마감까지 정리해 인테리어를 해치지 않도록</p>
+            <span class="go-more">자세히 보기 →</span></div>
+        </a>
       </div>
       <div class="pf-more"><a href="#contact" class="btn btn-out">비슷한 현장 문의하기</a></div>
     </div>
@@ -427,8 +437,8 @@
         <a href="#process">진행 순서</a>
         <a href="#faq">자주 묻는 질문</a>
         <a href="https://fanmaster.co.kr/">환기 설비 시공 (메인)</a>
-        <a href="https://window.fanmaster.co.kr/">창문형 환풍기 설치</a>
-        <a href="https://warehouse.fanmaster.co.kr/">창고·공장 환기 시공</a>
+        <a href="https://fanmaster.co.kr/">창문형 환풍기 설치</a>
+        <a href="https://fanmaster.co.kr/">창고·공장 환기 시공</a>
       </div>
     </div>
     <div class="fmeta">상호: 튼튼환풍기 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29<br>상담 시간 평일·주말 07:00 ~ 20:00 · © 2026 튼튼환풍기</div>
