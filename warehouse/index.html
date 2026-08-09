@@ -65,12 +65,12 @@
   .prj-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 3px 14px rgba(34,53,92,0.05);transition:transform .18s ease, box-shadow .18s ease;}
   .prj-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(34,53,92,0.11);}
   .ba-visual{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#fff;}
-  .ba-half{aspect-ratio:1/0.72;position:relative;display:flex;align-items:center;justify-content:center;}
-  .ba-half.before{background:linear-gradient(150deg,#E3E7ED 0%,#CBD2DC 100%);}
-  .ba-half.after{background:linear-gradient(150deg,#5F7396 0%,#22355C 100%);}
-  .ba-half svg{width:44px;height:44px;}
-  .ba-half.before svg{color:#9AA5B4;}
-  .ba-half.after svg{color:#DAE4F2;}
+  .ba-half{aspect-ratio:1/0.72;position:relative;overflow:hidden;background:#E3E7ED;}
+  .ba-half img{width:100%;height:100%;object-fit:cover;}
+  .prj-single{aspect-ratio:16/9;position:relative;overflow:hidden;background:#E3E7ED;}
+  .prj-single img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .prj-card:hover .prj-single img{transform:scale(1.05);}
+  .prj-single .tag{position:absolute;left:14px;bottom:14px;font-size:11.5px;font-weight:800;color:#fff;background:rgba(27,43,69,0.85);border-radius:6px;padding:5px 13px;}
   .ba-half .tag{position:absolute;left:12px;bottom:12px;font-size:11.5px;font-weight:800;color:#fff;background:#8B94A3;border-radius:6px;padding:4px 13px;}
   .ba-half.after .tag{left:auto;right:12px;background:var(--navy);}
   .prj-body{padding:24px 28px 28px;}
@@ -85,8 +85,9 @@
   @media(max-width:600px){.sv-grid{grid-template-columns:1fr;}}
   .sv-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .18s ease, box-shadow .18s ease;}
   .sv-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(34,53,92,0.10);}
-  .sv-visual{aspect-ratio:16/10;background:linear-gradient(150deg,#E9EFF6 0%,#CCD8E6 100%);display:flex;align-items:center;justify-content:center;}
-  .sv-visual svg{width:54px;height:54px;color:var(--navy);opacity:.7;}
+  .sv-visual{aspect-ratio:16/10;background:#E9EFF6;overflow:hidden;}
+  .sv-visual img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .sv-card:hover .sv-visual img{transform:scale(1.05);}
   .sv-body{padding:24px 26px 28px;}
   .sv-chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.12em;color:#fff;background:var(--navy);border-radius:6px;padding:5px 12px;margin-bottom:12px;text-transform:uppercase;}
   .sv-body h3{font-size:18px;font-weight:800;margin-bottom:8px;}
@@ -95,8 +96,9 @@
   .sv-card:hover .go{text-decoration:underline;}
 
   /* key features */
-  .feat-band{position:relative;background:linear-gradient(140deg,#3D5178 0%,#22355C 60%,#1B2B45 100%);overflow:hidden;padding:0;text-align:center;}
-  .feat-band::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 80% 25%, rgba(255,255,255,0.09) 0%, transparent 45%),linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);background-size:auto,70px 70px,70px 70px;}
+  .feat-band{position:relative;background:#22355C;overflow:hidden;padding:0;text-align:center;}
+  .feat-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .feat-band::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(150deg, rgba(27,43,69,0.93) 0%, rgba(34,53,92,0.86) 55%, rgba(27,43,69,0.93) 100%);}
   .feat-band .inner{position:relative;z-index:2;max-width:880px;margin:0 auto;padding:100px 24px;}
   @media(max-width:760px){.feat-band .inner{padding:68px 24px;}}
   .feat-band h2{color:#fff;font-size:clamp(27px,3.8vw,42px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;margin-bottom:16px;}
@@ -208,8 +210,8 @@
       <div class="prj-grid">
         <div class="prj-card">
           <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
+            <div class="ba-half before"><img src="photos/ba-wall-before.jpg" alt="시공 전" loading="lazy"><span class="tag">Before</span></div>
+            <div class="ba-half after"><img src="photos/ba-wall-after.jpg" alt="시공 후" loading="lazy"><span class="tag">After</span></div>
           </div>
           <div class="prj-body">
             <div class="cat">물류창고</div>
@@ -219,8 +221,8 @@
         </div>
         <div class="prj-card">
           <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
+            <div class="ba-half before"><img src="photos/ba-window-before.jpg" alt="시공 전" loading="lazy"><span class="tag">Before</span></div>
+            <div class="ba-half after"><img src="photos/ba-window-after.jpg" alt="시공 후" loading="lazy"><span class="tag">After</span></div>
           </div>
           <div class="prj-body">
             <div class="cat">제조공장</div>
@@ -229,10 +231,7 @@
           </div>
         </div>
         <div class="prj-card">
-          <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
-          </div>
+          <div class="prj-single"><img src="photos/card-fan-wall.jpg" alt="벽체 타공 고정" loading="lazy"><span class="tag">벽체 타공 고정</span></div>
           <div class="prj-body">
             <div class="cat">자재창고</div>
             <h3>창고 환풍기 신규 설치</h3>
@@ -240,10 +239,7 @@
           </div>
         </div>
         <div class="prj-card">
-          <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
-          </div>
+          <div class="prj-single"><img src="photos/card-duct.jpg" alt="배기 배관 마감" loading="lazy"><span class="tag">배기 배관 마감</span></div>
           <div class="prj-body">
             <div class="cat">가공작업장</div>
             <h3>작업장 환기팬 3대 분산 설치</h3>
@@ -251,10 +247,7 @@
           </div>
         </div>
         <div class="prj-card">
-          <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
-          </div>
+          <div class="prj-single"><img src="photos/card-shop.jpg" alt="다구 분산 배치" loading="lazy"><span class="tag">다구 분산 배치</span></div>
           <div class="prj-body">
             <div class="cat">부품공장</div>
             <h3>노후 산업용 환풍기 철거 후 교체</h3>
@@ -262,10 +255,7 @@
           </div>
         </div>
         <div class="prj-card">
-          <div class="ba-visual">
-            <div class="ba-half before"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><path d="M3 11h18"></path></svg><span class="tag">Before</span></div>
-            <div class="ba-half after"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"></rect><circle cx="12" cy="13" r="4"></circle></svg><span class="tag">After</span></div>
-          </div>
+          <div class="prj-single"><img src="photos/card-cafe.jpg" alt="설치 후 전경" loading="lazy"><span class="tag">설치 후 전경</span></div>
           <div class="prj-body">
             <div class="cat">지식산업센터</div>
             <h3>유리 타공 환풍기 설치</h3>
@@ -287,23 +277,23 @@
       </div>
       <div class="sv-grid">
         <div class="sv-card">
-          <div class="sv-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="7" width="20" height="13" rx="1"></rect><path d="M2 12h20M8 7V4h8v3"></path></svg></div>
+          <div class="sv-visual"><img src="photos/card-fan-wall.jpg" alt="창고 환풍기 설치" loading="lazy"></div>
           <div class="sv-body"><span class="sv-chip">Warehouse Fan</span><h3>창고 환풍기 설치</h3><p>창고에 직접 환풍기를 설치합니다. 물류·자재·저온창고 모두 가능합니다.</p><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="sv-card">
-          <div class="sv-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 12a9 9 0 1 0 9-9"></path><path d="M3 4v8h8"></path></svg></div>
+          <div class="sv-visual"><img src="photos/card-fan-window.jpg" alt="환풍기 교체" loading="lazy"></div>
           <div class="sv-body"><span class="sv-chip">Replacement</span><h3>환풍기 교체</h3><p>기존 노후 환풍기를 철거하고 신규 제품으로 교체합니다.</p><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="sv-card">
-          <div class="sv-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v3M12 17v3M4 12h3M17 12h3"></path></svg></div>
+          <div class="sv-visual"><img src="photos/card-cafe.jpg" alt="산업용 대형 환풍기" loading="lazy"></div>
           <div class="sv-body"><span class="sv-chip">Industrial</span><h3>산업용 대형 환풍기</h3><p>공장·물류센터 등 대면적 공간의 대형 환풍기를 시공합니다.</p><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="sv-card">
-          <div class="sv-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3v6m0 0-3-3m3 3 3-3"></path><rect x="4" y="12" width="16" height="9" rx="1"></rect></svg></div>
+          <div class="sv-visual"><img src="photos/card-duct.jpg" alt="벽면 타공 배기 시공" loading="lazy"></div>
           <div class="sv-body"><span class="sv-chip">Wall Drilling</span><h3>벽면 타공 배기 시공</h3><p>코어 드릴 타공으로 배기 경로가 없는 현장에도 시공 가능합니다.</p><span class="go">자세히 보기 →</span></div>
         </div>
         <div class="sv-card">
-          <div class="sv-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path><rect x="9" y="11" width="6" height="5"></rect></svg></div>
+          <div class="sv-visual"><img src="photos/card-shop.jpg" alt="조립식 판넬 시공" loading="lazy"></div>
           <div class="sv-body"><span class="sv-chip">Panel</span><h3>조립식 판넬 시공</h3><p>판넬 구조에 맞는 고정·보강 방식으로 안전하게 시공합니다.</p><span class="go">자세히 보기 →</span></div>
         </div>
       </div>
@@ -312,6 +302,7 @@
 
   <!-- KEY FEATURES -->
   <section class="feat-band">
+    <img class="feat-photo" src="photos/hero-wall.jpg" alt="환기 시공 현장">
     <div class="inner">
       <h2>넓은 공간의 환기 문제,<br>풍량 계산으로 해결합니다</h2>
       <p class="sub">감으로 정하지 않습니다. 면적 대비 필요 풍량을 계산해<br>정체된 공기, 습기, 분진, 열기 문제를 근본적으로 해결하세요.</p>
