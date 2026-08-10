@@ -163,19 +163,34 @@ footer .fcol a:hover{color:#fff;}
   @media(max-width:700px){.sm-head h1{font-size:26px;}}
   .sm-count{display:inline-block;font-size:12.5px;font-weight:800;color:var(--accd);
     background:var(--accp);border-radius:999px;padding:6px 16px;}
-  .sm-body{padding:34px 0 70px;}
-  .sm-group{margin-bottom:42px;}
-  .sm-group h3{font-size:16px;font-weight:800;padding-bottom:12px;margin-bottom:20px;
-    border-bottom:2px solid var(--acc);}
-  .sm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .sm-body{padding:34px 0 76px;}
+  .sm-group{margin-bottom:34px;border-radius:22px;padding:26px 26px 28px;
+    background:var(--gsoft);border:1px solid var(--gline);}
+  @media(max-width:600px){.sm-group{padding:20px 16px 22px;border-radius:18px;}}
+  .sm-group h3{display:flex;align-items:center;gap:10px;font-size:16.5px;font-weight:800;
+    color:var(--gink);padding-bottom:14px;margin-bottom:20px;
+    border-bottom:2px solid var(--gline2);}
+  .sm-group h3 i{width:10px;height:10px;border-radius:3px;background:var(--gink);flex:none;}
+  .sm-group h3 b{margin-left:auto;font-size:12px;font-weight:800;color:var(--gink);
+    background:#fff;border:1px solid var(--gline2);border-radius:999px;padding:3px 12px;}
+  .sm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
   @media(max-width:1000px){.sm-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:600px){.sm-grid{grid-template-columns:1fr;}}
-  .sm-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);
-    padding:17px 18px;display:flex;align-items:center;min-height:62px;
-    transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease;}
-  .sm-card:hover{border-color:var(--acc);transform:translateY(-2px);
-    box-shadow:0 10px 24px rgba(20,25,35,.07);}
-  .sm-card h4{font-size:14.5px;font-weight:700;line-height:1.5;}
+  .sm-card{background:#fff;border:1px solid var(--gline);border-radius:14px;
+    padding:16px 17px;display:flex;align-items:center;min-height:62px;
+    transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease,background .16s ease;}
+  .sm-card:hover{border-color:var(--gink);background:var(--gsoft);
+    transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,25,35,.08);}
+  .sm-card h4{font-size:14.5px;font-weight:700;line-height:1.5;color:var(--ink);}
+
+  /* pastel per section */
+  .g1{--gsoft:#E0F2FE;--gline:#BAE6FD;--gline2:#7DD3FC;--gink:#0369A1;}
+  .g2{--gsoft:#CCFBF1;--gline:#99F6E4;--gline2:#5EEAD4;--gink:#0F766E;}
+  .g3{--gsoft:#FEF3C7;--gline:#FDE68A;--gline2:#FCD34D;--gink:#B45309;}
+  .g4{--gsoft:#FFE4E6;--gline:#FECDD3;--gline2:#FDA4AF;--gink:#BE123C;}
+  .g5{--gsoft:#EDE9FE;--gline:#DDD6FE;--gline2:#C4B5FD;--gink:#6D28D9;}
+  .g6{--gsoft:#ECFCCB;--gline:#D9F99D;--gline2:#BEF264;--gink:#4D7C0F;}
+  .g7{--gsoft:#CFFAFE;--gline:#A5F3FC;--gline2:#67E8F9;--gink:#0E7490;}
 </style>
 </head>
 <body id="top">
@@ -206,14 +221,14 @@ footer .fcol a:hover{color:#fff;}
 
   <section class="sm-body">
     <div class="wrap">
-      <div class="sm-group">
-        <h3>메인</h3>
+      <div class="sm-group g1">
+        <h3><i></i>메인<b>1</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="index.html"><h4>창문형 환풍기 설치</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>서비스</h3>
+      <div class="sm-group g2">
+        <h3><i></i>서비스<b>5</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="index.html#service"><h4>상가 창문환풍기 설치</h4></a>
           <a class="sm-card" href="index.html#service"><h4>주방 창문환풍기 시공</h4></a>
@@ -222,8 +237,8 @@ footer .fcol a:hover{color:#fff;}
           <a class="sm-card" href="index.html#service"><h4>베란다·다용도실 시공</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>시공사례</h3>
+      <div class="sm-group g3">
+        <h3><i></i>시공사례<b>29</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="case-01.html"><h4>상가 매장 창문 환풍기 2대 설치</h4></a>
           <a class="sm-card" href="case-02.html"><h4>카페 로스터실 배기 환풍기 설치</h4></a>
@@ -256,8 +271,8 @@ footer .fcol a:hover{color:#fff;}
           <a class="sm-card" href="index.html#works"><h4>전체 시공사례 한눈에 보기</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>상담 및 기타</h3>
+      <div class="sm-group g4">
+        <h3><i></i>상담 및 기타<b>4</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="index.html#faq"><h4>자주 묻는 질문</h4></a>
           <a class="sm-card" href="sms:01026804538"><h4>문자로 사진 보내고 상담하기</h4></a>
@@ -265,8 +280,8 @@ footer .fcol a:hover{color:#fff;}
           <a class="sm-card" href="sitemap.html"><h4>사이트맵</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>지역별 서비스 · 서울</h3>
+      <div class="sm-group g5">
+        <h3><i></i>지역별 서비스 · 서울<b>11</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="area-gangnam.html"><h4>강남구 창문형 환풍기 설치</h4></a>
           <a class="sm-card" href="area-seocho.html"><h4>서초구 창문형 환풍기 설치</h4></a>
@@ -281,8 +296,8 @@ footer .fcol a:hover{color:#fff;}
           <a class="sm-card" href="area-gangseo.html"><h4>강서구 창문형 환풍기 설치</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>지역별 서비스 · 경기</h3>
+      <div class="sm-group g6">
+        <h3><i></i>지역별 서비스 · 경기<b>24</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="area-suwon.html"><h4>수원 창문형 환풍기 설치</h4></a>
           <a class="sm-card" href="area-seongnam.html"><h4>성남 창문형 환풍기 설치</h4></a>
@@ -310,8 +325,8 @@ footer .fcol a:hover{color:#fff;}
           <a class="sm-card" href="area-uijeongbu.html"><h4>의정부 창문형 환풍기 설치</h4></a>
         </div>
       </div>
-      <div class="sm-group">
-        <h3>지역별 서비스 · 인천</h3>
+      <div class="sm-group g7">
+        <h3><i></i>지역별 서비스 · 인천<b>6</b></h3>
         <div class="sm-grid">
           <a class="sm-card" href="area-michuhol.html"><h4>미추홀구 창문형 환풍기 설치</h4></a>
           <a class="sm-card" href="area-yeonsu.html"><h4>연수구 창문형 환풍기 설치</h4></a>
