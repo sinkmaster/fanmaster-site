@@ -175,16 +175,20 @@
   .area-card .a-head .cnt{margin-left:auto;font-size:11.5px;font-weight:800;letter-spacing:.01em;
     color:var(--sky-deep);background:var(--sky-pale);border-radius:999px;padding:4px 11px;}
   .area-chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .area-chips span{font-size:13.5px;font-weight:700;color:var(--ink-soft);
-    background:var(--sky-pale);border-radius:9px;padding:7px 13px;}
+  .area-chips a{font-size:13.5px;font-weight:700;color:var(--ink-soft);
+    background:var(--sky-pale);border-radius:9px;padding:7px 13px;
+    transition:background .15s ease,color .15s ease;}
+  .area-chips a:hover{background:var(--sky);color:#fff;}
   .area-card.c2 .a-head{border-bottom-color:#5EEAD4;}
   .area-card.c2 .a-head svg{color:var(--mint);}
   .area-card.c2 .a-head .cnt{color:#0F766E;background:var(--mint-pale);}
-  .area-card.c2 .area-chips span{background:var(--mint-pale);}
+  .area-card.c2 .area-chips a{background:var(--mint-pale);}
+  .area-card.c2 .area-chips a:hover{background:var(--mint);color:#fff;}
   .area-card.c3 .a-head{border-bottom-color:#FCD34D;}
   .area-card.c3 .a-head svg{color:var(--amber);}
   .area-card.c3 .a-head .cnt{color:#B45309;background:#FEF3C7;}
-  .area-card.c3 .area-chips span{background:#FEF3C7;}
+  .area-card.c3 .area-chips a{background:#FEF3C7;}
+  .area-card.c3 .area-chips a:hover{background:var(--amber);color:#fff;}
   .area-note{font-size:14px;color:var(--muted);margin-top:22px;font-weight:500;text-align:center;}
 
   /* faq */
@@ -426,23 +430,23 @@
       <div class="sec-head">
         <span class="eyebrow"><i></i>서비스 지역</span>
         <h2 class="title">서울·경기·인천 <mark>전 지역</mark> 방문 시공</h2>
-        <p class="sub">아래 지역은 방문이 가능한 서비스 지역입니다</p>
+        <p class="sub">지역을 누르면 해당 지역 시공 안내로 이동합니다</p>
       </div>
       <div class="area-grid">
         <div class="area-card c1">
           <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>서울</h3><span class="cnt">11개 지역</span></div>
-          <div class="area-chips"><span>강남구</span><span>서초구</span><span>송파구</span><span>강동구</span><span>동작구</span><span>관악구</span><span>금천구</span><span>구로구</span><span>영등포구</span><span>양천구</span><span>강서구</span></div>
+          <div class="area-chips"><a href="area-gangnam.html">강남구</a><a href="area-seocho.html">서초구</a><a href="area-songpa.html">송파구</a><a href="area-gangdong.html">강동구</a><a href="area-dongjak.html">동작구</a><a href="area-gwanak.html">관악구</a><a href="area-geumcheon.html">금천구</a><a href="area-guro.html">구로구</a><a href="area-yeongdeungpo.html">영등포구</a><a href="area-yangcheon.html">양천구</a><a href="area-gangseo.html">강서구</a></div>
         </div>
         <div class="area-card c2">
           <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>경기</h3><span class="cnt">24개 지역</span></div>
-          <div class="area-chips"><span>수원</span><span>성남</span><span>용인</span><span>화성</span><span>동탄</span><span>병점</span><span>오산</span><span>평택</span><span>안성</span><span>안산</span><span>시흥</span><span>부천</span><span>광명</span><span>안양</span><span>군포</span><span>의왕</span><span>과천</span><span>하남</span><span>이천</span><span>여주</span><span>경기 광주</span><span>구리</span><span>남양주</span><span>의정부</span></div>
+          <div class="area-chips"><a href="area-suwon.html">수원</a><a href="area-seongnam.html">성남</a><a href="area-yongin.html">용인</a><a href="area-hwaseong.html">화성</a><a href="area-dongtan.html">동탄</a><a href="area-byeongjeom.html">병점</a><a href="area-osan.html">오산</a><a href="area-pyeongtaek.html">평택</a><a href="area-anseong.html">안성</a><a href="area-ansan.html">안산</a><a href="area-siheung.html">시흥</a><a href="area-bucheon.html">부천</a><a href="area-gwangmyeong.html">광명</a><a href="area-anyang.html">안양</a><a href="area-gunpo.html">군포</a><a href="area-uiwang.html">의왕</a><a href="area-gwacheon.html">과천</a><a href="area-hanam.html">하남</a><a href="area-icheon.html">이천</a><a href="area-yeoju.html">여주</a><a href="area-gwangju.html">경기광주</a><a href="area-guri.html">구리</a><a href="area-namyangju.html">남양주</a><a href="area-uijeongbu.html">의정부</a></div>
         </div>
         <div class="area-card c3">
-          <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>인천</h3><span class="cnt">8개 지역</span></div>
-          <div class="area-chips"><span>중구</span><span>동구</span><span>미추홀구</span><span>연수구</span><span>남동구</span><span>부평구</span><span>계양구</span><span>서구</span></div>
+          <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>인천</h3><span class="cnt">6개 지역</span></div>
+          <div class="area-chips"><a href="area-michuhol.html">미추홀구</a><a href="area-yeonsu.html">연수구</a><a href="area-namdong.html">남동구</a><a href="area-bupyeong.html">부평구</a><a href="area-gyeyang.html">계양구</a><a href="area-seo.html">서구</a></div>
         </div>
       </div>
-      <p class="area-note">그 외 천안·아산 등 인접 지역도 일정에 따라 방문 가능하니 먼저 연락 주세요.</p>
+      <p class="area-note">목록에 없는 지역이어도 먼저 연락 주세요. 거리와 일정에 따라 방문 가능한 경우가 많습니다.</p>
     </div>
   </section>
 
