@@ -150,10 +150,11 @@
   .svc-row:nth-of-type(even) > *{direction:ltr;}
   .svc-visual{
     aspect-ratio:16/10;background:var(--cream-alt);border:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;position:relative;
+    position:relative;overflow:hidden;border-radius:14px;
   }
-  .svc-visual svg{width:64px;height:64px;color:var(--moss-deep);opacity:.85;}
-  .svc-visual .tagno{position:absolute;top:16px;left:18px;font-family:var(--serif);font-size:13px;color:var(--moss);}
+  .svc-visual img{width:100%;height:100%;object-fit:cover;display:block;}
+  .svc-visual .tagno{position:absolute;top:14px;left:14px;font-family:var(--serif);font-size:12.5px;
+    color:var(--moss-deep);background:rgba(255,255,255,.92);border-radius:999px;padding:4px 12px;z-index:2;}
   .svc-text h3{font-family:var(--serif);font-size:24px;margin-bottom:14px;font-weight:600;}
   .svc-text p{color:var(--muted2);font-size:14.5px;margin-bottom:16px;}
   .svc-text .chip{display:block;font-size:12.5px;font-weight:700;color:var(--moss);letter-spacing:.04em;margin-bottom:10px;}
@@ -308,6 +309,12 @@
   .area-card.c3 .area-chips a:hover{background:#E2A63D;color:#fff;}
   .area-note{font-size:14px;color:var(--muted2);margin-top:22px;font-weight:500;}
 
+  /* 섹션 파스텔 */
+  #service{background:#F4FAFD;}
+  #process{background:#F6F5FB;}
+  #area{background:#F3FAF6;}
+  #faq{background:#F5F9F3;}
+
   /* footer */
   footer{padding:84px 0 32px;background:var(--cream-alt);border-top:1px solid var(--line);}
   .fcontact{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start;
@@ -394,7 +401,7 @@
         <a href="#faq">문의 전 확인</a>
         <a href="sitemap.html">사이트맵</a>
       </div>
-      <a href="#contact" class="btn btn-primary">방문 진단 신청</a>
+      <a href="#contact" class="btn btn-primary">상담 문의</a>
     </nav>
   </div>
 </header>
@@ -430,16 +437,16 @@
       <div class="hero-photo-text">
         <span class="hero-eyebrow">INDUSTRIAL VENTILATION</span>
         <h1>숨쉬기 답답한 공간,<br><em>원인부터</em> 정확히 짚어냅니다</h1>
-        <p>매장과 주방, 창고까지 — 환기는 눈에 보이지 않는 압력과 방향의 문제라, 안 되는 이유가 공간마다 다릅니다. 방문 진단으로 구조를 먼저 확인한 뒤, 현장에서 쌓은 판단으로 공간에 맞는 방식만 골라 시공합니다.</p>
+        <p>매장과 주방, 창고까지 — 환기는 눈에 보이지 않는 압력과 방향의 문제라, 안 되는 이유가 공간마다 다릅니다. 현장 확인으로 구조를 먼저 파악한 뒤, 현장에서 쌓은 판단으로 공간에 맞는 방식만 골라 시공합니다.</p>
         <p class="hero-sign"><span></span>현장을 아는 사람이, 정확하게 시공합니다</p>
         <div class="cta-row">
-          <a href="#contact" class="btn btn-cream">무료 방문 진단 신청</a>
+          <a href="#contact" class="btn btn-cream">상담 문의</a>
           <a href="#works" class="btn btn-ghost">작업 사례 보기</a>
         </div>
         <div class="hero-flow">
           <span class="hf-step"><span class="hf-n">1</span>현장 사진 전송</span>
           <span class="hf-arrow">→</span>
-          <span class="hf-step"><span class="hf-n">2</span>방문 진단·견적</span>
+          <span class="hf-step"><span class="hf-n">2</span>견적 안내</span>
           <span class="hf-arrow">→</span>
           <span class="hf-step"><span class="hf-n">3</span>당일 시공 완료</span>
         </div>
@@ -449,7 +456,7 @@
         <ul>
           <li>노후 환풍기 교체</li>
           <li>신규 설치 시공</li>
-          <li>수도권 전역 방문 진단</li>
+          <li>서울·경기·인천 전지역 방문</li>
         </ul>
       </aside>
     </div>
@@ -466,7 +473,7 @@
 
   <div class="trust-strip">
     <div class="wrap">
-      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>당일 방문 진단 가능</span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>당일 방문 가능</span>
       <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="1"></rect><path d="M4 9h16"></path></svg>무타공 시공 선택 가능</span>
       <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 20l-5.5-5.5a2 2 0 0 1 0-2.8L9 6"></path><path d="M14 20l5.5-5.5a2 2 0 0 0 0-2.8L14 6"></path></svg>서울·경기·인천 전역 출장</span>
       <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7"></path></svg>시공 후 작동 확인까지</span>
@@ -512,7 +519,7 @@
       <div class="svc-row">
         <div class="svc-visual">
           <span class="tagno">01</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="1"></rect><path d="M12 4v16M4 12h16"></path></svg>
+          <img src="photos/svc/svc01.jpg" alt="창문형 환풍기 시공" loading="lazy">
         </div>
         <div class="svc-text">
           <span class="chip">무타공 · 원상복구 가능</span>
@@ -524,7 +531,7 @@
       <div class="svc-row">
         <div class="svc-visual">
           <span class="tagno">02</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"></circle><path d="M12 7v5l3.5 2"></path></svg>
+          <img src="photos/svc/svc02.jpg" alt="매장·상가 고압 배기" loading="lazy">
         </div>
         <div class="svc-text">
           <span class="chip">고배출압 · 대면적 대응</span>
@@ -536,7 +543,7 @@
       <div class="svc-row">
         <div class="svc-visual">
           <span class="tagno">03</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M6 21V8l6-5 6 5v13"></path><circle cx="12" cy="14" r="2"></circle></svg>
+          <img src="photos/svc/svc03.jpg" alt="외벽 타공 배기 시공" loading="lazy">
         </div>
         <div class="svc-text">
           <span class="chip">외벽 타공 · 덕트 연결</span>
@@ -548,7 +555,7 @@
       <div class="svc-row">
         <div class="svc-visual">
           <span class="tagno">04</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 21V9l8-6 8 6v12"></path><path d="M9 21v-7h6v7"></path></svg>
+          <img src="photos/svc/svc04.jpg" alt="주방·설비 환기 시공" loading="lazy">
         </div>
         <div class="svc-text">
           <span class="chip">화기 인근 안전 시공</span>
@@ -567,7 +574,7 @@
       <p class="lede">불필요한 절차 없이, 정확한 판단에 필요한 단계만 거칩니다.</p>
       <div class="timeline">
         <div class="tl-step"><div class="tl-dot">01</div><h4>상담 문의</h4><p>창호 형태와 설치 공간 사진을 보내주시면 1차로 적합한 사양을 검토합니다.</p></div>
-        <div class="tl-step"><div class="tl-dot">02</div><h4>방문 진단</h4><p>현장을 직접 방문해 배출 압력, 구조, 타공 가능 여부를 확인합니다.</p></div>
+        <div class="tl-step"><div class="tl-dot">02</div><h4>현장 확인</h4><p>현장을 직접 방문해 배출 압력, 구조, 타공 가능 여부를 확인합니다.</p></div>
         <div class="tl-step"><div class="tl-dot">03</div><h4>맞춤 시공</h4><p>공간의 용도와 면적에 맞는 사양으로 설치를 진행합니다.</p></div>
         <div class="tl-step"><div class="tl-dot">04</div><h4>작동 확인</h4><p>배출 상태와 마감을 함께 점검한 뒤 시공을 완료합니다.</p></div>
       </div>
@@ -604,7 +611,7 @@
 
 
   <!-- WORKS -->
-  <section id="works" style="background:var(--cream-alt);">
+  <section id="works" style="background:#FBF6EF;">
     <div class="wrap">
       <span class="label">Works</span>
       <h2 class="headline">직접 다녀온 시공 현장</h2>
@@ -958,7 +965,7 @@
   </section>
 
   <!-- REVIEWS -->
-  <section style="background:var(--cream-alt);">
+  <section style="background:#FDF4F4;">
     <div class="wrap">
       <span class="label">Review</span>
       <div class="review-grid">
@@ -1047,7 +1054,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q"><span class="qn">08</span><span>주말에도 상담·방문이 가능한가요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>네, 평일과 주말 모두 08:00~20:00 사이 상담 및 방문 진단이 가능합니다. 편하신 시간에 연락 주세요.</p></div>
+          <div class="faq-a"><p>네, 평일과 주말 모두 08:00~20:00 사이 상담 및 방문이 가능합니다. 편하신 시간에 연락 주세요.</p></div>
         </div>
       </div>
     </div>
