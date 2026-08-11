@@ -91,7 +91,7 @@
   .hero h1 em{font-style:normal;color:var(--amber);}
   .hero p.lead{color:#F3D9C4;font-size:17px;margin-bottom:38px;font-weight:500;}
   .steps{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:38px;}
-  .step{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:9px 18px 9px 10px;}
+  .step{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:#fff;background:rgba(30,17,10,.78);border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:9px 18px 9px 10px;backdrop-filter:blur(4px);text-shadow:0 1px 2px rgba(0,0,0,.35);box-shadow:0 4px 14px rgba(0,0,0,.22);}
   .step .n{width:26px;height:26px;border-radius:50%;background:var(--amber);color:var(--ink);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
   .arrow{color:rgba(255,255,255,.4);font-size:14px;}
   @media(max-width:600px){.arrow{display:none;}}
@@ -231,6 +231,12 @@
   .area-card.c3 .area-chips a,.area-card.c3 .area-chips span{background:var(--amber-pale);}
   .area-card.c3 .area-chips a:hover{background:#F59E0B;color:#fff;}
   .area-note{font-size:14px;color:var(--muted);margin-top:22px;font-weight:500;text-align:center;}
+  @media(max-width:560px){
+    .steps{gap:8px;}
+    .step{background:rgba(30,17,10,.9);border-color:rgba(255,255,255,.45);
+      font-size:14px;padding:9px 16px 9px 9px;}
+    .arrow{color:rgba(255,255,255,.75);}
+  }
 </style>
 </head>
 <body>
