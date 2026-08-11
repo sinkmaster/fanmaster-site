@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>창고·공장 환풍기 설치 | 튼튼환풍시스템 — 산업용 환기 시공</title>
-<meta name="description" content="창고·공장 환풍기 설치와 교체. 면적 대비 풍량 계산, 조립식 판넬 시공, 벽면 타공까지. 수원·용인·동탄·평택 중심 방문 시공.">
+<meta name="description" content="창고·공장 환풍기 설치와 교체. 면적 대비 풍량 계산, 조립식 판넬 시공, 벽면 타공까지. 서울·경기·인천 전지역 방문 시공.">
 <link rel="canonical" href="https://warehouse.fanmaster.co.kr/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="튼튼환풍시스템">
@@ -207,6 +207,39 @@
   a.prj-card{display:block;color:inherit;}
   .go-more{display:inline-flex;align-items:center;gap:5px;font-size:13.5px;font-weight:700;color:var(--indigo-deep);margin-top:12px;}
   a.prj-card:hover .go-more{text-decoration:underline;}
+
+  /* 더보기 · 시공가능지역 */
+  .prj-more{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .sv-more{text-align:center;margin-top:28px;}
+  .btn{font-family:var(--font);}
+  .area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;}
+  @media(max-width:980px){.area-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:640px){.area-grid{grid-template-columns:1fr;}}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 24px 28px;
+    box-shadow:0 6px 26px rgba(27,31,59,.05);transition:transform .18s ease,box-shadow .18s ease;}
+  .area-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(27,31,59,.10);}
+  .area-card .a-head{display:flex;align-items:center;gap:9px;padding-bottom:13px;margin-bottom:18px;
+    border-bottom:2px solid var(--indigo-pale);}
+  .area-card .a-head svg{width:17px;height:17px;flex:none;color:var(--indigo);}
+  .area-card .a-head h3{font-size:17.5px;font-weight:800;letter-spacing:-0.03em;}
+  .area-card .a-head .cnt{margin-left:auto;font-size:11.5px;font-weight:800;
+    color:var(--indigo-deep);background:var(--indigo-pale);border-radius:999px;padding:4px 11px;}
+  .area-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .area-chips a,.area-chips span{font-size:13.5px;font-weight:700;color:var(--ink-soft);
+    background:var(--indigo-pale);border-radius:9px;padding:7px 13px;}
+  .area-chips a{transition:background .15s ease,color .15s ease;}
+  .area-chips a:hover{background:var(--indigo);color:#fff;}
+  .area-card.c2 .a-head{border-bottom-color:var(--emerald-pale);}
+  .area-card.c2 .a-head svg{color:var(--emerald);}
+  .area-card.c2 .a-head .cnt{color:#047857;background:var(--emerald-pale);}
+  .area-card.c2 .area-chips a,.area-card.c2 .area-chips span{background:var(--emerald-pale);}
+  .area-card.c2 .area-chips a:hover{background:var(--emerald);color:#fff;}
+  .area-card.c3 .a-head{border-bottom-color:var(--cyan-pale);}
+  .area-card.c3 .a-head svg{color:var(--cyan);}
+  .area-card.c3 .a-head .cnt{color:#0E7490;background:var(--cyan-pale);}
+  .area-card.c3 .area-chips a,.area-card.c3 .area-chips span{background:var(--cyan-pale);}
+  .area-card.c3 .area-chips a:hover{background:var(--cyan);color:#fff;}
+  .area-note{font-size:14px;color:var(--muted);margin-top:22px;font-weight:500;text-align:center;}
 </style>
 </head>
 <body>
@@ -256,69 +289,126 @@
         <h2 class="title">넓은 공간일수록 <mark>계산이 먼저</mark></h2>
         <p class="sub">실제로 다녀온 산업 현장의 기록입니다</p>
       </div>
-      <div class="prj-grid">
+      <div class="prj-grid" id="prjGrid">
         <a class="prj-card" href="case-01.html">
           <div class="ba">
-            <div class="ba-half before"><img src="photos/ba-wall-before.jpg" alt="시공 전" loading="lazy"><span class="tag">시공 전</span></div>
-            <div class="ba-half after"><img src="photos/ba-wall-after.jpg" alt="시공 후" loading="lazy"><span class="tag">시공 후</span></div>
+            <div class="ba-half before"><img src="photos/idx/w01-b.jpg" alt="세로창 배기 팬 · 급기 루버 시공 시공 전" loading="lazy"><span class="tag">시공 전</span></div>
+            <div class="ba-half after"><img src="photos/idx/w01-a.jpg" alt="세로창 배기 팬 · 급기 루버 시공 시공 후" loading="lazy"><span class="tag">시공 후</span></div>
           </div>
           <div class="prj-body">
-            <span class="cat i">벽면 타공</span>
-            <h3>벽체 타공 후 환풍기 신규 설치</h3>
-            <p>배기 경로가 없던 공간에 코어 드릴로 구멍을 내고, 배관과 배선을 정리해 마감했습니다</p>
+            <span class="cat i">벽면 시공</span>
+            <h3>세로창 배기 팬 · 급기 루버 시공</h3>
+            <p>비어 있던 세로창에 위쪽 배기 팬과 아래쪽 급기 루버를 나눠 달아 공기 흐름을 만들었습니다</p>
             <span class="go-more">자세히 보기 →</span>
           </div>
         </a>
         <a class="prj-card" href="case-02.html">
           <div class="ba">
-            <div class="ba-half before"><img src="photos/ba-window-before.jpg" alt="시공 전" loading="lazy"><span class="tag">시공 전</span></div>
-            <div class="ba-half after"><img src="photos/ba-window-after.jpg" alt="시공 후" loading="lazy"><span class="tag">시공 후</span></div>
+            <div class="ba-half before"><img src="photos/idx/w02-b.jpg" alt="낡은 창가 환풍기 교체 시공 전" loading="lazy"><span class="tag">시공 전</span></div>
+            <div class="ba-half after"><img src="photos/idx/w02-a.jpg" alt="낡은 창가 환풍기 교체 시공 후" loading="lazy"><span class="tag">시공 후</span></div>
           </div>
           <div class="prj-body">
-            <span class="cat v">다구 설치</span>
-            <h3>상부 창 환풍기 2기 배치</h3>
-            <p>한 대로는 부족한 면적이라 두 대를 나눠 달고, 배출 방향을 서로 겹치지 않게 잡았습니다</p>
+            <span class="cat v">노후 교체</span>
+            <h3>낡은 창가 환풍기 교체</h3>
+            <p>바람이 약해진 제품을 철거하고 같은 자리에 규격을 맞춘 새 제품을 달았습니다</p>
             <span class="go-more">자세히 보기 →</span>
           </div>
         </a>
         <a class="prj-card" href="case-01.html">
-          <div class="one"><img src="photos/card-fan-wall.jpg" alt="벽체 고정 디테일" loading="lazy"><span class="tag">고정 디테일</span></div>
-          <div class="prj-body">
-            <span class="cat e">구조 보강</span>
-            <h3>진동 없는 본체 고정</h3>
-            <p>벽체 상태에 맞춰 보강한 뒤 고정해 장시간 돌려도 흔들리지 않도록 잡습니다</p>
-            <span class="go-more">자세히 보기 →</span>
+          <div class="ba">
+            <div class="ba-half before"><img src="photos/idx/w03-b.jpg" alt="작업장 세척실 창문 팬 설치 시공 전" loading="lazy"><span class="tag">시공 전</span></div>
+            <div class="ba-half after"><img src="photos/idx/w03-a.jpg" alt="작업장 세척실 창문 팬 설치 시공 후" loading="lazy"><span class="tag">시공 후</span></div>
           </div>
-        </a>
-        <a class="prj-card" href="case-01.html">
-          <div class="one"><img src="photos/card-duct.jpg" alt="배관 마감" loading="lazy"><span class="tag">배관 마감</span></div>
           <div class="prj-body">
-            <span class="cat c">덕트 정리</span>
-            <h3>배기 덕트 경로 정리</h3>
-            <p>배관이 늘어지거나 꺾이지 않게 선을 잡아야 풍량 손실이 줄어듭니다</p>
+            <span class="cat e">신규 설치</span>
+            <h3>작업장 세척실 창문 팬 설치</h3>
+            <p>습기가 몰리는 세척 공간 창문에 배기 팬을 달아 결로와 곰팡이를 줄였습니다</p>
             <span class="go-more">자세히 보기 →</span>
           </div>
         </a>
         <a class="prj-card" href="case-02.html">
-          <div class="one"><img src="photos/card-shop.jpg" alt="분산 배치" loading="lazy"><span class="tag">배치 설계</span></div>
+          <div class="one"><img src="photos/idx/w04.jpg" alt="셔터 상부 고압팬 2기 설치" loading="lazy"><span class="tag">고압 배기</span></div>
           <div class="prj-body">
-            <span class="cat i">분산 배치</span>
-            <h3>작업 구역 기준 분산 설치</h3>
-            <p>분진이나 열기가 몰리는 지점을 중심으로 나눠 달아 공기 순환을 만듭니다</p>
+            <span class="cat i">고압 배기</span>
+            <h3>셔터 상부 고압팬 2기 설치</h3>
+            <p>개구부 위에 고압팬 두 대를 나란히 고정하고 배출 방향을 맞췄습니다</p>
             <span class="go-more">자세히 보기 →</span>
           </div>
         </a>
         <a class="prj-card" href="case-01.html">
-          <div class="one"><img src="photos/card-cafe.jpg" alt="시공 완료 전경" loading="lazy"><span class="tag">완료 전경</span></div>
+          <div class="one"><img src="photos/idx/w05.jpg" alt="산업용 대형 팬 다중 배치" loading="lazy"><span class="tag">산업용</span></div>
+          <div class="prj-body">
+            <span class="cat v">산업용</span>
+            <h3>산업용 대형 팬 다중 배치</h3>
+            <p>천장이 높은 현장에 대형 팬을 나눠 배치해 배출량을 확보했습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-02.html">
+          <div class="one"><img src="photos/idx/w06.jpg" alt="외벽 덕트 연장 배기 경로" loading="lazy"><span class="tag">덕트 연장</span></div>
+          <div class="prj-body">
+            <span class="cat e">덕트 연장</span>
+            <h3>외벽 덕트 연장 배기 경로</h3>
+            <p>배기구가 먼 자리는 덕트를 연장해 바깥까지 경로를 새로 만들었습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-01.html">
+          <div class="one"><img src="photos/idx/w07.jpg" alt="세로창 루버 · 소형 팬 설치" loading="lazy"><span class="tag">좁은 공간</span></div>
+          <div class="prj-body">
+            <span class="cat i">좁은 공간</span>
+            <h3>세로창 루버 · 소형 팬 설치</h3>
+            <p>좁은 세로창에 루버와 팬을 함께 달아 정체된 공기를 뺐습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-02.html">
+          <div class="one"><img src="photos/idx/w08.jpg" alt="처마 아래 팬 2기 · 배선 정리" loading="lazy"><span class="tag">마감 정리</span></div>
           <div class="prj-body">
             <span class="cat v">마감 정리</span>
-            <h3>시공 완료 후 전경</h3>
-            <p>주변 마감과 배선까지 정리해 현장이 어수선해지지 않도록 마무리합니다</p>
+            <h3>처마 아래 팬 2기 · 배선 정리</h3>
+            <p>외부 노출 구간은 덕트와 배선을 정리해 깔끔하게 마감했습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-01.html">
+          <div class="one"><img src="photos/idx/w09.jpg" alt="창 상부 환풍기 2기 배치" loading="lazy"><span class="tag">다구 설치</span></div>
+          <div class="prj-body">
+            <span class="cat e">다구 설치</span>
+            <h3>창 상부 환풍기 2기 배치</h3>
+            <p>한 대로는 부족한 면적이라 두 대를 나눠 달고 배출 방향이 겹치지 않게 잡았습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-02.html">
+          <div class="one"><img src="photos/idx/w10.jpg" alt="매장 창문 상부 팬 시공" loading="lazy"><span class="tag">매장 환기</span></div>
+          <div class="prj-body">
+            <span class="cat i">매장 환기</span>
+            <h3>매장 창문 상부 팬 시공</h3>
+            <p>손님 동선을 피해 창문 위쪽으로 배기 위치를 올려 설치했습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-01.html">
+          <div class="one"><img src="photos/idx/w11.jpg" alt="매장 전면 상부 배기 그릴" loading="lazy"><span class="tag">상부 그릴</span></div>
+          <div class="prj-body">
+            <span class="cat v">상부 그릴</span>
+            <h3>매장 전면 상부 배기 그릴</h3>
+            <p>간판 라인에 맞춰 배기 그릴을 넣어 외관을 해치지 않게 마감했습니다</p>
+            <span class="go-more">자세히 보기 →</span>
+          </div>
+        </a>
+        <a class="prj-card" href="case-02.html">
+          <div class="one"><img src="photos/idx/w12.jpg" alt="개구부 상부 환풍기 고정" loading="lazy"><span class="tag">개구부</span></div>
+          <div class="prj-body">
+            <span class="cat e">개구부</span>
+            <h3>개구부 상부 환풍기 고정</h3>
+            <p>문 위 개구부에 본체를 단단히 고정하고 배선까지 정리했습니다</p>
             <span class="go-more">자세히 보기 →</span>
           </div>
         </a>
       </div>
-      <div class="prj-more"><a href="#contact" class="btn btn-out">비슷한 현장 문의하기</a></div>
+      <div class="prj-more"><button id="prjMore" class="btn btn-out" type="button">시공사례 더보기</button><a href="#contact" class="btn btn-out">비슷한 현장 문의하기</a></div>
     </div>
   </section>
 
@@ -330,28 +420,69 @@
         <h2 class="title">현장 구조에 맞는 <mark>시공 방식</mark></h2>
         <p class="sub">판넬인지 콘크리트인지에 따라 고정 방법부터 달라집니다</p>
       </div>
-      <div class="sv-grid">
+      <div class="sv-grid" id="svGrid">
         <div class="sv-card">
-          <div class="sv-img"><img src="photos/card-fan-wall.jpg" alt="창고 환풍기 설치" loading="lazy"></div>
+          <div class="sv-img"><img src="photos/idx/s01.jpg" alt="창고 환풍기 설치" loading="lazy"></div>
           <div class="sv-body"><h3>창고 환풍기 설치</h3><p>물류·자재·저온창고까지, 보관 물품에 맞춰 환기량을 잡아 설치합니다</p></div>
         </div>
         <div class="sv-card">
-          <div class="sv-img"><img src="photos/card-fan-window.jpg" alt="노후 환풍기 교체" loading="lazy"></div>
+          <div class="sv-img"><img src="photos/idx/s02.jpg" alt="노후 환풍기 교체" loading="lazy"></div>
           <div class="sv-body"><h3>노후 환풍기 교체</h3><p>바람이 약해지거나 소음이 커진 제품을 철거하고 새 사양으로 바꿉니다</p></div>
         </div>
         <div class="sv-card">
-          <div class="sv-img"><img src="photos/card-cafe.jpg" alt="산업용 대형 환풍기" loading="lazy"></div>
+          <div class="sv-img"><img src="photos/idx/s03.jpg" alt="산업용 대형 환풍기" loading="lazy"></div>
           <div class="sv-body"><h3>산업용 대형 환풍기</h3><p>공장이나 물류센터처럼 천장이 높고 면적이 넓은 공간에 대응합니다</p></div>
         </div>
         <div class="sv-card">
-          <div class="sv-img"><img src="photos/card-duct.jpg" alt="벽면 타공 배기 시공" loading="lazy"></div>
+          <div class="sv-img"><img src="photos/idx/s04.jpg" alt="벽면 타공 배기" loading="lazy"></div>
           <div class="sv-body"><h3>벽면 타공 배기</h3><p>나갈 길이 없는 현장은 벽을 뚫어 배기 경로부터 새로 만듭니다</p></div>
         </div>
         <div class="sv-card">
-          <div class="sv-img"><img src="photos/card-shop.jpg" alt="조립식 판넬 시공" loading="lazy"></div>
+          <div class="sv-img"><img src="photos/idx/s05.jpg" alt="조립식 판넬 시공" loading="lazy"></div>
           <div class="sv-body"><h3>조립식 판넬 시공</h3><p>판넬은 두께와 상태에 따라 보강이 필요합니다. 구조를 보고 방법을 정합니다</p></div>
         </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s06.jpg" alt="창문형 환풍기 설치" loading="lazy"></div>
+          <div class="sv-body"><h3>창문형 환풍기 설치</h3><p>벽을 뚫기 어려운 현장은 창문을 활용해 배기 경로를 만듭니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s07.jpg" alt="화장실·욕실 환풍기" loading="lazy"></div>
+          <div class="sv-body"><h3>화장실·욕실 환풍기</h3><p>냄새와 습기가 머무는 공간에 상시 배기 경로를 만들어 드립니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s08.jpg" alt="천장 매립형 환풍기" loading="lazy"></div>
+          <div class="sv-body"><h3>천장 매립형 환풍기</h3><p>본체를 천장 속에 넣어 겉으로는 그릴만 보이게 깔끔히 답니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s09.jpg" alt="덕트 연장 배기" loading="lazy"></div>
+          <div class="sv-body"><h3>덕트 연장 배기</h3><p>배기구가 먼 현장은 덕트를 이어 바깥까지 공기 길을 만듭니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s10.jpg" alt="루버 교체·마감" loading="lazy"></div>
+          <div class="sv-body"><h3>루버 교체·마감</h3><p>삭아서 덜렁거리는 루버를 새로 달고 빗물과 역풍을 막습니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s11.jpg" alt="출입구 상부 배기" loading="lazy"></div>
+          <div class="sv-body"><h3>출입구 상부 배기</h3><p>문 위 공간을 활용해 매장 안 공기를 밖으로 밀어냅니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s12.jpg" alt="주방 열기 배출" loading="lazy"></div>
+          <div class="sv-body"><h3>주방 열기 배출</h3><p>조리 열기와 유증기가 모이는 지점을 찾아 배기를 잡습니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s13.jpg" alt="세탁실 환풍기" loading="lazy"></div>
+          <div class="sv-body"><h3>세탁실 환풍기</h3><p>건조기 열기와 습기가 몰리는 세탁 공간의 공기를 빼냅니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s14.jpg" alt="사무실·상가 환기" loading="lazy"></div>
+          <div class="sv-body"><h3>사무실·상가 환기</h3><p>업무에 방해되지 않는 소음 수준으로 배기량을 맞춥니다</p></div>
+        </div>
+        <div class="sv-card">
+          <div class="sv-img"><img src="photos/idx/s15.jpg" alt="급기·배기 설계" loading="lazy"></div>
+          <div class="sv-body"><h3>급기·배기 설계</h3><p>나가는 길과 들어오는 길을 함께 계산해야 실제 배출량이 나옵니다</p></div>
+        </div>
       </div>
+      <div class="sv-more"><button id="svMore" class="btn btn-out" type="button">서비스 더보기</button></div>
     </div>
   </section>
 
@@ -371,6 +502,33 @@
       </div>
     </div>
   </section>
+
+  <!-- AREA -->
+  <section id="area">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><i></i>시공 가능 지역</span>
+        <h2 class="title">서울·경기·인천 <mark>전 지역</mark> 방문 시공</h2>
+        <p class="sub">지역 이름을 누르면 해당 지역 시공 안내로 이동합니다</p>
+      </div>
+      <div class="area-grid">
+        <div class="area-card c1">
+          <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>서울</h3><span class="cnt">25개 지역</span></div>
+          <div class="area-chips"><a href="work-gangnam-1.html">강남구</a><a href="work-seocho-1.html">서초구</a><a href="work-songpa-1.html">송파구</a><a href="work-gangdong-1.html">강동구</a><a href="work-dongjak-1.html">동작구</a><a href="work-gwanak-1.html">관악구</a><a href="work-geumcheon-1.html">금천구</a><a href="work-guro-1.html">구로구</a><a href="work-yeongdeungpo-1.html">영등포구</a><a href="work-yangcheon-1.html">양천구</a><a href="work-gangseo-1.html">강서구</a><span>마포구</span><span>용산구</span><span>성동구</span><span>광진구</span><span>동대문구</span><span>중랑구</span><span>성북구</span><span>강북구</span><span>도봉구</span><span>노원구</span><span>은평구</span><span>서대문구</span><span>종로구</span><span>중구</span></div>
+        </div>
+        <div class="area-card c2">
+          <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>경기</h3><span class="cnt">32개 지역</span></div>
+          <div class="area-chips"><a href="work-suwon-1.html">수원</a><a href="work-seongnam-1.html">성남</a><a href="work-yongin-1.html">용인</a><a href="work-hwaseong-1.html">화성</a><a href="work-dongtan-1.html">동탄</a><a href="work-byeongjeom-1.html">병점</a><a href="work-osan-1.html">오산</a><a href="work-pyeongtaek-1.html">평택</a><a href="work-songtan-1.html">송탄</a><a href="work-godeok-1.html">고덕</a><a href="work-jije-1.html">지제</a><a href="work-anseong-1.html">안성</a><a href="work-ansan-1.html">안산</a><a href="work-siheung-1.html">시흥</a><a href="work-bucheon-1.html">부천</a><a href="work-gwangmyeong-1.html">광명</a><a href="work-anyang-1.html">안양</a><a href="work-gunpo-1.html">군포</a><a href="work-uiwang-1.html">의왕</a><a href="work-gwacheon-1.html">과천</a><a href="work-hanam-1.html">하남</a><a href="work-icheon-1.html">이천</a><a href="work-yeoju-1.html">여주</a><a href="work-gwangju-1.html">경기광주</a><a href="work-guri-1.html">구리</a><a href="work-namyangju-1.html">남양주</a><a href="work-uijeongbu-1.html">의정부</a><span>김포</span><span>파주</span><span>고양</span><span>가평</span><span>양평</span></div>
+        </div>
+        <div class="area-card c3">
+          <div class="a-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><h3>인천</h3><span class="cnt">10개 지역</span></div>
+          <div class="area-chips"><a href="work-michuhol-1.html">미추홀구</a><a href="work-yeonsu-1.html">연수구</a><a href="work-namdong-1.html">남동구</a><a href="work-bupyeong-1.html">부평구</a><a href="work-gyeyang-1.html">계양구</a><a href="work-seo-1.html">서구</a><span>중구</span><span>동구</span><span>강화군</span><span>옹진군</span></div>
+        </div>
+      </div>
+      <p class="area-note">목록에 없는 지역이어도 먼저 연락 주세요. 거리와 일정에 따라 방문 가능한 경우가 많습니다.</p>
+    </div>
+  </section>
+
 
   <!-- FAQ -->
   <section id="faq" style="background:var(--bg-tint);">
@@ -411,7 +569,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q"><span class="qn">Q</span><span>어느 지역까지 가주시나요?</span><span class="sign">＋</span></button>
-          <div class="faq-a"><p>수원·오산·용인·동탄·화성·안산·평택을 중심으로 움직입니다. 그 외 수도권 지역도 일정을 조율해 방문하고 있으니, 위치를 먼저 알려주시면 가능 여부를 바로 알려드립니다.</p></div>
+          <div class="faq-a"><p>서울·경기·인천 전 지역을 방문합니다. 위치와 현장 사진을 먼저 보내주시면 가능한 일정과 함께 바로 안내드립니다.</p></div>
         </div>
       </div>
     </div>
@@ -448,7 +606,7 @@
       <div class="cta-tags">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"></path></svg>예약제 운영</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"></path></svg>일정 맞으면 당일 출동</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"></path></svg>수원·용인·동탄·평택 중심</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"></path></svg>서울·경기·인천 전지역</span>
       </div>
     </div>
   </section>
@@ -463,8 +621,9 @@
           <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"></path><rect x="9" y="13" width="6" height="8"></rect></svg></span>
           <b>튼튼환풍시스템</b>
         </div>
-        <p class="fd">창고·공장 산업용 환기 전문<br>풍량 계산 · 판넬 시공 · 벽면 타공<br>수원·용인·동탄·평택 중심 방문</p>
+        <p class="fd">창고·공장 산업용 환기 전문<br>풍량 계산 · 판넬 시공 · 벽면 타공<br>서울·경기·인천 전지역 방문</p>
         <div class="fp">010-2680-4538</div>
+        <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,.78);margin-top:7px;">상담시간 08~20시</div>
       </div>
       <div class="fcol">
         <h5>서비스</h5>
@@ -513,5 +672,34 @@
   });
 </script>
 
+
+<script>
+(function(){
+  function setup(gridId, btnId, rows){
+    var grid = document.getElementById(gridId), btn = document.getElementById(btnId);
+    if(!grid || !btn) return;
+    var open = false;
+    function cols(){
+      var c = getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length;
+      return Math.max(1, c);
+    }
+    function apply(){
+      var cards = grid.children, limit = cols() * rows;
+      var hidden = 0;
+      for(var i = 0; i < cards.length; i++){
+        var hide = !open && i >= limit;
+        cards[i].style.display = hide ? 'none' : '';
+        if(hide) hidden++;
+      }
+      btn.style.display = (open || hidden === 0) ? 'none' : '';
+    }
+    btn.addEventListener('click', function(){ open = true; apply(); });
+    var t; window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(apply, 150); });
+    apply();
+  }
+  setup('prjGrid', 'prjMore', 3);
+  setup('svGrid', 'svMore', 2);
+})();
+</script>
 </body>
 </html>
