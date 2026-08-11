@@ -14,13 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1E2119;
-    --moss:#5B6E4A;
-    --moss-deep:#3B4530;
-    --moss-soft:#8A9A78;
-    --cream:#FAF8F2;
-    --cream-alt:#F1EEE3;
-    --line:#E2DFD0;
+    --ink:#262B20;
+    --moss:#77895F;
+    --moss-deep:#576844;
+    --moss-soft:#AAB894;
+    --cream:#FCFBF6;
+    --cream-alt:#F4F2E9;
+    --line:#E6E3D6;
     --muted2:#726F60;
     --white:#FFFFFF;
     --radius:4px;
@@ -58,10 +58,10 @@
     padding:16px 30px;font-weight:700;font-size:14.5px;cursor:pointer;border:1.5px solid transparent;
     transition:all .18s ease;white-space:nowrap;letter-spacing:.01em;
   }
-  .btn-primary{background:var(--ink);color:#fff;}
+  .btn-primary{background:var(--moss-deep);color:#fff;}
   .btn-primary:hover{background:var(--moss-deep);}
   .btn-line{background:transparent;color:var(--ink);border-color:var(--ink);}
-  .btn-line:hover{background:var(--ink);color:#fff;}
+  .btn-line:hover{background:var(--moss-deep);color:#fff;border-color:var(--moss-deep);}
   .btn-cream{background:var(--cream);color:var(--ink);}
   .btn-cream:hover{background:var(--moss-soft);color:#fff;}
 
@@ -78,30 +78,30 @@
   .navlinks a:hover::after{width:100%;}
 
   /* hero photo */
-  .hero-photo{position:relative;min-height:86vh;display:flex;align-items:center;overflow:hidden;background:#181c12;}
+  .hero-photo{position:relative;min-height:86vh;display:flex;align-items:center;overflow:hidden;background:#6b7d54;}
   @media(max-width:760px){.hero-photo{min-height:auto;padding:96px 0 64px;}}
-  .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 30%, #3c4630 0%, #20250f 55%, #12140d 100%);}
-  .hero-bg .fan{position:absolute;width:56vw;max-width:820px;opacity:.16;}
+  .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 30%, #8fa075 0%, #6b7d54 55%, #576844 100%);}
+  .hero-bg .fan{position:absolute;width:56vw;max-width:820px;opacity:.12;}
   .hero-bg .fan-a{top:50%;left:8%;transform:translateY(-50%) rotate(8deg);}
   .hero-bg .fan-b{top:50%;right:-8%;transform:translateY(-50%) rotate(-14deg);}
   @media(max-width:760px){.hero-bg .fan{width:100vw;}.hero-bg .fan-a{left:-30%;}.hero-bg .fan-b{right:-40%;}}
-  .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg, rgba(18,20,13,0.94) 0%, rgba(18,20,13,0.72) 45%, rgba(18,20,13,0.42) 100%);}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg, rgba(66,78,50,0.72) 0%, rgba(66,78,50,0.45) 45%, rgba(66,78,50,0.18) 100%);}
   .hero-photo-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.35fr 0.65fr;gap:56px;align-items:center;padding-top:60px;padding-bottom:60px;width:100%;}
   @media(max-width:900px){.hero-photo-inner{grid-template-columns:1fr;gap:36px;}}
-  .hero-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--moss-soft);margin-bottom:22px;}
+  .hero-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.28em;color:#E5EBD2;margin-bottom:22px;}
   .hero-photo-text h1{font-family:var(--serif);font-size:clamp(32px,4.6vw,54px);line-height:1.32;font-weight:600;color:#fff;margin-bottom:22px;}
   .hero-photo-text h1 em{font-style:normal;color:#EAD9A8;}
-  .hero-photo-text p{color:#D7D9C7;font-size:15.5px;max-width:480px;margin-bottom:32px;}
+  .hero-photo-text p{color:#EEF1E4;font-size:15.5px;max-width:480px;margin-bottom:32px;}
   .hero-photo-text .cta-row{display:flex;gap:12px;flex-wrap:wrap;}
   .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.55);}
   .btn-ghost:hover{background:rgba(255,255,255,0.12);border-color:#fff;}
   .hero-card{
-    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(6px);
+    background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.35);backdrop-filter:blur(6px);
     padding:32px 30px;
   }
-  .hero-card-label{display:block;font-size:12.5px;font-weight:700;color:var(--moss-soft);letter-spacing:.05em;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.18);}
+  .hero-card-label{display:block;font-size:12.5px;font-weight:700;color:#E5EBD2;letter-spacing:.05em;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.18);}
   .hero-card ul li{color:#fff;font-size:14.5px;font-weight:600;padding:6px 0 6px 20px;position:relative;}
-  .hero-card ul li::before{content:"";position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--moss-soft);}
+  .hero-card ul li::before{content:"";position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:#E5EBD2;}
 
   /* floating call button */
   .float-call{
@@ -109,7 +109,7 @@
     background:var(--moss-deep);color:#fff;display:flex;align-items:center;justify-content:center;
     box-shadow:0 10px 26px rgba(0,0,0,0.3);z-index:80;transition:transform .15s ease, background .15s ease;
   }
-  .float-call:hover{background:var(--ink);transform:translateY(-2px);}
+  .float-call:hover{background:var(--moss);transform:translateY(-2px);}
   .float-call svg{width:24px;height:24px;}
 
   /* medallion icon */
@@ -118,7 +118,7 @@
     display:flex;align-items:center;justify-content:center;flex-shrink:0;
   }
   .medal svg{width:24px;height:24px;color:var(--moss-deep);}
-  .medal.filled{background:var(--ink);border-color:var(--ink);}
+  .medal.filled{background:var(--moss-deep);border-color:var(--moss-deep);}
   .medal.filled svg{color:var(--cream);}
 
   /* differentiators */
@@ -244,10 +244,10 @@
   @media(max-width:860px){.contact-band .inner{grid-template-columns:1fr;padding:52px 26px;gap:40px;}}
   .contact-band .label{color:var(--moss-soft);}
   .contact-band h2{color:#fff;font-family:var(--serif);font-size:clamp(24px,3vw,34px);margin-bottom:24px;font-weight:600;}
-  .phone-big{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);color:#fff;margin-bottom:28px;display:block;}
-  .info-list{border-top:1px solid rgba(255,255,255,0.15);}
-  .info-list li{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:14px;color:#DADCC9;}
-  .info-list li b{color:#fff;font-weight:600;}
+  .phone-big{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);color:var(--ink);margin-bottom:22px;display:block;}
+  .info-list{border-top:1px solid var(--line);}
+  .info-list li{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted2);gap:18px;}
+  .info-list li b{color:var(--ink);font-weight:600;text-align:right;}
   form.consult{display:flex;flex-direction:column;gap:12px;}
   form.consult input,form.consult textarea{
     width:100%;padding:15px 4px;border:none;border-bottom:1px solid rgba(255,255,255,0.3);
@@ -259,8 +259,13 @@
   form.consult .btn{margin-top:16px;align-self:flex-start;}
 
   /* footer */
-  footer{padding:32px 0;}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  footer{padding:84px 0 32px;background:var(--cream-alt);border-top:1px solid var(--line);}
+  .fcontact{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start;
+    padding-bottom:56px;border-bottom:1px solid var(--line);margin-bottom:26px;}
+  @media(max-width:860px){.fcontact{grid-template-columns:1fr;gap:36px;}}
+  .fc-title{font-family:var(--serif);font-size:clamp(24px,3vw,34px);font-weight:600;margin-bottom:20px;}
+  .fbtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;}
+  .fbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
   footer .fbrand{font-family:var(--serif);font-weight:700;font-size:15px;}
   footer .flinks{display:flex;gap:26px;font-size:13px;color:var(--muted2);flex-wrap:wrap;}
   footer .fmeta{font-size:12px;color:var(--muted2);width:100%;padding-top:18px;border-top:1px solid var(--line);margin-top:18px;}
@@ -399,7 +404,7 @@
   </section>
 
   <div class="float-group">
-    <a href="sms:01026804538" class="float-btn text" aria-label="문자 상담">
+    <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="float-btn text" aria-label="문자 상담">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
     </a>
     <a href="tel:010-2680-4538" class="float-btn call" aria-label="전화 상담">
@@ -953,49 +958,37 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="contact-band">
-        <div class="inner">
-          <div>
-            <span class="label">Contact</span>
-            <h2>지금 창문 상태만<br>찍어 보내셔도 됩니다</h2>
-            <a href="tel:010-2680-4538" class="phone-big">010-2680-4538</a>
-            <ul class="info-list">
-              <li><span>상호</span><b>튼튼환풍시스템</b></li>
-              <li><span>상담 가능 시간</span><b>평일·주말 08:00 ~ 20:00</b></li>
-              <li><span>주소</span><b>경기도 용인시 기흥구 공세로 150-29</b></li>
-              <li><span>사업자등록번호</span><b>636-13-02485</b></li>
-            </ul>
-          </div>
-          <form class="consult" onsubmit="event.preventDefault(); alert('문의가 접수되었습니다. (데모 폼입니다 — 실제 접수를 위해서는 서버 연동이 필요합니다)');">
-            <label>이름</label>
-            <input type="text" placeholder="성함을 입력해 주세요" required>
-            <label>연락처</label>
-            <input type="tel" placeholder="010-0000-0000" required>
-            <label>설치 위치 / 주소</label>
-            <input type="text" placeholder="시공을 원하시는 주소를 입력해 주세요">
-            <label>문의 내용</label>
-            <textarea placeholder="공간 종류와 원하시는 시공 시기를 알려주세요."></textarea>
-            <button type="submit" class="btn btn-cream">문자 상담 문의</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
 </main>
 
-<footer>
+<footer id="contact">
   <div class="wrap">
-    <span class="fbrand">튼튼환풍시스템</span>
-    <div class="flinks">
-      <a href="#service">서비스</a>
-      <a href="#works">작업사례</a>
-      <a href="#process">진행 프로세스</a>
-      <a href="#faq">문의 전 확인</a>
-      <a href="#contact">상담 문의</a>
+    <div class="fcontact">
+      <div>
+        <span class="label">Contact</span>
+        <h2 class="fc-title">지금 창문 상태만<br>찍어 보내셔도 됩니다</h2>
+        <a href="tel:010-2680-4538" class="phone-big">010-2680-4538</a>
+        <div class="fbtns">
+          <a href="tel:010-2680-4538" class="btn btn-primary">전화 상담</a>
+          <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="btn btn-line">사진 보내고 문자 상담</a>
+        </div>
+      </div>
+      <ul class="info-list">
+        <li><span>상호</span><b>튼튼환풍시스템</b></li>
+        <li><span>상담 가능 시간</span><b>평일·주말 08:00 ~ 20:00</b></li>
+        <li><span>주소</span><b>경기도 용인시 기흥구 공세로 150-29</b></li>
+        <li><span>사업자등록번호</span><b>636-13-02485</b></li>
+      </ul>
+    </div>
+    <div class="fbar">
+      <span class="fbrand">튼튼환풍시스템</span>
+      <div class="flinks">
+        <a href="#service">서비스</a>
+        <a href="#works">작업사례</a>
+        <a href="#process">진행 프로세스</a>
+        <a href="#faq">문의 전 확인</a>
+      </div>
     </div>
     <div class="fmeta">상호: 튼튼환풍시스템 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29 · © 2026 튼튼환풍시스템. All rights reserved.</div>
   </div>
