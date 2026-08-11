@@ -1,9 +1,9 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --acc:#6366F1; --accd:#4F46E5; --accp:#E0E7FF;
+  --acc:#0E7490; --accd:#155E75; --accp:#E3F3F7;
   --acc2:#10B981; --acc2p:#D1FAE5;
-  --ink:#1B1F3B; --inks:#3F4568; --muted:#767CA0;
-  --line:#E5E5F5; --tint:#F8F8FE; --r:16px; --maxw:1140px;
+  --ink:#0F1D2B; --inks:#33475C; --muted:#64748B;
+  --line:#E1E9EE; --tint:#F4F8F9; --r:16px; --maxw:1140px;
   --font:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
 }
 html{scroll-behavior:smooth;}
@@ -61,7 +61,7 @@ h2.title{font-size:26px;font-weight:800;margin-bottom:16px;}
 .shot .half img{width:100%;aspect-ratio:4/3;object-fit:cover;}
 .shot .half .t{position:absolute;left:9px;bottom:9px;font-size:10.5px;font-weight:800;color:#fff;
   border-radius:6px;padding:3px 10px;}
-.shot .half.b .t{background:rgba(27,31,59,.85);}
+.shot .half.b .t{background:rgba(15,29,43,.85);}
 .shot .half.a .t{background:var(--acc);}
 
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
