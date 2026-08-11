@@ -93,6 +93,10 @@
   .hero-photo-text h1 em{font-style:normal;color:var(--moss);}
   .hero-photo-text p{color:#41607A;font-size:15.5px;max-width:480px;margin-bottom:32px;}
   .hero-photo-text .cta-row{display:flex;gap:12px;flex-wrap:wrap;}
+  .hero-photo-text p.hero-sign{display:flex;align-items:center;gap:14px;font-family:var(--serif);
+    font-size:18.5px;font-weight:600;color:var(--ink);margin-bottom:30px;max-width:none;}
+  .hero-sign span{width:44px;height:2px;background:var(--moss);display:block;flex:none;}
+  @media(max-width:560px){.hero-photo-text p.hero-sign{font-size:16px;}}
   .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(22,50,74,0.35);}
   .btn-ghost:hover{background:rgba(31,154,201,0.08);border-color:var(--moss);color:var(--moss-deep);}
   .hero-card{
@@ -394,7 +398,8 @@
       <div class="hero-photo-text">
         <span class="hero-eyebrow">INDUSTRIAL VENTILATION</span>
         <h1>숨쉬기 답답한 공간,<br><em>원인부터</em> 정확히 짚어냅니다</h1>
-        <p>매장과 주방, 창고까지 — 환기가 안 되는 이유는 공간마다 다릅니다. 방문 진단으로 배출 압력과 구조를 먼저 확인한 뒤, 공간에 맞는 방식으로만 시공합니다.</p>
+        <p>매장과 주방, 창고까지 — 환기는 눈에 보이지 않는 압력과 방향의 문제라, 안 되는 이유가 공간마다 다릅니다. 방문 진단으로 구조를 먼저 확인한 뒤, 현장에서 쌓은 판단으로 공간에 맞는 방식만 골라 시공합니다.</p>
+        <p class="hero-sign"><span></span>현장을 아는 사람이, 정확하게 시공합니다</p>
         <div class="cta-row">
           <a href="#contact" class="btn btn-cream">무료 방문 진단 신청</a>
           <a href="#works" class="btn btn-ghost">작업 사례 보기</a>
@@ -462,15 +467,6 @@
           <p>설치로 끝내지 않고 실제 배출량과 소음 수준을 함께 점검한 뒤 인도합니다.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about-band">
-    <div class="wrap about-inner">
-      <span class="label">About</span>
-      <p class="about-lead">현장을 아는 사람이,<br>정확하게 시공합니다.</p>
-      <p class="about-sub">환기는 눈에 보이지 않는 압력과 방향의 문제입니다. 튼튼환풍시스템은 매뉴얼이 아니라 현장에서 쌓은 판단으로 공간마다 다른 답을 찾습니다.</p>
     </div>
   </section>
 
