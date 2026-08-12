@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://window.fanmaster.co.kr/sitemap.xml
