@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>화장실 환풍기 교체 · 설치 | 튼튼환풍시스템</title>
+<meta name="description" content="화장실 환풍기 교체와 설치를 정리했습니다. 언제 바꿔야 하는지, 왜 새것으로 바꿔도 안 빠지는지, 소음과 습기는 무엇 때문인지, 비용은 무엇으로 정해지는지 현장 기준으로 설명합니다.">
+<link rel="canonical" href="https://window.fanmaster.co.kr/toilet-fan">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="튼튼환풍시스템">
+<meta property="og:title" content="화장실 환풍기 교체 · 설치 — 교체 신호부터 비용까지">
+<meta property="og:url" content="https://window.fanmaster.co.kr/toilet-fan">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --accent:#0EA5E9;
+    --accent-deep:#0284C7;
+    --accent-pale:#E0F2FE;
+    --accent-glow:rgba(14,165,233,.32);
+    --accent2:#14B8A6;
+    --ink:#0F2436;
+    --ink-soft:#334A5E;
+    --muted:#6B8299;
+    --bg:#FFFFFF;
+    --line:#DFEDF6;
+    --brand-grad:linear-gradient(135deg,#0EA5E9 0%,#14B8A6 100%);
+    --cta-grad:linear-gradient(140deg,#38BDF8 0%,#0EA5E9 45%,#0284C7 100%);
+    --foot-bg:#0B2233;
+    --foot-tx:#9FC0D4;
+    --maxw:900px;
+    --font:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;}
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:14px;font-weight:700;font-size:15px;cursor:pointer;border:1.5px solid transparent;transition:transform .16s ease, box-shadow .16s ease, background .16s ease;white-space:nowrap;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn svg{width:17px;height:17px;}
+  .btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px var(--accent-glow);}
+  .btn-main:hover{background:var(--accent-deep);}
+  .btn-out{background:#fff;color:var(--ink);border-color:var(--line);}
+  .btn-out:hover{border-color:var(--accent);color:var(--accent-deep);}
+  .btn-white{background:#fff;color:var(--ink);}
+  .btn-glass{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.55);}
+  .btn-glass:hover{background:rgba(255,255,255,.3);}
+
+  /* header */
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  header .wrap{max-width:1140px;display:flex;align-items:center;justify-content:space-between;min-height:74px;flex-wrap:wrap;gap:10px;padding-top:8px;padding-bottom:8px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand .dot{width:34px;height:34px;border-radius:11px;background:var(--brand-grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .brand .dot svg{width:19px;height:19px;color:#fff;}
+  .brand b{font-size:18px;font-weight:800;letter-spacing:-0.03em;}
+  .brand b span{color:var(--accent-deep);}
+  nav{display:flex;align-items:center;gap:30px;}
+  .nav-links{display:none;gap:26px;}
+  @media(min-width:920px){.nav-links{display:flex;}}
+  .nav-links a{font-size:15px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--accent-deep);}
+
+  /* breadcrumb + title */
+  .top{padding:38px 0 0;}
+  .crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);font-weight:500;margin-bottom:20px;}
+  .crumb a:hover{color:var(--accent-deep);}
+  .crumb i{font-style:normal;opacity:.5;}
+  .chip{display:inline-block;font-size:12.5px;font-weight:700;border-radius:8px;padding:5px 13px;margin-bottom:14px;color:var(--accent-deep);background:var(--accent-pale);}
+  h1{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.3;margin-bottom:14px;}
+  .lead{font-size:16.5px;color:var(--muted);font-weight:500;margin-bottom:30px;}
+
+  /* info box */
+  .info{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:36px;}
+  @media(max-width:700px){.info{grid-template-columns:1fr 1fr;}}
+  .info div{background:#fff;padding:20px 18px;}
+  .info dt{font-size:12.5px;font-weight:700;color:var(--accent-deep);margin-bottom:5px;}
+  .info dd{font-size:15px;font-weight:700;letter-spacing:-0.02em;}
+
+  .hero-shot{border-radius:20px;overflow:hidden;margin-bottom:12px;border:1px solid var(--line);}
+  .hero-shot img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+  .cap{font-size:13px;color:var(--muted);text-align:center;margin-bottom:44px;font-weight:500;}
+
+  /* sections */
+  section.blk{padding:0 0 46px;}
+  .lbl{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;color:var(--accent-deep);background:var(--accent-pale);border-radius:999px;padding:6px 16px;margin-bottom:14px;letter-spacing:.04em;}
+  h2{font-size:clamp(21px,2.6vw,27px);font-weight:800;letter-spacing:-0.035em;line-height:1.35;margin-bottom:16px;}
+  .blk p{font-size:15.5px;color:var(--ink-soft);font-weight:500;margin-bottom:14px;}
+  .blk p b{color:var(--ink);font-weight:700;}
+  .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin-top:20px;position:relative;}
+  .shot img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .shot .tag{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:800;color:#fff;background:rgba(20,28,38,.82);border-radius:9px;padding:6px 14px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+  @media(max-width:640px){.two{grid-template-columns:1fr;}}
+  .two .shot{margin-top:0;}
+
+  /* process steps */
+  .step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line);}
+  @media(max-width:600px){.step{grid-template-columns:44px 1fr;gap:14px;}}
+  .step .n{width:48px;height:48px;border-radius:15px;background:var(--accent);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  @media(max-width:600px){.step .n{width:42px;height:42px;border-radius:13px;font-size:14px;}}
+  .step h3{font-size:18px;font-weight:800;letter-spacing:-0.03em;margin-bottom:8px;}
+  .step p{font-size:15px;color:var(--ink-soft);font-weight:500;margin-bottom:0;}
+
+  /* summary */
+  .sum{background:var(--accent-pale);border-radius:20px;padding:32px 30px;}
+  @media(max-width:600px){.sum{padding:26px 22px;}}
+  .sum h2{margin-bottom:18px;}
+  .sum li{display:flex;align-items:flex-start;gap:11px;font-size:15.5px;font-weight:600;color:var(--ink);padding:7px 0;}
+  .sum li svg{width:18px;height:18px;color:var(--accent-deep);flex-shrink:0;margin-top:5px;}
+
+  /* other cases */
+  .others{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.others{grid-template-columns:1fr;}}
+  .oc{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s ease, box-shadow .2s ease;}
+  .oc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.08);}
+  .oc img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .oc .b{padding:18px 20px 20px;}
+  .oc .b span{font-size:12px;font-weight:700;color:var(--accent-deep);}
+  .oc .b h4{font-size:16.5px;font-weight:800;letter-spacing:-0.03em;margin-top:4px;}
+
+  /* cta */
+  .cta{background:var(--cta-grad);text-align:center;margin-top:26px;}
+  .cta .inner{max-width:640px;margin:0 auto;padding:76px 24px;}
+  @media(max-width:640px){.cta .inner{padding:56px 22px;}}
+  .cta h2{color:#fff;font-size:clamp(24px,3.2vw,34px);margin-bottom:12px;}
+  .cta p{color:rgba(255,255,255,.86);font-size:16px;margin-bottom:26px;font-weight:500;}
+  .cta .phone{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:clamp(25px,3.2vw,34px);font-weight:800;letter-spacing:-0.02em;margin-bottom:24px;}
+  .cta .phone svg{width:26px;height:26px;}
+  .cta .row{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;}
+
+  /* footer */
+  footer{background:var(--foot-bg);color:var(--foot-tx);padding:52px 0 32px;}
+  footer .wrap{max-width:1140px;}
+  .foot{display:grid;grid-template-columns:1.3fr 1fr;gap:38px;margin-bottom:34px;}
+  @media(max-width:700px){.foot{grid-template-columns:1fr;gap:26px;}}
+  .foot .brand{margin-bottom:12px;}
+  .foot .brand b{color:#fff;}
+  .foot .fd{font-size:14px;line-height:1.9;margin-bottom:12px;}
+  .foot .fp{font-size:18px;font-weight:800;color:#fff;}
+  .fcol h5{font-size:13px;font-weight:800;color:#fff;margin-bottom:14px;}
+  .fcol a{display:block;font-size:14px;padding:5px 0;}
+  .fcol a:hover{color:#fff;}
+  .fmeta{font-size:12.5px;opacity:.7;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);line-height:1.9;}
+
+  .float{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;flex-direction:column;gap:11px;}
+  .fbtn{width:56px;height:56px;border-radius:19px;display:flex;align-items:center;justify-content:center;transition:transform .16s ease;}
+  .fbtn:hover{transform:translateY(-3px);}
+  .fbtn svg{width:23px;height:23px;}
+  .fbtn.call{background:var(--accent);color:#fff;box-shadow:0 8px 22px var(--accent-glow);}
+  .fbtn.sms{background:var(--accent2);color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.18);}
+
+  .qas{display:grid;gap:12px;margin-top:6px;}
+  .qa{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:10px;padding:20px 22px;}
+  .qa h4{font-size:15px;font-weight:800;margin-bottom:8px;}
+  .qa p{font-size:14px;line-height:1.85;opacity:.82;margin:0;}
+  .gtbl{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px;}
+  .gtbl th,.gtbl td{border:1px solid rgba(0,0,0,.1);padding:12px 14px;text-align:left;vertical-align:top;}
+  .gtbl th{background:rgba(0,0,0,.035);font-weight:800;font-size:13.5px;}
+  .gtbl td b{font-weight:800;}
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .signs{margin-top:6px;}
+  .signs li{position:relative;padding:14px 0 14px 30px;border-bottom:1px solid rgba(0,0,0,.08);
+    font-size:15px;line-height:1.75;list-style:none;}
+  .signs li:last-child{border-bottom:none;}
+  .signs li::before{content:"";position:absolute;left:4px;top:22px;width:8px;height:8px;
+    border-radius:50%;background:currentColor;opacity:.5;}
+  .signs li b{font-weight:800;}
+  .callout{background:rgba(0,0,0,.035);border-radius:12px;padding:22px 24px;margin-top:22px;}
+  .callout h4{font-size:15.5px;font-weight:800;margin-bottom:9px;}
+  .callout p{font-size:14.5px;line-height:1.85;margin:0;opacity:.85;}
+  .rel{display:grid;gap:14px;grid-template-columns:1fr;margin-top:6px;}
+  @media(min-width:640px){.rel{grid-template-columns:repeat(3,1fr);}}
+  .rel a{display:block;border:1px solid rgba(0,0,0,.1);border-radius:12px;overflow:hidden;background:#fff;}
+  .rel a img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .rel a span{display:block;padding:13px 15px 16px;font-size:14px;font-weight:700;line-height:1.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+      <b>튼튼환풍시스템 <span>창문형</span></b>
+    </a>
+    <nav>
+      <div class="nav-links">
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <a href="tel:010-2680-4538" class="btn btn-main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>전화 상담</a>
+    </nav>
+  </div>
+</header>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"화장실 환풍기 교체, 시간이 얼마나 걸리나요?","acceptedAnswer":{"@type":"Answer","text":"기존 개구부를 그대로 쓰는 교체는 대부분 반나절 안에 끝납니다. 덕트 정리나 전기 작업이 함께 들어가면 당일 하루를 잡습니다."}},{"@type":"Question","name":"천장형을 새것으로 바꿨는데 그대로입니다. 왜 그런가요?","acceptedAnswer":{"@type":"Answer","text":"덕트 쪽 문제일 가능성이 큽니다. 천장 속 관이 눌려 있거나 이음새가 빠져 있으면 제품과 무관하게 공기가 밖으로 나가지 못합니다. 교체 전에 통로 상태를 먼저 확인해야 합니다."}},{"@type":"Question","name":"창이 없는 화장실도 설치가 되나요?","acceptedAnswer":{"@type":"Answer","text":"됩니다. 천장 속 공간과 덕트가 있으면 천장 매립형, 외벽에 면해 있으면 벽부형으로 진행합니다. 천장 사진과 벽 위치를 보내주시면 가능한 방식을 알려드립니다."}},{"@type":"Question","name":"전월세인데 벽을 뚫어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"창이 있다면 창문형을 권합니다. 벽과 창호에 구멍을 내지 않아 나중에 판만 빼면 원래대로 돌아갑니다. 원상복구 부담이 없습니다."}},{"@type":"Question","name":"환풍기를 얼마나 돌려야 하나요?","acceptedAnswer":{"@type":"Answer","text":"샤워 후 눈에 보이는 김이 걷힌 뒤에도 20~30분 정도 더 돌리시는 편이 좋습니다. 그 시점에도 벽면과 줄눈은 젖어 있어서, 여기서 끄면 곰팡이가 자리 잡기 쉽습니다."}},{"@type":"Question","name":"화장실 환풍기에서 담배 냄새가 올라옵니다.","acceptedAnswer":{"@type":"Answer","text":"공용 배기 덕트를 통해 다른 세대 냄새가 역류하는 경우입니다. 환풍기를 새것으로 바꾸는 것만으로는 잡히지 않습니다. 역류를 막는 전용 장치(역류방지 댐퍼)를 다는 방법이 있는데 저희 시공 범위가 아니라, 이 문제만 있으시다면 댐퍼 전문 업체나 관리사무소를 통해 공용 덕트 상태를 확인하시는 편이 빠릅니다."}},{"@type":"Question","name":"화장실 환풍기 청소는 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"반드시 차단기를 내린 뒤 그릴을 분리해 먼지를 털고 중성세제로 닦습니다. 물을 직접 뿌리지 마시고, 부품은 완전히 마른 뒤 조립하셔야 합니다. 가정 기준 6~12개월에 한 번을 참고하시면 됩니다."}}]}</script>
+<main>
+  <div class="wrap top">
+    <div class="crumb">
+      <a href="/">홈</a><i>›</i><a href="/#service">서비스</a><i>›</i><span>화장실 환풍기 교체·설치</span>
+    </div>
+    <span class="chip">화장실 환풍기</span>
+    <h1>화장실 환풍기 교체 · 설치</h1>
+    <p class="lead">새것으로 바꿨는데 그대로인 경우, 소리만 커진 경우, 곰팡이가 계속 올라오는 경우 — 원인이 각각 다릅니다. 제품을 고르기 전에 무엇부터 봐야 하는지 정리했습니다.</p>
+
+    <dl class="info"><div><dt>대상</dt><dd>아파트 · 주택 · 상가 화장실</dd></div><div><dt>시공 방식</dt><dd>천장 매립형 · 벽부형 · 창문형</dd></div><div><dt>소요 시간</dt><dd>대부분 반나절~당일</dd></div><div><dt>상담</dt><dd>010-2680-4538 (08~20시)</dd></div></dl>
+  </div>
+
+  <div class="wrap">
+    <section class="blk">
+      <span class="lbl">SIGNS</span>
+      <h2>이런 증상이면 화장실 환풍기를 점검할 때입니다</h2>
+      <p>화장실 환풍기는 어느 날 갑자기 멈추기보다 몇 년에 걸쳐 서서히 나빠집니다. 매일 보는 사람은 그 변화를 알아채기 어렵습니다. 아래 중 두 가지 이상 해당되면 한 번 보실 때가 된 것입니다.</p>
+      <ul class="signs">
+        <li><b>샤워 후 거울 김이 오래 남는다</b> — 문을 닫고 돌렸을 때 몇 분 안에 걷혀야 정상입니다</li>
+        <li><b>켤 때 덜컹거리다 돌기 시작한다</b> — 시동에 힘이 드는 상태로, 모터나 축 쪽 신호입니다</li>
+        <li><b>소리가 예전보다 커졌다</b> — 베어링이 닳았거나 고정이 헐거워졌을 때 나타납니다</li>
+        <li><b>그릴 주변이 검게 변색됐다</b> — 공기가 제대로 빠지지 않고 그 자리에서 맴돈 흔적입니다</li>
+        <li><b>천장 모서리와 줄눈에 곰팡이가 다시 올라온다</b> — 닦아도 재발하면 배출량 문제입니다</li>
+        <li><b>돌려도 냄새가 안 빠진다</b> — 배출 통로가 막혔을 가능성이 큽니다</li>
+      </ul>
+      <p class="note">탄 냄새가 나거나 몸체가 뜨겁다면 바로 사용을 멈추고 연락 주시는 편이 안전합니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">CHECK</span>
+      <h2>새것으로 바꿔도 그대로인 진짜 이유</h2>
+      <p>화장실 환풍기 교체 문의 중에 <b>"얼마 전에 바꿨는데 똑같다"</b>는 경우가 꽤 있습니다. 대부분 제품 탓이 아닙니다. 공기가 나가는 통로에 문제가 있는 것입니다.</p>
+      <p>천장 매립형은 본체가 천장 속에 들어가고 거기서 덕트를 타고 밖으로 나갑니다. 이 덕트가 살아 있어야 성능이 나옵니다. 오래된 건물에서 자주 보이는 상태는 세 가지입니다.</p>
+      <ul class="signs">
+        <li><b>덕트 이음새가 빠져 있다</b> — 실내 공기가 천장 속으로 뿜어져 나갑니다. 화장실은 그대로인데 위층 바닥이 젖습니다</li>
+        <li><b>관이 눌리거나 꺾여 있다</b> — 단면이 좁아져 아무리 큰 제품을 달아도 그만큼만 나갑니다</li>
+        <li><b>바깥 배출구가 막혀 있다</b> — 먼지가 굳었거나 새·벌레집이 들어간 경우입니다</li>
+      </ul>
+      <p>그래서 저희는 제품을 정하기 전에 <b>그릴을 열고 통로 상태부터 봅니다.</b> 여기를 건너뛰면 새 제품을 달고도 같은 증상이 반복됩니다.</p>
+      <div class="callout"><h4>공용 배기 덕트를 쓰는 아파트라면</h4><p>세대별 환풍기가 하나의 공용 덕트로 모이는 구조에서는 내 집 환풍기만 새것으로 바꿔도 한계가 있습니다. 다른 세대 냄새가 역류하는 경우가 대표적인데, 이건 환풍기 성능 문제가 아니라 덕트 쪽 문제라 관리사무소에 공용 덕트 상태를 먼저 확인해 보시는 편이 순서입니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">TYPE</span>
+      <h2>우리 화장실엔 어떤 방식이 맞을까</h2>
+      <p>화장실 환풍기는 크게 세 가지 방식이 있습니다. 어느 것이 좋다기보다 <b>화장실 조건이 방식을 정합니다.</b></p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th>방식</th><th>가능한 조건</th><th>장점</th><th>감안할 점</th></tr></thead>
+        <tbody>
+          <tr><td><b>천장 매립형</b></td><td>천장 속 공간과 덕트가 살아 있을 것</td><td>눈에 안 보이고 소음이 낮음</td><td>덕트가 없거나 막혀 있으면 성능이 안 나옴</td></tr>
+          <tr><td><b>벽부형</b></td><td>외벽에 면해 있을 것</td><td>위치를 자유롭게 잡을 수 있고 배출이 안정적</td><td>타공과 방수 마감이 필요, 원상복구 어려움</td></tr>
+          <tr><td><b>창문형</b></td><td>창이 있고 규격·깊이가 나올 것</td><td>벽을 뚫지 않아 임대·전월세에 적합</td><td>창 규격 제약, 창 면적 일부를 사용</td></tr>
+        </tbody>
+      </table></div>
+      <p>저희는 <b>창이 있으면 창문형부터 검토합니다.</b> 벽에 손을 대지 않아 되돌릴 수 있고, 작업 시간도 짧기 때문입니다. 창이 없거나 고정창이라 규격이 안 나오면 천장 매립형이나 벽부형으로 갑니다.</p>
+      <p class="note">창문형이 안 되는 대표적인 경우는 세 가지입니다. 고정창이라 열리지 않는 경우, 창이 너무 작아 본체 폭이 안 나오는 경우, 이중창·방충망이 겹쳐 판을 끼울 깊이가 부족한 경우입니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">NOISE</span>
+      <h2>소리가 커졌다면 — 원인이 셋으로 나뉩니다</h2>
+      <p>화장실 환풍기 소음은 하나가 아니라 세 가지가 섞여 있습니다. 어느 쪽인지 구분해야 해결 방법이 나옵니다.</p>
+      <ul class="signs">
+        <li><b>모터 소음</b> — 돌아가는 소리 자체입니다. 베어링이 닳으면 점점 커지고, 이 경우는 교체가 답입니다</li>
+        <li><b>진동 소음</b> — 고정이 헐거워 본체가 미세하게 흔들리고, 그 진동이 천장재나 창틀로 전달되면서 실제보다 크게 들립니다. 고정 보강과 완충만으로 줄어드는 경우가 많습니다</li>
+        <li><b>바람 소리</b> — 휘파람 같은 소리라면 들어올 공기가 부족하다는 신호입니다. 제품 문제가 아닙니다</li>
+      </ul>
+      <div class="callout"><h4>교체 없이 잡히는 경우도 많습니다</h4><p>진동에서 오는 소음이라면 본체 고정을 다시 잡고 접촉면에 완충을 넣는 것만으로 체감이 크게 달라집니다. 무조건 새 제품부터 권하지 않고 어느 쪽인지 먼저 확인해 드립니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">MOISTURE</span>
+      <h2>곰팡이가 계속 올라온다면 급기를 보셔야 합니다</h2>
+      <p>화장실 습기 문제로 문의 주시는 분들이 가장 많이 놓치는 부분입니다. 환기는 공기를 빼내는 일이 아니라 <b>갈아주는</b> 일입니다. 빼낸 만큼 새 공기가 들어와야 실제로 갈아집니다.</p>
+      <p>컵에 빨대를 꽂고 컵 입구를 손으로 완전히 막은 채 빨면 아무것도 올라오지 않습니다. 실내도 같습니다. 문을 꽉 닫아 공기가 들어올 틈이 없으면 환풍기는 돌아도 배출량이 나오지 않습니다.</p>
+      <p>화장실 문 아래에는 보통 작은 틈이 있습니다. 이게 급기 통로입니다. 문턱을 새로 하거나 매트를 두껍게 깔아 이 틈이 막히면 그때부터 환기가 안 되기 시작합니다.</p>
+      <ul class="signs">
+        <li>환풍기를 켠 상태에서 <b>문이 평소보다 무겁다</b> → 급기 부족</li>
+        <li>문틈에서 <b>휘파람 같은 소리</b>가 난다 → 급기 부족</li>
+        <li>문을 살짝 열면 갑자기 잘 빠진다 → 급기 부족</li>
+      </ul>
+      <div class="callout"><h4>가동 시간도 함께 보셔야 합니다</h4><p>샤워 후 눈에 보이는 김이 걷혔다고 끄시는 경우가 많은데, 그 시점에도 벽면과 줄눈은 아직 젖어 있습니다. 20~30분 정도 더 돌리시면 곰팡이가 자리 잡는 조건 자체가 줄어듭니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">CLEAN</span>
+      <h2>청소로 되는 경우와 교체해야 하는 경우</h2>
+      <p>화장실 환풍기 청소만으로 회복되는 상태가 분명히 있습니다. 굳이 바꿀 필요가 없는데 교체하시는 것도 손해라 기준을 알려드립니다.</p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th>확인</th><th>청소로 해결</th><th>교체 권장</th></tr></thead>
+        <tbody>
+          <tr><td>그릴·날개 먼지를 털어낸 뒤</td><td>배출량이 눈에 띄게 돌아온다</td><td>거의 그대로다</td></tr>
+          <tr><td>켤 때</td><td>바로 부드럽게 돈다</td><td>덜컹거리다 돈다</td></tr>
+          <tr><td>소리</td><td>이전 수준으로 돌아온다</td><td>닦아도 그대로거나 잡음이 섞인다</td></tr>
+          <tr><td>외관</td><td>변색·부식이 표면 수준</td><td>몸체 부식, 그릴 파손</td></tr>
+        </tbody>
+      </table></div>
+      <p>청소 주기는 가정 화장실 기준 6~12개월 정도를 현장에서 참고합니다. 사용 인원이 많거나 상가 화장실이라면 더 짧게 보셔도 됩니다.</p>
+      <p class="note">청소하실 때는 반드시 차단기를 내리고 진행하셔야 합니다. 전원이 살아 있는 상태에서 그릴을 열거나 물을 직접 뿌리는 것은 위험합니다. 부품은 완전히 말린 뒤 조립하십시오.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">COST</span>
+      <h2>화장실 환풍기 교체 비용은 무엇으로 정해지나</h2>
+      <p>금액을 한 줄로 말씀드리기 어려운 이유가 있습니다. 같은 "화장실 환풍기 교체"라도 현장 조건에 따라 작업 범위가 크게 달라지기 때문입니다. 비용을 정하는 요소는 대략 이렇습니다.</p>
+      <ul class="signs">
+        <li><b>방식</b> — 기존과 같은 방식으로 교체하는지, 다른 방식으로 바꾸는지</li>
+        <li><b>규격</b> — 기존 개구부에 맞는 제품이 있는지, 맞춤 판이 필요한지</li>
+        <li><b>통로 작업</b> — 덕트 정리나 바깥 배출구 손질이 함께 들어가는지</li>
+        <li><b>전기</b> — 기존 배선을 그대로 쓸 수 있는지, 회로를 새로 잡아야 하는지</li>
+        <li><b>접근</b> — 천장 점검구가 있는지, 마감을 뜯어야 하는지</li>
+      </ul>
+      <p>그래서 저희는 <b>사진을 먼저 받습니다.</b> 화장실 천장(또는 창) 사진 한 장과 대략적인 크기만 있으면 방식과 비용 범위를 방문 전에 알려드릴 수 있습니다. 현장에서 조건이 다르면 그 자리에서 설명드리고 진행 여부를 정하시면 됩니다.</p>
+      <div class="callout"><h4>방문 후에 금액이 늘어나지 않도록</h4><p>견적 단계에서 확인할 수 있는 조건은 최대한 미리 확인합니다. 사진으로 판단이 안 되는 부분이 있으면 "이건 열어봐야 안다"고 미리 말씀드리고, 그 경우 어떻게 달라지는지도 함께 안내드립니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">AREA</span>
+      <h2>방문 지역</h2>
+      <p>서울·경기·인천 전 지역 방문 시공합니다. 상담은 평일·주말 08:00 ~ 20:00 가능합니다.</p>
+      <p><a class="deep" href="/sitemap">지역별 페이지에서 우리 동네 확인하기 →</a></p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">FAQ</span>
+      <h2>화장실 환풍기, 자주 묻는 질문</h2>
+      <div class="qas">
+        <div class="qa"><h4>화장실 환풍기 교체, 시간이 얼마나 걸리나요?</h4><p>기존 개구부를 그대로 쓰는 교체는 대부분 반나절 안에 끝납니다. 덕트 정리나 전기 작업이 함께 들어가면 당일 하루를 잡습니다.</p></div>
+        <div class="qa"><h4>천장형을 새것으로 바꿨는데 그대로입니다. 왜 그런가요?</h4><p>덕트 쪽 문제일 가능성이 큽니다. 천장 속 관이 눌려 있거나 이음새가 빠져 있으면 제품과 무관하게 공기가 밖으로 나가지 못합니다. 교체 전에 통로 상태를 먼저 확인해야 합니다.</p></div>
+        <div class="qa"><h4>창이 없는 화장실도 설치가 되나요?</h4><p>됩니다. 천장 속 공간과 덕트가 있으면 천장 매립형, 외벽에 면해 있으면 벽부형으로 진행합니다. 천장 사진과 벽 위치를 보내주시면 가능한 방식을 알려드립니다.</p></div>
+        <div class="qa"><h4>전월세인데 벽을 뚫어도 되나요?</h4><p>창이 있다면 창문형을 권합니다. 벽과 창호에 구멍을 내지 않아 나중에 판만 빼면 원래대로 돌아갑니다. 원상복구 부담이 없습니다.</p></div>
+        <div class="qa"><h4>환풍기를 얼마나 돌려야 하나요?</h4><p>샤워 후 눈에 보이는 김이 걷힌 뒤에도 20~30분 정도 더 돌리시는 편이 좋습니다. 그 시점에도 벽면과 줄눈은 젖어 있어서, 여기서 끄면 곰팡이가 자리 잡기 쉽습니다.</p></div>
+        <div class="qa"><h4>화장실 환풍기에서 담배 냄새가 올라옵니다.</h4><p>공용 배기 덕트를 통해 다른 세대 냄새가 역류하는 경우입니다. 환풍기를 새것으로 바꾸는 것만으로는 잡히지 않습니다. 역류를 막는 전용 장치(역류방지 댐퍼)를 다는 방법이 있는데 저희 시공 범위가 아니라, 이 문제만 있으시다면 댐퍼 전문 업체나 관리사무소를 통해 공용 덕트 상태를 확인하시는 편이 빠릅니다.</p></div>
+        <div class="qa"><h4>화장실 환풍기 청소는 어떻게 하나요?</h4><p>반드시 차단기를 내린 뒤 그릴을 분리해 먼지를 털고 중성세제로 닦습니다. 물을 직접 뿌리지 마시고, 부품은 완전히 마른 뒤 조립하셔야 합니다. 가정 기준 6~12개월에 한 번을 참고하시면 됩니다.</p></div>
+      </div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">WORKS</span>
+      <h2>관련 시공사례</h2>
+      <div class="rel">
+        <a href="/case-05"><img src="photos/works/w03-a.jpg" alt="화장실 창 자리 환풍기 설치" loading="lazy"><span>화장실 창 자리 환풍기 설치</span></a>
+        <a href="/case-26"><img src="photos/works/w24-a.jpg" alt="욕실 창 환풍기 설치" loading="lazy"><span>욕실 창 환풍기 설치</span></a>
+        <a href="/case-06"><img src="photos/works/w04-a.jpg" alt="천장 매립형 환풍기 교체" loading="lazy"><span>천장 매립형 환풍기 교체</span></a>
+      </div>
+    </section>
+  </div>
+
+  <section class="cta">
+    <div class="inner">
+      <h2>화장실 사진 한 장이면 판단됩니다</h2>
+      <p>사진 한 장과 대략적인 크기를 문자로 보내주시면 가능한 방식과 비용 범위를 먼저 알려드립니다</p>
+      <a href="tel:010-2680-4538" class="phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>010-2680-4538</a>
+      <div class="row">
+        <a href="tel:010-2680-4538" class="btn btn-white">전화로 상담하기</a>
+        <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="btn btn-glass">사진 보내고 문의</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+          <b>튼튼환풍시스템</b>
+        </div>
+        <p class="fd">창문형 환풍기 설치 전문<br>수원·용인·동탄 중심 방문 시공</p>
+        <div class="fp">010-2680-4538</div>
+      </div>
+      <div class="fcol">
+        <h5>바로가기</h5>
+        <a href="/">홈</a>
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">자주 묻는 질문</a>
+        <a href="/sitemap">사이트맵</a>
+        <a href="/case-02">카페 로스터실 배기 환풍기 설치</a>
+      </div>
+    </div>
+    <div class="fmeta">상호: 튼튼환풍시스템 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29<br>상담 시간 평일·주말 08:00 ~ 20:00 · © 2026 튼튼환풍시스템</div>
+  </div>
+</footer>
+
+<div class="float">
+  <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="fbtn sms" aria-label="문자 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </a>
+  <a href="tel:010-2680-4538" class="fbtn call" aria-label="전화 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>
+  </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>욕실 환풍기 교체 · 어떤 제품을 고를까 | 튼튼환풍시스템</title>
+<meta name="description" content="욕실 환풍기를 고를 때 무엇부터 정해야 하는지 정리했습니다. 우리 욕실에 필요한 풍량 계산, 밤에도 켤 수 있는 소음 기준, 일반형과 복합형(환기·난방·건조)의 차이, 교체 시 규격 맞추는 법까지 다룹니다.">
+<link rel="canonical" href="https://window.fanmaster.co.kr/bathroom-fan">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="튼튼환풍시스템">
+<meta property="og:title" content="욕실 환풍기 교체 — 풍량·소음·복합형, 무엇부터 정할까">
+<meta property="og:url" content="https://window.fanmaster.co.kr/bathroom-fan">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --accent:#0EA5E9;
+    --accent-deep:#0284C7;
+    --accent-pale:#E0F2FE;
+    --accent-glow:rgba(14,165,233,.32);
+    --accent2:#14B8A6;
+    --ink:#0F2436;
+    --ink-soft:#334A5E;
+    --muted:#6B8299;
+    --bg:#FFFFFF;
+    --line:#DFEDF6;
+    --brand-grad:linear-gradient(135deg,#0EA5E9 0%,#14B8A6 100%);
+    --cta-grad:linear-gradient(140deg,#38BDF8 0%,#0EA5E9 45%,#0284C7 100%);
+    --foot-bg:#0B2233;
+    --foot-tx:#9FC0D4;
+    --maxw:900px;
+    --font:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;}
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:14px;font-weight:700;font-size:15px;cursor:pointer;border:1.5px solid transparent;transition:transform .16s ease, box-shadow .16s ease, background .16s ease;white-space:nowrap;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn svg{width:17px;height:17px;}
+  .btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px var(--accent-glow);}
+  .btn-main:hover{background:var(--accent-deep);}
+  .btn-out{background:#fff;color:var(--ink);border-color:var(--line);}
+  .btn-out:hover{border-color:var(--accent);color:var(--accent-deep);}
+  .btn-white{background:#fff;color:var(--ink);}
+  .btn-glass{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.55);}
+  .btn-glass:hover{background:rgba(255,255,255,.3);}
+
+  /* header */
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  header .wrap{max-width:1140px;display:flex;align-items:center;justify-content:space-between;min-height:74px;flex-wrap:wrap;gap:10px;padding-top:8px;padding-bottom:8px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand .dot{width:34px;height:34px;border-radius:11px;background:var(--brand-grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .brand .dot svg{width:19px;height:19px;color:#fff;}
+  .brand b{font-size:18px;font-weight:800;letter-spacing:-0.03em;}
+  .brand b span{color:var(--accent-deep);}
+  nav{display:flex;align-items:center;gap:30px;}
+  .nav-links{display:none;gap:26px;}
+  @media(min-width:920px){.nav-links{display:flex;}}
+  .nav-links a{font-size:15px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--accent-deep);}
+
+  /* breadcrumb + title */
+  .top{padding:38px 0 0;}
+  .crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);font-weight:500;margin-bottom:20px;}
+  .crumb a:hover{color:var(--accent-deep);}
+  .crumb i{font-style:normal;opacity:.5;}
+  .chip{display:inline-block;font-size:12.5px;font-weight:700;border-radius:8px;padding:5px 13px;margin-bottom:14px;color:var(--accent-deep);background:var(--accent-pale);}
+  h1{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.3;margin-bottom:14px;}
+  .lead{font-size:16.5px;color:var(--muted);font-weight:500;margin-bottom:30px;}
+
+  /* info box */
+  .info{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:36px;}
+  @media(max-width:700px){.info{grid-template-columns:1fr 1fr;}}
+  .info div{background:#fff;padding:20px 18px;}
+  .info dt{font-size:12.5px;font-weight:700;color:var(--accent-deep);margin-bottom:5px;}
+  .info dd{font-size:15px;font-weight:700;letter-spacing:-0.02em;}
+
+  .hero-shot{border-radius:20px;overflow:hidden;margin-bottom:12px;border:1px solid var(--line);}
+  .hero-shot img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+  .cap{font-size:13px;color:var(--muted);text-align:center;margin-bottom:44px;font-weight:500;}
+
+  /* sections */
+  section.blk{padding:0 0 46px;}
+  .lbl{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;color:var(--accent-deep);background:var(--accent-pale);border-radius:999px;padding:6px 16px;margin-bottom:14px;letter-spacing:.04em;}
+  h2{font-size:clamp(21px,2.6vw,27px);font-weight:800;letter-spacing:-0.035em;line-height:1.35;margin-bottom:16px;}
+  .blk p{font-size:15.5px;color:var(--ink-soft);font-weight:500;margin-bottom:14px;}
+  .blk p b{color:var(--ink);font-weight:700;}
+  .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin-top:20px;position:relative;}
+  .shot img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .shot .tag{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:800;color:#fff;background:rgba(20,28,38,.82);border-radius:9px;padding:6px 14px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+  @media(max-width:640px){.two{grid-template-columns:1fr;}}
+  .two .shot{margin-top:0;}
+
+  /* process steps */
+  .step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line);}
+  @media(max-width:600px){.step{grid-template-columns:44px 1fr;gap:14px;}}
+  .step .n{width:48px;height:48px;border-radius:15px;background:var(--accent);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  @media(max-width:600px){.step .n{width:42px;height:42px;border-radius:13px;font-size:14px;}}
+  .step h3{font-size:18px;font-weight:800;letter-spacing:-0.03em;margin-bottom:8px;}
+  .step p{font-size:15px;color:var(--ink-soft);font-weight:500;margin-bottom:0;}
+
+  /* summary */
+  .sum{background:var(--accent-pale);border-radius:20px;padding:32px 30px;}
+  @media(max-width:600px){.sum{padding:26px 22px;}}
+  .sum h2{margin-bottom:18px;}
+  .sum li{display:flex;align-items:flex-start;gap:11px;font-size:15.5px;font-weight:600;color:var(--ink);padding:7px 0;}
+  .sum li svg{width:18px;height:18px;color:var(--accent-deep);flex-shrink:0;margin-top:5px;}
+
+  /* other cases */
+  .others{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.others{grid-template-columns:1fr;}}
+  .oc{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s ease, box-shadow .2s ease;}
+  .oc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.08);}
+  .oc img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .oc .b{padding:18px 20px 20px;}
+  .oc .b span{font-size:12px;font-weight:700;color:var(--accent-deep);}
+  .oc .b h4{font-size:16.5px;font-weight:800;letter-spacing:-0.03em;margin-top:4px;}
+
+  /* cta */
+  .cta{background:var(--cta-grad);text-align:center;margin-top:26px;}
+  .cta .inner{max-width:640px;margin:0 auto;padding:76px 24px;}
+  @media(max-width:640px){.cta .inner{padding:56px 22px;}}
+  .cta h2{color:#fff;font-size:clamp(24px,3.2vw,34px);margin-bottom:12px;}
+  .cta p{color:rgba(255,255,255,.86);font-size:16px;margin-bottom:26px;font-weight:500;}
+  .cta .phone{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:clamp(25px,3.2vw,34px);font-weight:800;letter-spacing:-0.02em;margin-bottom:24px;}
+  .cta .phone svg{width:26px;height:26px;}
+  .cta .row{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;}
+
+  /* footer */
+  footer{background:var(--foot-bg);color:var(--foot-tx);padding:52px 0 32px;}
+  footer .wrap{max-width:1140px;}
+  .foot{display:grid;grid-template-columns:1.3fr 1fr;gap:38px;margin-bottom:34px;}
+  @media(max-width:700px){.foot{grid-template-columns:1fr;gap:26px;}}
+  .foot .brand{margin-bottom:12px;}
+  .foot .brand b{color:#fff;}
+  .foot .fd{font-size:14px;line-height:1.9;margin-bottom:12px;}
+  .foot .fp{font-size:18px;font-weight:800;color:#fff;}
+  .fcol h5{font-size:13px;font-weight:800;color:#fff;margin-bottom:14px;}
+  .fcol a{display:block;font-size:14px;padding:5px 0;}
+  .fcol a:hover{color:#fff;}
+  .fmeta{font-size:12.5px;opacity:.7;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);line-height:1.9;}
+
+  .float{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;flex-direction:column;gap:11px;}
+  .fbtn{width:56px;height:56px;border-radius:19px;display:flex;align-items:center;justify-content:center;transition:transform .16s ease;}
+  .fbtn:hover{transform:translateY(-3px);}
+  .fbtn svg{width:23px;height:23px;}
+  .fbtn.call{background:var(--accent);color:#fff;box-shadow:0 8px 22px var(--accent-glow);}
+  .fbtn.sms{background:var(--accent2);color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.18);}
+
+  .qas{display:grid;gap:12px;margin-top:6px;}
+  .qa{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:10px;padding:20px 22px;}
+  .qa h4{font-size:15px;font-weight:800;margin-bottom:8px;}
+  .qa p{font-size:14px;line-height:1.85;opacity:.82;margin:0;}
+  .gtbl{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px;}
+  .gtbl th,.gtbl td{border:1px solid rgba(0,0,0,.1);padding:12px 14px;text-align:left;vertical-align:top;}
+  .gtbl th{background:rgba(0,0,0,.035);font-weight:800;font-size:13.5px;}
+  .gtbl td b{font-weight:800;}
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .signs{margin-top:6px;}
+  .signs li{position:relative;padding:14px 0 14px 30px;border-bottom:1px solid rgba(0,0,0,.08);
+    font-size:15px;line-height:1.75;list-style:none;}
+  .signs li:last-child{border-bottom:none;}
+  .signs li::before{content:"";position:absolute;left:4px;top:22px;width:8px;height:8px;
+    border-radius:50%;background:currentColor;opacity:.5;}
+  .signs li b{font-weight:800;}
+  .callout{background:rgba(0,0,0,.035);border-radius:12px;padding:22px 24px;margin-top:22px;}
+  .callout h4{font-size:15.5px;font-weight:800;margin-bottom:9px;}
+  .callout p{font-size:14.5px;line-height:1.85;margin:0;opacity:.85;}
+  .rel{display:grid;gap:14px;grid-template-columns:1fr;margin-top:6px;}
+  @media(min-width:640px){.rel{grid-template-columns:repeat(3,1fr);}}
+  .rel a{display:block;border:1px solid rgba(0,0,0,.1);border-radius:12px;overflow:hidden;background:#fff;}
+  .rel a img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .rel a span{display:block;padding:13px 15px 16px;font-size:14px;font-weight:700;line-height:1.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+      <b>튼튼환풍시스템 <span>창문형</span></b>
+    </a>
+    <nav>
+      <div class="nav-links">
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <a href="tel:010-2680-4538" class="btn btn-main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>전화 상담</a>
+    </nav>
+  </div>
+</header>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"욕실 환풍기, 몇 CMH짜리를 사야 하나요?","acceptedAnswer":{"@type":"Answer","text":"욕실 부피(가로×세로×높이)에 시간당 환기 횟수 8~15회를 곱해 계산합니다. 1.5평 정도면 대략 80~150 CMH가 출발점이고, 덕트 길이와 급기 여건에 따라 조정합니다. 크기를 알려주시면 계산해 드립니다."}},{"@type":"Question","name":"복합 환풍기(난방 겸용)를 달고 싶은데 아무 집이나 되나요?","acceptedAnswer":{"@type":"Answer","text":"전기가 관건입니다. 난방 기능은 소비전력이 커서 기존 환풍기 배선을 그대로 쓰기 어려운 경우가 있고, 본체도 커서 천장 속 여유 공간이 필요합니다. 천장과 분전반 사진을 보내주시면 미리 확인해 드립니다."}},{"@type":"Question","name":"욕실 환풍기가 시끄러운데 바꿔야 하나요?","acceptedAnswer":{"@type":"Answer","text":"먼저 원인을 나눠야 합니다. 고정이 헐거워 생긴 진동 소음이면 다시 잡고 완충을 넣는 것만으로 크게 줄어듭니다. 모터 자체 소음이 커진 것이라면 교체가 맞습니다."}},{"@type":"Question","name":"욕실에 창이 있으면 창문형이 더 나은가요?","acceptedAnswer":{"@type":"Answer","text":"천장 속 덕트가 없거나 막힌 집, 전월세처럼 원상복구가 필요한 집에서는 창문형이 유리합니다. 다만 이중창·방충망 때문에 깊이가 안 나오는 경우가 있어 실측이 필요합니다."}},{"@type":"Question","name":"특정 제품을 지정해서 요청할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"원하시는 제품이 있으면 말씀해 주세요. 그 제품이 욕실 조건(개구부 규격, 천장 여유, 전기 용량)에 맞는지 먼저 확인해 드리고, 맞지 않으면 어디가 걸리는지 설명드립니다."}},{"@type":"Question","name":"교체할 때 기존 구멍을 넓혀야 하나요?","acceptedAnswer":{"@type":"Answer","text":"대부분 넓히지 않아도 됩니다. 맞춤 판으로 규격 차이를 흡수하는 방법이 있어서, 기존 개구부 크기를 알려주시면 가능한지 먼저 확인해 드립니다."}}]}</script>
+<main>
+  <div class="wrap top">
+    <div class="crumb">
+      <a href="/">홈</a><i>›</i><a href="/#service">서비스</a><i>›</i><span>욕실 환풍기 교체·선택</span>
+    </div>
+    <span class="chip">욕실 환풍기</span>
+    <h1>욕실 환풍기 교체 · 어떤 제품을 고를까</h1>
+    <p class="lead">제품부터 고르면 대개 실패합니다. 순서는 방식 → 풍량 → 소음 → 부가 기능입니다. 가정 욕실 기준으로 하나씩 정리했습니다.</p>
+
+    <dl class="info"><div><dt>대상</dt><dd>아파트 · 주택 욕실</dd></div><div><dt>시공 방식</dt><dd>천장 매립형 · 창문형 · 벽부형</dd></div><div><dt>소요 시간</dt><dd>대부분 반나절</dd></div><div><dt>상담</dt><dd>010-2680-4538 (08~20시)</dd></div></dl>
+  </div>
+
+  <div class="wrap">
+    <section class="blk">
+      <span class="lbl">ORDER</span>
+      <h2>제품보다 순서를 먼저 정해야 합니다</h2>
+      <p>욕실 환풍기 추천을 찾아보시면 제품 이름부터 나옵니다. 그런데 <b>같은 제품이 어떤 욕실에서는 잘 맞고 어떤 욕실에서는 안 맞습니다.</b> 욕실 조건이 먼저이고 제품은 그다음입니다.</p>
+      <p>현장에서 정하는 순서는 이렇습니다.</p>
+      <ul class="signs">
+        <li><b>1. 방식</b> — 천장 속에 공간과 덕트가 있는가, 창이 있는가, 외벽에 면해 있는가</li>
+        <li><b>2. 풍량</b> — 욕실 크기에 필요한 배출량이 얼마인가</li>
+        <li><b>3. 소음</b> — 밤에도 켤 수 있는 수준인가</li>
+        <li><b>4. 부가 기능</b> — 환기만 필요한가, 난방·건조까지 필요한가</li>
+      </ul>
+      <p>이 순서를 지키면 선택지가 자연스럽게 좁혀집니다. 반대로 제품부터 정하면 "달고 보니 안 맞는" 상황이 생깁니다.</p>
+      <div class="callout"><h4>교체가 목적이시라면</h4><p>지금 쓰시는 환풍기가 왜 안 되는지부터 확인하는 게 순서입니다. 제품이 아니라 배기 통로 문제인 경우가 많습니다. <a class="deep" href="/toilet-fan">화장실 환풍기 교체 — 무엇부터 봐야 할까 →</a></p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">CMH</span>
+      <h2>우리 욕실엔 몇 CMH가 필요할까</h2>
+      <p>풍량은 CMH로 표시합니다. 한 시간에 밀어내는 공기의 양(㎥)입니다. 계산은 어렵지 않습니다.</p>
+      <p><b>가로 × 세로 × 높이 = 욕실 부피</b>, 여기에 <b>시간당 환기 횟수</b>를 곱하면 필요 풍량이 나옵니다. 욕실은 습기가 많은 공간이라 시간당 8~15회 정도를 현장에서 참고합니다.</p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th>욕실 크기(대략)</th><th>부피</th><th>필요 풍량(참고)</th></tr></thead>
+        <tbody>
+          <tr><td>1평 남짓 (1.5m × 2m × 2.3m)</td><td>약 7㎥</td><td>약 60~100 CMH</td></tr>
+          <tr><td>1.5평 (1.8m × 2.4m × 2.3m)</td><td>약 10㎥</td><td>약 80~150 CMH</td></tr>
+          <tr><td>2평 (2m × 3m × 2.3m)</td><td>약 14㎥</td><td>약 110~200 CMH</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">표는 계산의 출발점입니다. 실제로는 덕트 길이와 꺾임, 급기 여건에 따라 조정합니다. 카탈로그 풍량은 저항이 없는 조건에서 잰 값이라 현장에서는 그대로 나오지 않습니다.</p>
+      <p>크게만 잡으면 되는 것도 아닙니다. 풍량이 커질수록 소음과 진동이 따라 커지고, 급기가 부족한 욕실에서는 배출량이 늘지 않고 바람 소리만 커집니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">NOISE</span>
+      <h2>집이라서 소음 기준이 다릅니다</h2>
+      <p>상가나 사무실 환풍기와 욕실 환풍기의 가장 큰 차이가 이겁니다. <b>욕실은 밤에도 돌아갑니다.</b></p>
+      <p>욕실이 침실과 붙어 있거나 아이가 있는 집이라면, 배출량보다 소음이 먼저입니다. 시끄러우면 결국 짧게 켰다 끄게 되고, 그러면 습기가 다 빠지기 전에 멈추게 됩니다. <b>켜둘 수 있어야 성능이 의미가 있습니다.</b></p>
+      <ul class="signs">
+        <li>제품 사양표의 <b>소음 수치(dB)</b>를 비교하시면 대략적인 감이 잡힙니다</li>
+        <li>같은 풍량이라도 날개 형상과 모터 방식에 따라 소음 차이가 큽니다</li>
+        <li>설치할 때 <b>고정과 완충</b>이 부실하면 진동이 천장재로 전달돼 실제보다 훨씬 크게 들립니다</li>
+      </ul>
+      <div class="callout"><h4>소리가 큰 게 꼭 제품 탓은 아닙니다</h4><p>지금 쓰시는 제품이 시끄럽다면 고정이 헐거워졌을 가능성부터 봅니다. 본체를 다시 잡고 접촉면에 완충을 넣는 것만으로 체감이 크게 줄어드는 경우가 많습니다. 교체 전에 확인해 드립니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">COMBO</span>
+      <h2>일반형과 복합형, 무엇이 다른가</h2>
+      <p>욕실 복합 환풍기는 환기에 <b>난방·건조·송풍</b> 같은 기능이 함께 들어간 제품입니다. 겨울에 욕실이 춥거나 빨래 건조까지 생각하신다면 후보가 됩니다.</p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th></th><th>일반형</th><th>복합형(환기+난방 등)</th></tr></thead>
+        <tbody>
+          <tr><td>하는 일</td><td>공기 배출</td><td>배출 + 난방·건조·송풍</td></tr>
+          <tr><td>설치 조건</td><td>기본 배선으로 대부분 가능</td><td><b>전용 회로가 필요한 경우가 많음</b> — 소비전력이 큽니다</td></tr>
+          <tr><td>본체 크기</td><td>작음</td><td>큼 — 천장 속 여유 공간이 더 필요</td></tr>
+          <tr><td>적합한 경우</td><td>환기만 필요하고 조용한 것이 우선</td><td>겨울 욕실 추위·건조까지 함께 해결하고 싶을 때</td></tr>
+        </tbody>
+      </table></div>
+      <p>복합형에서 가장 많이 걸리는 조건이 <b>전기</b>입니다. 난방 기능은 소비전력이 커서 기존 환풍기 배선을 그대로 쓰기 어려운 경우가 있습니다. 이 확인 없이 제품부터 사시면 설치 당일에 막힙니다.</p>
+      <p class="note">전기 작업은 자격을 갖춘 인력이 진행합니다. 용량을 넘겨 기존 회로에 물리면 차단기가 내려가거나 발열 위험이 있습니다. 복합형을 고려 중이시면 분전반 사진도 함께 보내주시면 미리 확인해 드립니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">WINDOW</span>
+      <h2>욕실에 창이 있다면 선택지가 하나 더 있습니다</h2>
+      <p>천장 매립형만 생각하시는 경우가 많은데, <b>창이 있는 욕실은 창문형도 됩니다.</b> 저희가 가장 많이 하는 방식이기도 합니다.</p>
+      <ul class="signs">
+        <li><b>천장 속 덕트가 없거나 막힌 집</b> — 천장형을 달아도 성능이 안 나오는 조건에서 창이 답이 됩니다</li>
+        <li><b>전월세</b> — 벽과 창호에 구멍을 내지 않아 나중에 판만 빼면 원래대로 돌아갑니다</li>
+        <li><b>공사 규모를 줄이고 싶을 때</b> — 천장을 뜯지 않아 반나절이면 끝납니다</li>
+      </ul>
+      <p>다만 창이 있다고 무조건 되는 것은 아닙니다. 욕실 창은 <b>이중창에 방충망까지 겹쳐 있는 경우</b>가 많아서, 판을 끼울 깊이가 나오는지 실측이 필요합니다. 방충망 위치를 조정하면 확보되는 경우가 대부분입니다.</p>
+      <p class="note">그래서 욕실 창은 정면 사진만으로는 판단이 어렵습니다. <b>옆에서 찍은 사진</b>이 한 장 더 있으면 겹친 구조와 깊이가 보입니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">REPLACE</span>
+      <h2>교체할 때 규격은 이렇게 맞춥니다</h2>
+      <p>기존 환풍기를 떼고 새것을 다는 경우, 규격이 딱 맞는 제품을 찾기 어려울 때가 있습니다. 특히 오래된 제품은 단종된 경우가 많습니다.</p>
+      <p>이때 천장이나 벽 구멍을 넓히는 것이 유일한 방법은 아닙니다. <b>맞춤 판을 대서 차이를 흡수하면</b> 기존 개구부를 그대로 쓸 수 있습니다. 구멍을 넓히면 마감을 다시 해야 하고 건물에도 부담이 갑니다.</p>
+      <ul class="signs">
+        <li>기존 <b>개구부 가로·세로</b>를 재두시면 상담이 빨라집니다</li>
+        <li>천장형이라면 <b>점검구가 있는지</b> 함께 봐주세요 — 없으면 접근 방법이 달라집니다</li>
+        <li>지금 제품에 <b>모델명</b>이 보이면 알려주세요 — 규격을 바로 확인할 수 있습니다</li>
+      </ul>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">COST</span>
+      <h2>욕실 환풍기 교체 비용을 정하는 것들</h2>
+      <p>금액을 한 줄로 못 적는 이유는 같은 "욕실 환풍기 교체"라도 작업 범위가 크게 달라지기 때문입니다. 비용을 가르는 요소는 이렇습니다.</p>
+      <ul class="signs">
+        <li><b>제품 종류</b> — 일반형인지 복합형인지 (복합형은 제품가와 전기 작업이 함께 올라갑니다)</li>
+        <li><b>규격</b> — 기존 개구부에 맞는지, 맞춤 판이 필요한지</li>
+        <li><b>통로</b> — 덕트 정리나 바깥 배출구 손질이 들어가는지</li>
+        <li><b>전기</b> — 기존 배선으로 되는지, 회로를 새로 잡아야 하는지</li>
+        <li><b>접근</b> — 점검구가 있는지, 천장 마감을 뜯어야 하는지</li>
+      </ul>
+      <p>사진 한 장과 대략적인 크기만 있으면 방문 전에 방식과 비용 범위를 알려드립니다. 현장 조건이 다르면 그 자리에서 설명드리고 진행 여부를 정하시면 됩니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">AREA</span>
+      <h2>방문 지역</h2>
+      <p>서울·경기·인천 전 지역 방문 시공합니다. 상담은 평일·주말 08:00 ~ 20:00 가능합니다.</p>
+      <p><a class="deep" href="/sitemap">지역별 페이지에서 우리 동네 확인하기 →</a></p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">FAQ</span>
+      <h2>욕실 환풍기, 자주 묻는 질문</h2>
+      <div class="qas">
+        <div class="qa"><h4>욕실 환풍기, 몇 CMH짜리를 사야 하나요?</h4><p>욕실 부피(가로×세로×높이)에 시간당 환기 횟수 8~15회를 곱해 계산합니다. 1.5평 정도면 대략 80~150 CMH가 출발점이고, 덕트 길이와 급기 여건에 따라 조정합니다. 크기를 알려주시면 계산해 드립니다.</p></div>
+        <div class="qa"><h4>복합 환풍기(난방 겸용)를 달고 싶은데 아무 집이나 되나요?</h4><p>전기가 관건입니다. 난방 기능은 소비전력이 커서 기존 환풍기 배선을 그대로 쓰기 어려운 경우가 있고, 본체도 커서 천장 속 여유 공간이 필요합니다. 천장과 분전반 사진을 보내주시면 미리 확인해 드립니다.</p></div>
+        <div class="qa"><h4>욕실 환풍기가 시끄러운데 바꿔야 하나요?</h4><p>먼저 원인을 나눠야 합니다. 고정이 헐거워 생긴 진동 소음이면 다시 잡고 완충을 넣는 것만으로 크게 줄어듭니다. 모터 자체 소음이 커진 것이라면 교체가 맞습니다.</p></div>
+        <div class="qa"><h4>욕실에 창이 있으면 창문형이 더 나은가요?</h4><p>천장 속 덕트가 없거나 막힌 집, 전월세처럼 원상복구가 필요한 집에서는 창문형이 유리합니다. 다만 이중창·방충망 때문에 깊이가 안 나오는 경우가 있어 실측이 필요합니다.</p></div>
+        <div class="qa"><h4>특정 제품을 지정해서 요청할 수 있나요?</h4><p>원하시는 제품이 있으면 말씀해 주세요. 그 제품이 욕실 조건(개구부 규격, 천장 여유, 전기 용량)에 맞는지 먼저 확인해 드리고, 맞지 않으면 어디가 걸리는지 설명드립니다.</p></div>
+        <div class="qa"><h4>교체할 때 기존 구멍을 넓혀야 하나요?</h4><p>대부분 넓히지 않아도 됩니다. 맞춤 판으로 규격 차이를 흡수하는 방법이 있어서, 기존 개구부 크기를 알려주시면 가능한지 먼저 확인해 드립니다.</p></div>
+      </div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">WORKS</span>
+      <h2>관련 시공사례</h2>
+      <div class="rel">
+        <a href="/case-26"><img src="photos/works/w24-a.jpg" alt="욕실 창 환풍기 설치" loading="lazy"><span>욕실 창 환풍기 설치</span></a>
+        <a href="/case-06"><img src="photos/works/w04-a.jpg" alt="천장 매립형 환풍기 교체" loading="lazy"><span>천장 매립형 환풍기 교체</span></a>
+        <a href="/case-05"><img src="photos/works/w03-a.jpg" alt="화장실 창 자리 환풍기 설치" loading="lazy"><span>화장실 창 자리 환풍기 설치</span></a>
+      </div>
+    </section>
+  </div>
+
+  <section class="cta">
+    <div class="inner">
+      <h2>욕실 천장이나 창 사진 한 장이면 됩니다</h2>
+      <p>사진 한 장과 대략적인 크기를 문자로 보내주시면 가능한 방식과 비용 범위를 먼저 알려드립니다</p>
+      <a href="tel:010-2680-4538" class="phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>010-2680-4538</a>
+      <div class="row">
+        <a href="tel:010-2680-4538" class="btn btn-white">전화로 상담하기</a>
+        <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="btn btn-glass">사진 보내고 문의</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+          <b>튼튼환풍시스템</b>
+        </div>
+        <p class="fd">창문형 환풍기 설치 전문<br>수원·용인·동탄 중심 방문 시공</p>
+        <div class="fp">010-2680-4538</div>
+      </div>
+      <div class="fcol">
+        <h5>바로가기</h5>
+        <a href="/">홈</a>
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">자주 묻는 질문</a>
+        <a href="/sitemap">사이트맵</a>
+        <a href="/case-02">카페 로스터실 배기 환풍기 설치</a>
+      </div>
+    </div>
+    <div class="fmeta">상호: 튼튼환풍시스템 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29<br>상담 시간 평일·주말 08:00 ~ 20:00 · © 2026 튼튼환풍시스템</div>
+  </div>
+</footer>
+
+<div class="float">
+  <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="fbtn sms" aria-label="문자 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </a>
+  <a href="tel:010-2680-4538" class="fbtn call" aria-label="전화 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>
+  </a>
+</div>
+
+</body>
+</html>

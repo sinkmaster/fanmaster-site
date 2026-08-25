@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주방 환풍기 교체 · 설치 | 튼튼환풍시스템</title>
+<meta name="description" content="주방 환풍기 교체와 설치를 정리했습니다. 후드가 있는데도 주방이 더운 이유, 어디에 몇 대가 필요한지, 기름때에 견디는 제품 고르는 법, 교체 시 규격 맞추는 법을 현장 기준으로 설명합니다.">
+<link rel="canonical" href="https://window.fanmaster.co.kr/kitchen-fan">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="튼튼환풍시스템">
+<meta property="og:title" content="주방 환풍기 교체 · 설치 — 후드가 있는데도 더운 이유">
+<meta property="og:url" content="https://window.fanmaster.co.kr/kitchen-fan">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --accent:#0EA5E9;
+    --accent-deep:#0284C7;
+    --accent-pale:#E0F2FE;
+    --accent-glow:rgba(14,165,233,.32);
+    --accent2:#14B8A6;
+    --ink:#0F2436;
+    --ink-soft:#334A5E;
+    --muted:#6B8299;
+    --bg:#FFFFFF;
+    --line:#DFEDF6;
+    --brand-grad:linear-gradient(135deg,#0EA5E9 0%,#14B8A6 100%);
+    --cta-grad:linear-gradient(140deg,#38BDF8 0%,#0EA5E9 45%,#0284C7 100%);
+    --foot-bg:#0B2233;
+    --foot-tx:#9FC0D4;
+    --maxw:900px;
+    --font:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;}
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:14px;font-weight:700;font-size:15px;cursor:pointer;border:1.5px solid transparent;transition:transform .16s ease, box-shadow .16s ease, background .16s ease;white-space:nowrap;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn svg{width:17px;height:17px;}
+  .btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px var(--accent-glow);}
+  .btn-main:hover{background:var(--accent-deep);}
+  .btn-out{background:#fff;color:var(--ink);border-color:var(--line);}
+  .btn-out:hover{border-color:var(--accent);color:var(--accent-deep);}
+  .btn-white{background:#fff;color:var(--ink);}
+  .btn-glass{background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.55);}
+  .btn-glass:hover{background:rgba(255,255,255,.3);}
+
+  /* header */
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  header .wrap{max-width:1140px;display:flex;align-items:center;justify-content:space-between;min-height:74px;flex-wrap:wrap;gap:10px;padding-top:8px;padding-bottom:8px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand .dot{width:34px;height:34px;border-radius:11px;background:var(--brand-grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .brand .dot svg{width:19px;height:19px;color:#fff;}
+  .brand b{font-size:18px;font-weight:800;letter-spacing:-0.03em;}
+  .brand b span{color:var(--accent-deep);}
+  nav{display:flex;align-items:center;gap:30px;}
+  .nav-links{display:none;gap:26px;}
+  @media(min-width:920px){.nav-links{display:flex;}}
+  .nav-links a{font-size:15px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--accent-deep);}
+
+  /* breadcrumb + title */
+  .top{padding:38px 0 0;}
+  .crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);font-weight:500;margin-bottom:20px;}
+  .crumb a:hover{color:var(--accent-deep);}
+  .crumb i{font-style:normal;opacity:.5;}
+  .chip{display:inline-block;font-size:12.5px;font-weight:700;border-radius:8px;padding:5px 13px;margin-bottom:14px;color:var(--accent-deep);background:var(--accent-pale);}
+  h1{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-0.04em;line-height:1.3;margin-bottom:14px;}
+  .lead{font-size:16.5px;color:var(--muted);font-weight:500;margin-bottom:30px;}
+
+  /* info box */
+  .info{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:36px;}
+  @media(max-width:700px){.info{grid-template-columns:1fr 1fr;}}
+  .info div{background:#fff;padding:20px 18px;}
+  .info dt{font-size:12.5px;font-weight:700;color:var(--accent-deep);margin-bottom:5px;}
+  .info dd{font-size:15px;font-weight:700;letter-spacing:-0.02em;}
+
+  .hero-shot{border-radius:20px;overflow:hidden;margin-bottom:12px;border:1px solid var(--line);}
+  .hero-shot img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+  .cap{font-size:13px;color:var(--muted);text-align:center;margin-bottom:44px;font-weight:500;}
+
+  /* sections */
+  section.blk{padding:0 0 46px;}
+  .lbl{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;color:var(--accent-deep);background:var(--accent-pale);border-radius:999px;padding:6px 16px;margin-bottom:14px;letter-spacing:.04em;}
+  h2{font-size:clamp(21px,2.6vw,27px);font-weight:800;letter-spacing:-0.035em;line-height:1.35;margin-bottom:16px;}
+  .blk p{font-size:15.5px;color:var(--ink-soft);font-weight:500;margin-bottom:14px;}
+  .blk p b{color:var(--ink);font-weight:700;}
+  .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin-top:20px;position:relative;}
+  .shot img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .shot .tag{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:800;color:#fff;background:rgba(20,28,38,.82);border-radius:9px;padding:6px 14px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+  @media(max-width:640px){.two{grid-template-columns:1fr;}}
+  .two .shot{margin-top:0;}
+
+  /* process steps */
+  .step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line);}
+  @media(max-width:600px){.step{grid-template-columns:44px 1fr;gap:14px;}}
+  .step .n{width:48px;height:48px;border-radius:15px;background:var(--accent);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  @media(max-width:600px){.step .n{width:42px;height:42px;border-radius:13px;font-size:14px;}}
+  .step h3{font-size:18px;font-weight:800;letter-spacing:-0.03em;margin-bottom:8px;}
+  .step p{font-size:15px;color:var(--ink-soft);font-weight:500;margin-bottom:0;}
+
+  /* summary */
+  .sum{background:var(--accent-pale);border-radius:20px;padding:32px 30px;}
+  @media(max-width:600px){.sum{padding:26px 22px;}}
+  .sum h2{margin-bottom:18px;}
+  .sum li{display:flex;align-items:flex-start;gap:11px;font-size:15.5px;font-weight:600;color:var(--ink);padding:7px 0;}
+  .sum li svg{width:18px;height:18px;color:var(--accent-deep);flex-shrink:0;margin-top:5px;}
+
+  /* other cases */
+  .others{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.others{grid-template-columns:1fr;}}
+  .oc{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s ease, box-shadow .2s ease;}
+  .oc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.08);}
+  .oc img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+  .oc .b{padding:18px 20px 20px;}
+  .oc .b span{font-size:12px;font-weight:700;color:var(--accent-deep);}
+  .oc .b h4{font-size:16.5px;font-weight:800;letter-spacing:-0.03em;margin-top:4px;}
+
+  /* cta */
+  .cta{background:var(--cta-grad);text-align:center;margin-top:26px;}
+  .cta .inner{max-width:640px;margin:0 auto;padding:76px 24px;}
+  @media(max-width:640px){.cta .inner{padding:56px 22px;}}
+  .cta h2{color:#fff;font-size:clamp(24px,3.2vw,34px);margin-bottom:12px;}
+  .cta p{color:rgba(255,255,255,.86);font-size:16px;margin-bottom:26px;font-weight:500;}
+  .cta .phone{display:inline-flex;align-items:center;gap:10px;color:#fff;font-size:clamp(25px,3.2vw,34px);font-weight:800;letter-spacing:-0.02em;margin-bottom:24px;}
+  .cta .phone svg{width:26px;height:26px;}
+  .cta .row{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;}
+
+  /* footer */
+  footer{background:var(--foot-bg);color:var(--foot-tx);padding:52px 0 32px;}
+  footer .wrap{max-width:1140px;}
+  .foot{display:grid;grid-template-columns:1.3fr 1fr;gap:38px;margin-bottom:34px;}
+  @media(max-width:700px){.foot{grid-template-columns:1fr;gap:26px;}}
+  .foot .brand{margin-bottom:12px;}
+  .foot .brand b{color:#fff;}
+  .foot .fd{font-size:14px;line-height:1.9;margin-bottom:12px;}
+  .foot .fp{font-size:18px;font-weight:800;color:#fff;}
+  .fcol h5{font-size:13px;font-weight:800;color:#fff;margin-bottom:14px;}
+  .fcol a{display:block;font-size:14px;padding:5px 0;}
+  .fcol a:hover{color:#fff;}
+  .fmeta{font-size:12.5px;opacity:.7;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);line-height:1.9;}
+
+  .float{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;flex-direction:column;gap:11px;}
+  .fbtn{width:56px;height:56px;border-radius:19px;display:flex;align-items:center;justify-content:center;transition:transform .16s ease;}
+  .fbtn:hover{transform:translateY(-3px);}
+  .fbtn svg{width:23px;height:23px;}
+  .fbtn.call{background:var(--accent);color:#fff;box-shadow:0 8px 22px var(--accent-glow);}
+  .fbtn.sms{background:var(--accent2);color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.18);}
+
+  .qas{display:grid;gap:12px;margin-top:6px;}
+  .qa{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:10px;padding:20px 22px;}
+  .qa h4{font-size:15px;font-weight:800;margin-bottom:8px;}
+  .qa p{font-size:14px;line-height:1.85;opacity:.82;margin:0;}
+  .gtbl{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px;}
+  .gtbl th,.gtbl td{border:1px solid rgba(0,0,0,.1);padding:12px 14px;text-align:left;vertical-align:top;}
+  .gtbl th{background:rgba(0,0,0,.035);font-weight:800;font-size:13.5px;}
+  .gtbl td b{font-weight:800;}
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .signs{margin-top:6px;}
+  .signs li{position:relative;padding:14px 0 14px 30px;border-bottom:1px solid rgba(0,0,0,.08);
+    font-size:15px;line-height:1.75;list-style:none;}
+  .signs li:last-child{border-bottom:none;}
+  .signs li::before{content:"";position:absolute;left:4px;top:22px;width:8px;height:8px;
+    border-radius:50%;background:currentColor;opacity:.5;}
+  .signs li b{font-weight:800;}
+  .callout{background:rgba(0,0,0,.035);border-radius:12px;padding:22px 24px;margin-top:22px;}
+  .callout h4{font-size:15.5px;font-weight:800;margin-bottom:9px;}
+  .callout p{font-size:14.5px;line-height:1.85;margin:0;opacity:.85;}
+  .rel{display:grid;gap:14px;grid-template-columns:1fr;margin-top:6px;}
+  @media(min-width:640px){.rel{grid-template-columns:repeat(3,1fr);}}
+  .rel a{display:block;border:1px solid rgba(0,0,0,.1);border-radius:12px;overflow:hidden;background:#fff;}
+  .rel a img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+  .rel a span{display:block;padding:13px 15px 16px;font-size:14px;font-weight:700;line-height:1.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+      <b>튼튼환풍시스템 <span>창문형</span></b>
+    </a>
+    <nav>
+      <div class="nav-links">
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <a href="tel:010-2680-4538" class="btn btn-main"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>전화 상담</a>
+    </nav>
+  </div>
+</header>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"후드가 있는데 주방 환풍기가 또 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"후드는 화구 위 연기를 잡는 장치이고, 환풍기는 실내 공기를 갈아주는 장치입니다. 복사열과 장비 발열, 세척 구역 습기는 후드 범위 밖이라 별도 배기가 있어야 빠집니다."}},{"@type":"Question","name":"주방 환풍기는 몇 대가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"면적이 아니라 부피와 구획으로 봅니다. 주방이 장비로 나뉘어 있으면 한 지점에서 뽑는 것으로는 안쪽 공기가 움직이지 않습니다. 평면과 천장 높이, 화구 수를 알려주시면 계산해 드립니다."}},{"@type":"Question","name":"환풍기를 키웠는데 오히려 소리만 커졌습니다.","acceptedAnswer":{"@type":"Answer","text":"들어올 공기가 부족한 상태입니다. 급기가 없으면 배기를 키워도 배출량은 늘지 않고 바람 소리만 커집니다. 급기 경로부터 확인하는 것이 순서입니다."}},{"@type":"Question","name":"주방 환풍기 청소는 얼마나 자주 해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"조리가 많은 주방은 3~6개월에 한 번 날개를 분리해 닦는 것을 참고하시면 됩니다. 향이 강하고 볶음이 많은 매장은 더 짧게 보셔도 됩니다."}},{"@type":"Question","name":"기존 구멍보다 새 제품이 작거나 큽니다.","acceptedAnswer":{"@type":"Answer","text":"맞춤 판으로 차이를 흡수하면 구멍을 넓히지 않아도 되는 경우가 대부분입니다. 기존 개구부 가로·세로를 알려주시면 먼저 확인해 드립니다."}},{"@type":"Question","name":"임대 주방인데 벽을 뚫어도 되나요?","acceptedAnswer":{"@type":"Answer","text":"창이 있다면 창문형을 권합니다. 벽과 창호에 구멍을 내지 않아 나중에 판만 빼면 원래대로 돌아갑니다. 다만 주방은 창 앞이 장비로 막힌 경우가 많아 쓸 수 있는 칸이 있는지 실측이 필요합니다."}}]}</script>
+<main>
+  <div class="wrap top">
+    <div class="crumb">
+      <a href="/">홈</a><i>›</i><a href="/#service">서비스</a><i>›</i><span>주방 환풍기 교체·설치</span>
+    </div>
+    <span class="chip">주방 환풍기</span>
+    <h1>주방 환풍기 교체 · 설치</h1>
+    <p class="lead">후드는 화구 위 연기를 잡습니다. 그런데 주방이 더운 이유는 연기만이 아닙니다. 후드가 못 잡는 열과 습기를 어떻게 빼내는지 정리했습니다.</p>
+
+    <dl class="info"><div><dt>대상</dt><dd>가정 주방 · 음식점 · 상업 주방</dd></div><div><dt>시공 방식</dt><dd>창문형 · 벽부형 · 고압형</dd></div><div><dt>소요 시간</dt><dd>대부분 반나절~당일</dd></div><div><dt>상담</dt><dd>010-2680-4538 (08~20시)</dd></div></dl>
+  </div>
+
+  <div class="wrap">
+    <section class="blk">
+      <span class="lbl">WHY</span>
+      <h2>후드가 있는데도 주방이 더운 이유</h2>
+      <p>주방 환풍기 문의에서 가장 많이 듣는 말이 <b>"후드는 있는데요"</b>입니다. 있는 게 맞고, 잘 돌고 있는 경우도 많습니다. 그런데도 주방이 덥습니다.</p>
+      <p>후드가 잡는 범위는 <b>화구 바로 위, 후드 면적 안쪽</b>입니다. 올라오는 연기와 유증기를 잡아 덕트로 보내는 것이 후드의 일입니다. 이건 후드가 가장 잘합니다.</p>
+      <p>문제는 그 바깥에 있습니다. 주방이 더운 원인은 대부분 여기입니다.</p>
+      <ul class="signs">
+        <li><b>달궈진 팬과 솥에서 나오는 복사열</b> — 후드 아래를 지나가지 않습니다</li>
+        <li><b>냉장고·온장고가 뒤로 뿜는 열</b> — 후드와 아무 상관없는 자리에서 나옵니다</li>
+        <li><b>식기세척기와 싱크에서 올라오는 증기</b> — 후드 범위 밖입니다</li>
+        <li><b>사람 여럿이 움직이며 내는 열</b> — 좁은 주방일수록 큽니다</li>
+      </ul>
+      <div class="callout"><h4>후드는 연기를 잡는 장치, 환풍기는 공기를 갈아주는 장치</h4><p>역할이 다릅니다. 후드 성능만 키운다고 주방이 시원해지지 않고, 오히려 급기가 더 부족해져 후드 자체 배출량까지 떨어지는 경우가 있습니다. 둘을 나눠서 봐야 합니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">WHERE</span>
+      <h2>어디에 몇 대가 필요한가</h2>
+      <p>주방은 벽과 장비로 구획이 나뉘어 있습니다. 그래서 <b>한 지점에서만 뽑으면 그 구획 공기만 움직입니다.</b> 면적 계산으로 나온 풍량이 맞아도 안쪽이 그대로인 이유입니다.</p>
+      <p>현장에서는 주방을 구역으로 나눠서 봅니다.</p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th>구역</th><th>주로 나오는 것</th><th>배기 위치</th></tr></thead>
+        <tbody>
+          <tr><td>조리 라인</td><td>복사열, 후드가 못 잡은 유증기</td><td>천장 가까운 <b>상부</b> — 더운 공기가 위에 모입니다</td></tr>
+          <tr><td>싱크·세척</td><td>수증기, 습기</td><td>증기가 올라오는 자리 가까이</td></tr>
+          <tr><td>저장·작업대</td><td>냉장고 등 장비 발열</td><td>장비 뒤 열이 모이는 쪽</td></tr>
+        </tbody>
+      </table></div>
+      <p>대수는 무조건 많은 게 좋은 것이 아닙니다. 다만 <b>큰 것 한 대보다 나눠 다는 편이 유리한 경우가 많습니다.</b> 구획마다 공기가 움직이고, 소음이 한 작업 자리에 몰리지 않으며, 한 대가 멈춰도 나머지가 돕니다.</p>
+      <p class="note">상업 주방은 시간당 20~30회 정도의 환기 횟수를 현장에서 참고합니다. 다만 이건 출발점이고 화구 수, 후드 용량, 급기 여건에 따라 조정합니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">AIR</span>
+      <h2>급기를 안 보면 배기를 키워도 소용없습니다</h2>
+      <p>주방에서 특히 자주 걸리는 부분입니다. 후드가 이미 상당한 양의 공기를 뽑아내고 있는데 배기를 더하면, <b>들어올 공기가 부족해집니다.</b></p>
+      <p>이렇게 되면 증상이 이렇게 나타납니다.</p>
+      <ul class="signs">
+        <li>문이 무겁게 느껴지고, 문틈에서 <b>휘파람 같은 바람 소리</b>가 난다</li>
+        <li>후드를 켜면 오히려 배출량이 줄어든 느낌이 든다</li>
+        <li>뒷문을 살짝 열면 갑자기 잘 빠진다</li>
+      </ul>
+      <p>이때 필요한 건 더 큰 환풍기가 아니라 <b>들어올 길</b>입니다. 뒷문이나 홀 쪽 출입구로 확보되는 주방도 있고, 급기용 루버나 갤러리를 따로 만들어야 하는 주방도 있습니다.</p>
+      <p class="note">가스를 쓰는 주방은 이 부분이 안전과도 이어집니다. 연소에 필요한 공기가 부족한 상태가 계속되면 불완전연소 위험이 있습니다. 배기를 늘리실 때는 급기를 반드시 함께 보셔야 합니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">OIL</span>
+      <h2>기름때에 견디는 제품이란 없습니다 — 닦을 수 있는 제품이 있을 뿐</h2>
+      <p>주방 환풍기는 유증기를 계속 통과시킵니다. 어떤 제품이든 시간이 지나면 날개와 케이스에 기름이 앉습니다. 이건 피할 수 없습니다.</p>
+      <p>그래서 제품을 고를 때 실제로 중요한 것은 성능 수치가 아니라 <b>날개를 분리해 닦을 수 있는 구조인가</b>입니다. 못 여는 구조면 몇 년 뒤 통째로 교체하게 됩니다.</p>
+      <ul class="signs">
+        <li><b>날개 분리</b>가 공구 없이 되는지 — 안 되면 결국 아무도 안 닦습니다</li>
+        <li><b>설치 위치에 손이 닿는지</b> — 냉장고를 밀어야 접근되는 자리면 관리가 안 됩니다</li>
+        <li><b>바깥 루버가 굳지 않는 구조인지</b> — 루버가 기름으로 붙으면 돌아도 공기가 안 나갑니다</li>
+      </ul>
+      <p>청소 주기는 조리량에 따라 다르지만, 조리가 많은 주방은 <b>3~6개월에 한 번</b> 날개를 닦는 것을 현장에서 참고 주기로 말씀드립니다. 향이 강하고 볶음이 많은 매장은 더 짧게 보셔도 됩니다.</p>
+      <p class="note">청소하실 때는 반드시 차단기를 내리고 진행하십시오. 물을 직접 뿌리지 마시고 부품은 완전히 말린 뒤 조립하셔야 합니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">TYPE</span>
+      <h2>주방 조건에 따라 방식이 갈립니다</h2>
+      <p>주방은 벽마다 장비가 붙어 있어 쓸 수 있는 자리가 몇 안 됩니다. 남은 조건을 보고 방식을 정합니다.</p>
+      <div class="tblwrap"><table class="gtbl">
+        <thead><tr><th>방식</th><th>가능한 조건</th><th>이럴 때 씁니다</th></tr></thead>
+        <tbody>
+          <tr><td><b>창문형</b></td><td>주방에 창이 있고 규격·깊이가 나올 것</td><td>벽을 뚫을 수 없는 임대 주방, 공사 규모를 줄이고 싶을 때</td></tr>
+          <tr><td><b>벽부형</b></td><td>외벽에 면해 있을 것</td><td>창이 없거나 위치를 자유롭게 잡아야 할 때</td></tr>
+          <tr><td><b>고압형</b></td><td>덕트가 길거나 꺾임이 많을 것</td><td>유증기가 많고 배기 경로에 저항이 쌓이는 상업 주방</td></tr>
+        </tbody>
+      </table></div>
+      <p>저희는 <b>창이 있으면 창문형부터 검토합니다.</b> 다만 주방은 창 앞이 냉장고나 작업대로 막혀 있는 경우가 많아서, 쓸 수 있는 칸이 남아 있는지 실측이 필요합니다.</p>
+      <div class="callout"><h4>덕트가 길다면 풍량 숫자만 보면 안 됩니다</h4><p>카탈로그 풍량은 저항이 거의 없는 조건에서 잰 값입니다. 덕트가 길고 꺾임이 많으면 그대로 나오지 않습니다. 이런 현장은 저항을 이겨내는 힘, 즉 <b>정압</b>에 여유가 있는 제품이어야 합니다.</p></div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">REPLACE</span>
+      <h2>교체할 때 구멍을 넓히지 않는 방법</h2>
+      <p>오래된 주방 환풍기는 단종된 경우가 많습니다. 새 제품 규격이 기존 개구부와 안 맞을 때, 벽이나 창을 더 뚫는 것이 유일한 방법은 아닙니다.</p>
+      <p><b>맞춤 판을 대서 규격 차이를 흡수하면</b> 기존 구멍을 그대로 쓸 수 있습니다. 벽을 더 건드리지 않아 마감을 다시 할 일이 없고, 건물에도 부담이 적습니다.</p>
+      <ul class="signs">
+        <li>교체 전에 <b>기존 개구부 가로·세로</b>를 재두시면 상담이 빨라집니다</li>
+        <li>떼어낸 뒤에는 <b>바깥 루버와 통로 상태</b>를 함께 확인합니다 — 여기가 막혀 있으면 새 제품도 소용없습니다</li>
+        <li>지금 제품에 <b>모델명</b>이 보이면 알려주세요</li>
+      </ul>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">COST</span>
+      <h2>주방 환풍기 교체 비용을 정하는 것들</h2>
+      <p>같은 "주방 환풍기 교체"라도 현장 조건에 따라 작업 범위가 크게 달라집니다. 비용을 가르는 요소는 이렇습니다.</p>
+      <ul class="signs">
+        <li><b>제품 등급</b> — 일반형인지, 정압이 확보된 고압형인지</li>
+        <li><b>대수</b> — 한 지점인지, 구역을 나눠 여러 지점인지</li>
+        <li><b>규격</b> — 기존 개구부에 맞는지, 맞춤 판이 필요한지</li>
+        <li><b>통로 작업</b> — 덕트 정리나 바깥 루버 교체가 함께 들어가는지</li>
+        <li><b>전기</b> — 기존 배선으로 되는지, 회로를 나눠야 하는지</li>
+      </ul>
+      <p>주방 사진 한 장과 대략적인 크기, 창 위치만 있으면 방문 전에 방식과 비용 범위를 알려드립니다. 현장에서 조건이 다르면 그 자리에서 설명드리고 진행 여부를 정하시면 됩니다.</p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">AREA</span>
+      <h2>방문 지역</h2>
+      <p>서울·경기·인천 전 지역 방문 시공합니다. 상담은 평일·주말 08:00 ~ 20:00 가능합니다.</p>
+      <p><a class="deep" href="/sitemap">지역별 페이지에서 우리 동네 확인하기 →</a></p>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">FAQ</span>
+      <h2>주방 환풍기, 자주 묻는 질문</h2>
+      <div class="qas">
+        <div class="qa"><h4>후드가 있는데 주방 환풍기가 또 필요한가요?</h4><p>후드는 화구 위 연기를 잡는 장치이고, 환풍기는 실내 공기를 갈아주는 장치입니다. 복사열과 장비 발열, 세척 구역 습기는 후드 범위 밖이라 별도 배기가 있어야 빠집니다.</p></div>
+        <div class="qa"><h4>주방 환풍기는 몇 대가 필요한가요?</h4><p>면적이 아니라 부피와 구획으로 봅니다. 주방이 장비로 나뉘어 있으면 한 지점에서 뽑는 것으로는 안쪽 공기가 움직이지 않습니다. 평면과 천장 높이, 화구 수를 알려주시면 계산해 드립니다.</p></div>
+        <div class="qa"><h4>환풍기를 키웠는데 오히려 소리만 커졌습니다.</h4><p>들어올 공기가 부족한 상태입니다. 급기가 없으면 배기를 키워도 배출량은 늘지 않고 바람 소리만 커집니다. 급기 경로부터 확인하는 것이 순서입니다.</p></div>
+        <div class="qa"><h4>주방 환풍기 청소는 얼마나 자주 해야 하나요?</h4><p>조리가 많은 주방은 3~6개월에 한 번 날개를 분리해 닦는 것을 참고하시면 됩니다. 향이 강하고 볶음이 많은 매장은 더 짧게 보셔도 됩니다.</p></div>
+        <div class="qa"><h4>기존 구멍보다 새 제품이 작거나 큽니다.</h4><p>맞춤 판으로 차이를 흡수하면 구멍을 넓히지 않아도 되는 경우가 대부분입니다. 기존 개구부 가로·세로를 알려주시면 먼저 확인해 드립니다.</p></div>
+        <div class="qa"><h4>임대 주방인데 벽을 뚫어도 되나요?</h4><p>창이 있다면 창문형을 권합니다. 벽과 창호에 구멍을 내지 않아 나중에 판만 빼면 원래대로 돌아갑니다. 다만 주방은 창 앞이 장비로 막힌 경우가 많아 쓸 수 있는 칸이 있는지 실측이 필요합니다.</p></div>
+      </div>
+    </section>
+
+    <section class="blk">
+      <span class="lbl">WORKS</span>
+      <h2>관련 시공사례</h2>
+      <div class="rel">
+        <a href="/case-04"><img src="photos/works/w02-a.jpg" alt="기름때로 굳은 주방 환풍기 교체" loading="lazy"><span>기름때로 굳은 주방 환풍기 교체</span></a>
+        <a href="/case-12"><img src="photos/works/w10-a.jpg" alt="주방 환풍기 설치 — 냉장고 상부 창 2대" loading="lazy"><span>주방 환풍기 설치 — 냉장고 상부 창 2대</span></a>
+        <a href="/case-19"><img src="photos/works/w17-a.jpg" alt="주방 환풍기 설치 — 상부 창 3대 분산" loading="lazy"><span>주방 환풍기 설치 — 상부 창 3대 분산</span></a>
+      </div>
+    </section>
+  </div>
+
+  <section class="cta">
+    <div class="inner">
+      <h2>주방 창이나 벽 사진 한 장이면 됩니다</h2>
+      <p>사진 한 장과 대략적인 크기를 문자로 보내주시면 가능한 방식과 비용 범위를 먼저 알려드립니다</p>
+      <a href="tel:010-2680-4538" class="phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>010-2680-4538</a>
+      <div class="row">
+        <a href="tel:010-2680-4538" class="btn btn-white">전화로 상담하기</a>
+        <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="btn btn-glass">사진 보내고 문의</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v6M21 12h-6M12 21v-6M3 12h6"></path></svg></span>
+          <b>튼튼환풍시스템</b>
+        </div>
+        <p class="fd">창문형 환풍기 설치 전문<br>수원·용인·동탄 중심 방문 시공</p>
+        <div class="fp">010-2680-4538</div>
+      </div>
+      <div class="fcol">
+        <h5>바로가기</h5>
+        <a href="/">홈</a>
+        <a href="/#works">시공사례</a>
+        <a href="/#service">서비스</a>
+        <a href="/#faq">자주 묻는 질문</a>
+        <a href="/sitemap">사이트맵</a>
+        <a href="/case-02">카페 로스터실 배기 환풍기 설치</a>
+      </div>
+    </div>
+    <div class="fmeta">상호: 튼튼환풍시스템 · 사업자등록번호: 636-13-02485 · 경기도 용인시 기흥구 공세로 150-29<br>상담 시간 평일·주말 08:00 ~ 20:00 · © 2026 튼튼환풍시스템</div>
+  </div>
+</footer>
+
+<div class="float">
+  <a href="sms:01026804538?&body=%ED%99%98%ED%92%8D%EA%B8%B0%20%EC%84%A4%EC%B9%98%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%EC%82%AC%EC%A7%84%20%EC%B2%A8%EB%B6%80%ED%95%A9%EB%8B%88%EB%8B%A4" class="fbtn sms" aria-label="문자 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </a>
+  <a href="tel:010-2680-4538" class="fbtn call" aria-label="전화 상담">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.45a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path></svg>
+  </a>
+</div>
+
+</body>
+</html>
