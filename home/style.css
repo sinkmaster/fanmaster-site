@@ -382,3 +382,12 @@ footer .brand small{color:rgba(255,255,255,.55);}
   border-bottom:1px solid var(--line);font-size:14px;color:var(--muted);}
 .cinfo li:first-child{border-top:1px solid var(--line);}
 .cinfo li b{color:var(--ink);font-weight:700;text-align:right;}
+
+/* ── 작업사례 카드 → 상세 페이지 유도 ───────────────────── */
+.wcard .bd h4 a{display:block;}
+.wcard .bd h4 a:hover{color:var(--accd);}
+.wcard .bd p{font-size:13.5px;color:var(--muted);line-height:1.7;}
+.wcard .bd p a{display:inline-block;margin-top:8px;font-weight:800;color:var(--acc);
+  font-size:13px;white-space:nowrap;}
+.wcard .bd p a:hover{color:var(--accd);text-decoration:underline;}
+.wcard:hover .bd h4 a{color:var(--accd);}
