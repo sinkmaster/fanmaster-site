@@ -61,6 +61,10 @@ def exists(site_dir, ref):
     ref = ref.split('#')[0].split('?')[0]
     if not ref:
         return True
+    # "/info" 처럼 슬래시로 시작하는 주소는 그 사이트 폴더가 뿌리다
+    ref = ref.lstrip('/')
+    if not ref:
+        return True
     p = os.path.normpath(os.path.join(site_dir, ref))
     if os.path.isfile(p):
         return True
