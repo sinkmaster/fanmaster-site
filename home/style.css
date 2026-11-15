@@ -270,7 +270,7 @@ footer .brand small{color:rgba(255,255,255,.55);}
 .shot{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;max-width:880px;}
 .shot .ba{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);}
 .shot .half{position:relative;background:var(--accl);}
-.shot .half img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.shot .half img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
 .shot .half .t{position:absolute;left:10px;bottom:10px;font-size:11px;font-weight:800;color:#fff;
   border-radius:7px;padding:4px 11px;}
 .shot .half.b .t{background:rgba(30,27,51,.85);}
@@ -324,24 +324,24 @@ footer .brand small{color:rgba(255,255,255,.55);}
 .wtab:hover{border-color:var(--acc);color:var(--accd);}
 .wtab.on{background:var(--acc);border-color:var(--acc);color:#fff;
   box-shadow:0 8px 18px rgba(109,90,230,.26);}
-.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.wgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:1000px;margin-left:auto;margin-right:auto;}
 @media(max-width:900px){.wgrid{grid-template-columns:1fr 1fr;}}
-@media(max-width:580px){.wgrid{grid-template-columns:1fr;}}
+@media(max-width:640px){.wgrid{grid-template-columns:1fr;gap:22px;}}
 .wcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
   transition:transform .18s ease,box-shadow .18s ease;}
 .wcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(30,27,51,.11);}
 .wcard[hidden]{display:none;}
 .wba{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);}
 .wba figure{position:relative;margin:0;background:var(--accl);overflow:hidden;}
-.wba img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.wba img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;}
 .wba figcaption{position:absolute;left:9px;bottom:9px;font-size:10.5px;font-weight:800;
   color:#fff;border-radius:6px;padding:3px 10px;}
 .wba .b figcaption{background:rgba(30,27,51,.85);}
 .wba .a figcaption{background:var(--acc);}
-.wcard .bd{padding:20px 20px 24px;}
+.wcard .bd{padding:22px 24px 26px;}
 .wcard .cat{display:inline-block;font-size:11.5px;font-weight:800;color:var(--accd);
   background:var(--accp);border-radius:999px;padding:4px 12px;margin-bottom:11px;}
-.wcard h4{font-size:16px;margin-bottom:8px;}
+.wcard h4{font-size:17.5px;margin-bottom:10px;}
 .wcard p{font-size:13.5px;color:var(--muted);line-height:1.7;}
 
 /* ── 체크포인트 ─────────────────────────────────────────── */
